@@ -1069,6 +1069,7 @@ function grantReward(m){
   const g = grantXp(base);
   const pts = base ? Math.round(m.pts * g.xp / base) : m.pts;
   state.points += pts;
+  try{ if(pts>0 && window.EcoBackend && window.EcoBackend.creditMissions) window.EcoBackend.creditMissions([{ key:key, id:m.id, pts:pts }]); }catch(e){}
   if(!Array.isArray(state.rewardLog)) state.rewardLog = [];
   state.rewardLog.push({ key, id:m.id, title:m.title, cat:m.cat, per:key.split("|")[1], d:todayISO(), t:nowTs(), base, xp:g.xp, pts, limited:g.limited });
   return { dup:false, xp:g.xp, pts, limited:g.limited };
