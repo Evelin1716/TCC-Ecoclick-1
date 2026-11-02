@@ -30,6 +30,8 @@ exports.rewardsList = async (_req, res) => res.json({ items: await rewards.listR
 exports.redemptions = async (req, res) => res.json({ items: await rewards.listRedemptions(req.user.id) });
 exports.redeem = async (req, res) => res.json({ ok: true, ...(await rewards.redeem(req.user.id, req.body.rewardId, req.body.qty)) });
 
+exports.missionCredit = async (req, res) => res.json({ ok: true, ...(await rewards.creditMissions(req.user.id, req.body.items)) });
+
 exports.communityList = async (req, res) => res.json({ items: await community.list(req.params.col) });
 exports.communityGet = async (req, res) => res.json(await community.get(req.params.col, req.params.id));
 exports.communityPut = async (req, res) => { await community.put(req.params.col, req.params.id, req.body.data, req.user); res.json({ ok: true }); };
