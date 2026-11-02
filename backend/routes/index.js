@@ -34,6 +34,7 @@ const S = {
   validate: z.object({ approve: z.boolean(), points: z.number().int().min(0).max(100000).default(0) })
     .refine((b) => !b.approve || b.points > 0, { message: 'Informe os pontos do descarte aprovado.', path: ['points'] }),
   redeem: z.object({ rewardId: id, qty: z.number().int().min(1).max(99) }),
+  missionCredit: z.object({ items: z.array(z.object({ key: z.string().regex(/^[A-Za-z0-9_.:|\-]{1,80}$/, 'Chave inválida.'), id, pts: z.number().int().min(0).max(100000) })).min(1).max(100) }),
   community: z.object({ data: z.object({}).passthrough() }),
   point: z.object({
     id, name: z.string().min(1).max(200), kind: z.string().min(1).max(200), operator: z.string().min(1).max(200),
@@ -94,6 +95,7 @@ r.post('/appointments/:id/validate', requireAuth, requireRole('OPERATOR'), valid
 /* ---------- pontos, recompensas ---------- */
 r.get('/progress/balance', requireAuth, h(D.balance));
 r.get('/redemptions', requireAuth, h(D.redemptions));
+r.post('/progress/missions/credit', requireAuth, validate({ body: S.missionCredit }), h(D.missionCredit));
 r.post('/rewards/redeem', requireAuth, validate({ body: S.redeem }), h(D.redeem));
 
 /* ---------- comunidade (leitura pública, escrita só logado) ---------- */
