@@ -125,6 +125,7 @@ function persist(reward, quantity, total){
 }
 function sync(){ const b = readBal(); if (b !== balance){ balance = b; renderBalance(); } }
 window.addEventListener('focus', sync);
+document.addEventListener('ecoclick:points-changed', sync);
 document.addEventListener('ecoclick:view-change', e => { if (e.detail && e.detail.view === 'recompensas') sync(); });
 renderBalance(); renderGrid();
 
