@@ -101,7 +101,7 @@
     l.unshift({ id: 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5), type: type, title: title, text: text, createdAt: new Date().toISOString(), read: false });
     raw('ecoclick_notifications', JSON.stringify(l.slice(0, 100)));
   }
-  function fixPoints() { var p = lj('ecoclick_profile', {}); if (+p.points !== balance) { p.points = balance; raw('ecoclick_profile', JSON.stringify(p)); } }
+  function fixPoints() { var p = lj('ecoclick_profile', {}); if (+p.points !== balance) { p.points = balance; raw('ecoclick_profile', JSON.stringify(p)); fire('ecoclick:points-changed', {}); } }
   function markSince(email, ts) {
     try {
       email = String(email || '').toLowerCase(); if (!email) return;
@@ -144,6 +144,7 @@
       var r = await EcoApi.get('/appdata'); applyItems(r.items);
       try { sessionStorage.setItem('eco_hydrated', String(Date.now())); } catch (e) {}
       await pullServerOwned();
+      await flushCredits(); await reconcileMissions();
     } catch (e) { if (e && e.status === 401) { clearLocal(); } else if (!e || e.status !== 0) console.error('backend pull', e); }
     pulling = false; fixPoints(); flush();
   }
@@ -176,6 +177,39 @@
     });
     if (newly.length) fire('ecoclick:points-changed', {});
     if (changed) fire('ecoclick:appointment-created', {});
+  }
+
+  /* ---------- moedas das missões ---------- */
+  /* A tela de missões guarda as moedas no próprio estado; o saldo de "Recompensas" é o do servidor.
+     Aqui cada missão concluída vira um crédito no servidor (idempotente) e o saldo é atualizado na hora. */
+  var PENDING = 'eco_pending_credits', KEY_OK = /^[A-Za-z0-9_.:|\-]{1,80}$/;
+  function gamKey() { var u = lj('ecoclick_current_user', null); return 'ecoclick:gamificacao:v5:' + String((u && u.email) || 'local'); }
+  function missionLog() { var st = lj(gamKey(), null); return st && Array.isArray(st.rewardLog) ? st.rewardLog : []; }
+  function cleanCredit(e) { return e && KEY_OK.test(String(e.key)) && KEY_OK.test(String(e.id)) && +e.pts > 0 ? { key: String(e.key), id: String(e.id), pts: Math.round(+e.pts) } : null; }
+  async function sendCredits(items) {
+    for (var i = 0; i < items.length; i += 100) {
+      var r = await EcoApi.post('/progress/missions/credit', { items: items.slice(i, i + 100) });
+      if (r && r.balance != null) balance = +r.balance || 0;
+    }
+    fixPoints();
+  }
+  async function flushCredits() {
+    var q = lj(PENDING, []).map(cleanCredit).filter(Boolean);
+    if (!q.length || !uid) { if (!q.length) rawDel(PENDING); return; }
+    try { await sendCredits(q); rawDel(PENDING); }
+    catch (e) { if (e && e.status >= 400 && e.status < 500 && e.status !== 401) rawDel(PENDING); /* recusado: não insiste */ }
+  }
+  async function creditMissions(items) {
+    var q = lj(PENDING, []); (items || []).forEach(function (i) { q.push(i); });
+    raw(PENDING, JSON.stringify(q.slice(-300)));
+    await flushCredits();
+  }
+  /* Missões concluídas antes deste ajuste (ou sem conexão na hora) também entram no saldo, uma única vez por mudança. */
+  async function reconcileMissions() {
+    if (!uid) return;
+    var items = missionLog().map(cleanCredit).filter(Boolean), sig = 'eco_credit_sig_' + uid;
+    if (!items.length || lget(sig) === String(items.length)) return;
+    try { await sendCredits(items); raw(sig, String(items.length)); } catch (e) { /* tenta de novo na próxima atualização */ }
   }
 
   /* ---------- navegador -> servidor ---------- */
@@ -332,7 +366,7 @@
   window.EcoStore = EcoStore;
   window.EcoBackend = {
     on: true, ready: ready, online: function () { return online; }, flush: flush, refresh: refresh, auth: auth, logout: logout,
-    redeem: redeem, community: community, updateEmail: updateEmail, updatePassword: updatePassword, signOutOthers: signOutOthers,
+    redeem: redeem, creditMissions: creditMissions, community: community, updateEmail: updateEmail, updatePassword: updatePassword, signOutOthers: signOutOthers,
     exportData: exportData, deleteAccount: deleteAccount, confirmReset: confirmReset, policyVersion: POLICY_VERSION,
     user: function () { try { return JSON.parse(EcoStore.get('ecoclick_current_user')); } catch (e) { return null; } }
   };
