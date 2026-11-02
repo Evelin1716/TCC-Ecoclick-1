@@ -1,0 +1,9 @@
+
+.side,.burger,#burger,#meBtn,#bellBtn,.bellwrap,.bell,.me,.me-btn,#menuBtn{display:none!important}
+html,body{background:transparent!important;min-height:0!important;height:auto!important}
+html[data-theme="dark"]{color-scheme:dark}
+html:not([data-theme="dark"]){color-scheme:light}
+.app{display:block!important;min-height:0!important;height:auto!important}
+.main{min-height:0!important;height:auto!important;margin-left:0!important;padding-left:clamp(0px,1vw,12px)!important}
+.shell{min-height:0!important;height:auto!important}
+.main{padding-bottom:24px!important}

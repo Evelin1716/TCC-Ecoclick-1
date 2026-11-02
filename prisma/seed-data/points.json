@@ -1,0 +1,557 @@
+{
+  "_aviso": "Dados extraídos do código original do EcoClick (pesquisa na internet). Confirme cada ponto (endereço, materiais, horário, contato e posição no mapa) antes de usar em produção. Posições marcadas com geoApprox=true são aproximadas.",
+  "sources": {
+    "secti": {
+      "t": "Bahia Notícias — Secti instala novo ponto de coleta de resíduos eletrônicos e baterias em Salvador",
+      "u": "https://www.bahianoticias.com.br/noticia/280884-secti-instala-novo-ponto-de-coleta-de-residuos-eletronicos-e-baterias-em-salvador"
+    },
+    "metro": {
+      "t": "BNews — Junho Verde: Metrô de Salvador intensifica campanha de descarte de lixo eletrônico nas estações (08/06/2026)",
+      "u": "https://www.bnews.com.br/noticias/salvador/junho-verde-metro-bahia-intensifica-campanha-de-descarte-de-lixo-eletronico-nas-estacoes-em-salvador-confira.html"
+    },
+    "prints": {
+      "t": "Pesquisa na internet (Google)",
+      "u": ""
+    },
+    "limpurb": {
+      "t": "Limpurb — Ecopontos de Salvador (endereço e horário)",
+      "u": "https://limpurb.salvador.ba.gov.br/ecoponto/"
+    },
+    "bshop": {
+      "t": "Brasil Shoppings — Salvador Shopping (endereço, telefone e horário do shopping)",
+      "u": "https://www.brasil-shoppings.com.br/centros-comerciais/bahia-shoppings/cidade-salvador/salvador-shopping"
+    },
+    "acba": {
+      "t": "Associação Comercial da Bahia — Veja onde descartar lixo eletrônico em Salvador",
+      "u": "https://www.acbahia.com.br/veja-onde-descartar-lixo-eletronico-em-salvador"
+    },
+    "ilista": {
+      "t": "iLista — Recicle Logística Reversa de Eletroeletrônicos (telefone)",
+      "u": "https://ilista.com.br/empresa/recicle/perfil"
+    },
+    "shop": {
+      "t": "BNews — Poluição tecnológica: empresas instalam pontos de coleta para lixo eletrônico em Salvador (13/07/2021)",
+      "u": "https://www.bnews.com.br/noticias/meio-ambiente/314312-poluicao-tecnologica-empresas-instalam-pontos-de-coleta-para-lixo-eletronico-em-salvador-assista.html"
+    }
+  },
+  "points": [
+    {
+      "id": "mrx",
+      "name": "Lixo Eletrônico MRX",
+      "kind": "Coleta gratuita de eletrônicos",
+      "operator": "Lixo Eletrônico MRX",
+      "neighborhood": "Boca do Rio",
+      "address": "Rua Jaime Loureiro, 87 — Boca do Rio, Salvador – BA",
+      "geoQuery": "Rua Jaime Loureiro 87, Boca do Rio, Salvador",
+      "geoApprox": true,
+      "lat": -12.981,
+      "lng": -38.4265,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Segundo a pesquisa: coleta gratuita de diversos tipos de eletrônicos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "wbs",
+      "name": "WBS — Coleta Gratuita Lixo Eletrônico",
+      "kind": "Serviço de coleta de lixo eletrônico",
+      "operator": "WBS",
+      "neighborhood": "Boca do Rio",
+      "address": "Rua Lúcio Manoel da Hora — Boca do Rio, Salvador – BA (número não informado)",
+      "geoQuery": "Rua Lúcio Manoel da Hora, Boca do Rio, Salvador",
+      "geoApprox": true,
+      "lat": -12.9795,
+      "lng": -38.4225,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [
+        "Notebooks e computadores",
+        "Celulares e tablets",
+        "Pequenos eletrodomésticos"
+      ],
+      "matNote": "Segundo a pesquisa: TVs, computadores, celulares e outros aparelhos que vão à tomada.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: aberto no dia da consulta, fechando às 19:00.",
+      "hoursShort": "Fecha 19:00 (no Google)",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": true,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "recicle-logistica",
+      "name": "Recicle Logística Reversa de Eletrônicos",
+      "kind": "Centro de Reciclagem",
+      "operator": "Recicle Logística Reversa de Eletrônicos",
+      "neighborhood": "Amaralina",
+      "address": "Rua Guanabara, 03 — Amaralina, Salvador – BA",
+      "geoQuery": "Rua Guanabara 3, Amaralina, Salvador",
+      "geoApprox": true,
+      "lat": -13.004,
+      "lng": -38.478,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Segundo a pesquisa: coleta gratuita (exceto linha branca), com emissão de certificado.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints",
+        "ilista"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "ecoponto-itaigara",
+      "name": "Ecoponto Itaigara",
+      "kind": "Serviço de gerenciamento de descartes",
+      "operator": "Ecoponto Itaigara",
+      "neighborhood": "Itaigara",
+      "address": "Rua Wanderley de Pinho, s/n (no Waze consta nº 760) — Itaigara, Salvador – BA. Acesso pela Av. ACM, atrás do Hiper Posto BR.",
+      "geoQuery": "Rua Wanderley Pinho, Itaigara, Salvador",
+      "geoApprox": true,
+      "lat": -12.993,
+      "lng": -38.454,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Segundo a pesquisa: recebe materiais recicláveis e equipamentos eletroeletrônicos.",
+      "pendingNote": "O site da Limpurb lista entulho, recicláveis, volumosos e poda; a pesquisa cita também eletroeletrônicos. Confirme antes de levar eletrônicos.",
+      "hours": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "open": "07:00",
+          "close": "19:00",
+          "label": "Seg–Sáb"
+        },
+        {
+          "days": [
+            0
+          ],
+          "open": "08:00",
+          "close": "12:00",
+          "label": "Dom"
+        }
+      ],
+      "hoursNote": null,
+      "hoursShort": "Seg–Sáb 07–19h · Dom 08–12h",
+      "sources": [
+        "prints",
+        "limpurb"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": true,
+        "phone": true
+      }
+    },
+    {
+      "id": "salvador-shopping",
+      "name": "Salvador Shopping — Ecoponto",
+      "kind": "Ecoponto em shopping",
+      "operator": "Salvador Shopping",
+      "neighborhood": "Caminho das Árvores",
+      "address": "Av. Tancredo Neves, 3133 — Caminho das Árvores, Salvador – BA, CEP 41820-021. Ecoponto no Piso G2, ao lado da Magazine Luiza.",
+      "geoQuery": "Salvador Shopping, Salvador, Bahia",
+      "geoApprox": true,
+      "lat": -12.983,
+      "lng": -38.457,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [
+        "Pilhas e baterias"
+      ],
+      "matNote": "Segundo a pesquisa: descarte de resíduos eletrônicos, pilhas e baterias.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "open": "09:00",
+          "close": "22:00",
+          "label": "Seg–Sáb"
+        },
+        {
+          "days": [
+            0
+          ],
+          "open": "13:00",
+          "close": "21:00",
+          "label": "Dom"
+        }
+      ],
+      "hoursNote": "Horário do shopping; confirme o horário do ecoponto.",
+      "hoursShort": "Shopping: seg–sáb 09–22h",
+      "sources": [
+        "prints",
+        "bshop"
+      ],
+      "verified": {
+        "address": true,
+        "materials": true,
+        "hours": true,
+        "phone": true
+      }
+    },
+    {
+      "id": "salvador-reciclagem",
+      "name": "Salvador Reciclagem",
+      "kind": "Centro de Reciclagem",
+      "operator": "Salvador Reciclagem",
+      "neighborhood": null,
+      "address": "Av. Jorge Amado, Salvador – BA (número completo não informado)",
+      "geoQuery": "Avenida Jorge Amado, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Serviço informado: reciclagem de produtos eletrônicos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "big-logistica",
+      "name": "Big Logística Reversa de Eletrônicos",
+      "kind": "Centro de Reciclagem",
+      "operator": "Big Logística Reversa de Eletrônicos",
+      "neighborhood": null,
+      "address": "R. do Norte, 64 — Salvador – BA",
+      "geoQuery": "Rua do Norte 64, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Serviço informado: coleta, transporte e destinação final de resíduos eletroeletrônicos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "eco-coleta",
+      "name": "ECO Coleta de Lixo Eletrônico",
+      "kind": "Ponto de coleta seletiva",
+      "operator": "ECO Coleta de Lixo Eletrônico",
+      "neighborhood": null,
+      "address": "R. Silveira Martins, 346 — Salvador – BA",
+      "geoQuery": "Rua Silveira Martins 346, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa não detalha os itens aceitos.",
+      "pendingNote": "Na pesquisa aparece como \"fechado temporariamente\". Confirme com o local antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado temporariamente.",
+      "hoursShort": "Fechado temporariamente",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "recicla-salvador",
+      "name": "Recicla Salvador",
+      "kind": "Centro de Reciclagem",
+      "operator": "Recicla Salvador",
+      "neighborhood": null,
+      "address": "R. Édson Saldanha, Salvador – BA (número completo não informado)",
+      "geoQuery": "Rua Édson Saldanha, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Serviço informado: reciclagem de lixo eletrônico.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "cooperativa-santos-titara",
+      "name": "Cooperativa de Coleta Seletiva",
+      "kind": "Ponto de coleta seletiva",
+      "operator": "Cooperativa de Coleta Seletiva",
+      "neighborhood": null,
+      "address": "R. Santos Titara, 22 — Salvador – BA",
+      "geoQuery": "Rua Santos Titara 22, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa a lista como ponto de coleta seletiva e não informa se recebe eletrônicos.",
+      "pendingNote": "Nome cortado na pesquisa. Confirme se aceita eletrônicos antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 07:00.",
+      "hoursShort": "Abre seg. 07:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "residuos-log",
+      "name": "Resíduos Log Lixo Eletrônico",
+      "kind": "Centro de Reciclagem",
+      "operator": "Resíduos Log Lixo Eletrônico",
+      "neighborhood": null,
+      "address": "Av. Edgard Santos, Salvador – BA (número completo não informado)",
+      "geoQuery": "Avenida Edgard Santos, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa não detalha os itens aceitos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "jj-lixo-eletronico",
+      "name": "JJ Lixo Eletrônico",
+      "kind": "Centro de Reciclagem",
+      "operator": "JJ Lixo Eletrônico",
+      "neighborhood": "Nazaré",
+      "address": "Rua Jogo do Carneiro, 54 — Nazaré, Salvador – BA (Baixa dos Sapateiros). Endereço de reportagem; no Google aparece \"Baixa dos Sapateiros\".",
+      "geoQuery": "Rua Jogo do Carneiro 54, Salvador, Bahia",
+      "geoApprox": true,
+      "lat": -12.9805,
+      "lng": -38.5045,
+      "geoLabel": "Posição aproximada no mapa offline do EcoClick",
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa não detalha os itens aceitos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 08:00.",
+      "hoursShort": "Abre seg. 08:00",
+      "sources": [
+        "prints",
+        "acba"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": true
+      }
+    },
+    {
+      "id": "sucatex",
+      "name": "Sucatex do Brasil",
+      "kind": "Serviço de gerenciamento de descartes",
+      "operator": "Sucatex do Brasil",
+      "neighborhood": null,
+      "address": "R. do Afeganistão, 10 — Salvador – BA",
+      "geoQuery": "Rua do Afeganistão 10, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa não detalha os itens aceitos.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: aberto no dia da consulta, fechando às 19:00.",
+      "hoursShort": "Fecha 19:00 (no Google)",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": true,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "sos-coleta",
+      "name": "SOS Coleta de Eletrodomésticos",
+      "kind": "Serviço de coleta de lixo",
+      "operator": "SOS Coleta de Eletrodomésticos",
+      "neighborhood": null,
+      "address": "Edifício Lucaia, Salvador – BA (endereço completo não informado)",
+      "geoQuery": "Edifício Lucaia, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Serviço informado: remoção e descarte de lixo eletrônico.",
+      "pendingNote": "Nome e endereço aparecem cortados na pesquisa. Confirme com o local antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 09:00.",
+      "hoursShort": "Abre seg. 09:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "descarte-doacao-sucata",
+      "name": "Descarte Doação Coleta Sucata",
+      "kind": "Centro de Reciclagem",
+      "operator": "Descarte Doação Coleta Sucata",
+      "neighborhood": null,
+      "address": "Rua das Mangueiras, Salvador – BA (número não informado)",
+      "geoQuery": "Rua das Mangueiras, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "A pesquisa não detalha os itens aceitos.",
+      "pendingNote": "Nome cortado na pesquisa. Confirme com o local antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: fechado no momento da consulta; reabre na segunda-feira às 09:00.",
+      "hoursShort": "Abre seg. 09:00",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    },
+    {
+      "id": "brasil-entulho",
+      "name": "Brasil Entulho",
+      "kind": "Empresa de coleta de entulho",
+      "operator": "Brasil Entulho",
+      "neighborhood": null,
+      "address": "R. Homero Pires, Salvador – BA (número não informado)",
+      "geoQuery": "Rua Homero Pires, Salvador, Bahia",
+      "geoApprox": false,
+      "lat": null,
+      "lng": null,
+      "geoLabel": null,
+      "geoUrl": null,
+      "materials": [],
+      "matNote": "Serviço informado: remoção e descarte de lixo eletrônico.",
+      "pendingNote": "Dados vindos de pesquisa na internet: confirme com o local se o serviço está ativo e o horário antes de ir.",
+      "hours": [],
+      "hoursNote": "No Google: aberto no dia da consulta, fechando às 00:00.",
+      "hoursShort": "Fecha 00:00 (no Google)",
+      "sources": [
+        "prints"
+      ],
+      "verified": {
+        "address": false,
+        "materials": false,
+        "hours": false,
+        "phone": false
+      }
+    }
+  ]
+}

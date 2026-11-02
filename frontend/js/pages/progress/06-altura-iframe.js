@@ -1,0 +1,1 @@
+(function(){function h(){var b=document.body.getBoundingClientRect();parent.postMessage({ecoH:Math.ceil(b.height+40)},'*');}try{new ResizeObserver(h).observe(document.body);}catch(e){}window.addEventListener('load',h);setTimeout(h,300);setTimeout(h,1200);})();

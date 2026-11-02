@@ -1,0 +1,66 @@
+[
+  {
+    "id": "garrafa",
+    "name": "Garrafa personalizada",
+    "description": "Garrafa reutilizável com a identidade visual sustentável do EcoClick.",
+    "cost": 500,
+    "glow": "#2f7d66",
+    "sortOrder": 0
+  },
+  {
+    "id": "broches",
+    "name": "Broches",
+    "description": "Broches decorativos com símbolos de reciclagem e a tartaruga mascote.",
+    "cost": 300,
+    "glow": "#3b63b5",
+    "sortOrder": 1
+  },
+  {
+    "id": "album",
+    "name": "Álbum de figurinhas",
+    "description": "Álbum colecionável ilustrado com a tartaruga mascote.",
+    "cost": 400,
+    "glow": "#8a6f2c",
+    "sortOrder": 2
+  },
+  {
+    "id": "fone",
+    "name": "Fone de ouvido personalizado",
+    "description": "Fone com detalhes verdes e folhas inspirados em sustentabilidade.",
+    "cost": 1200,
+    "glow": "#355c9c",
+    "sortOrder": 3
+  },
+  {
+    "id": "tabuleiro",
+    "name": "Jogo de tabuleiro",
+    "description": "Jogo educativo sobre reciclagem e preservação ambiental.",
+    "cost": 800,
+    "glow": "#7a5a2c",
+    "sortOrder": 4
+  },
+  {
+    "id": "chaveiro",
+    "name": "Chaveiro",
+    "description": "Chaveiro acrílico da tartaruga mascote, com argola e pingente de folha.",
+    "cost": 250,
+    "glow": "#2f7d66",
+    "sortOrder": 5
+  },
+  {
+    "id": "ursinho",
+    "name": "Ursinho de pelúcia de tartaruga",
+    "description": "Tartaruga de pelúcia macia para abraçar e colecionar.",
+    "cost": 1500,
+    "glow": "#2f7d66",
+    "sortOrder": 6
+  },
+  {
+    "id": "adesivos",
+    "name": "Cartela de adesivos",
+    "description": "Adesivos variados com a tartaruga mascote e elementos da natureza.",
+    "cost": 200,
+    "glow": "#2f7d66",
+    "sortOrder": 7
+  }
+]

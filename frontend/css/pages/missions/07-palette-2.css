@@ -1,0 +1,19 @@
+
+html:not([data-theme="dark"]){--cream:#f2faf6;--sand:#e4f3ec;--mint:#e4f3ec;--sage:#d3eadf;--bg-soft:#e4f3ec;--line:#d3eadf;--ink:#1d2e4b;--heading:#1d2e4b;--ink-soft:#4b6a62;--muted:#4b6a62;--forest:#2f6b5c;--forest-2:#4a8476;--green-dark:#2f6b5c;--aqua:#4a8476;--aqua-dark:#2f6b5c;--shadow:0 12px 35px rgba(31,74,64,.07);--shadow-sm:0 5px 18px rgba(31,74,64,.06);--shadow-md:0 8px 24px rgba(31,74,64,.10)}
+html[data-theme="dark"]{--cream:#0d1e20;--sand:#0a1a1c;--card:#152a30;--surface:#152a30;--bg-soft:#0a1a1c;--mint:rgba(109,187,167,.16);--sage:rgba(109,187,167,.26);--line:#25444a;--ink:#eefbff;--heading:#eefbff;--ink-soft:#9db8c0;--muted:#9db8c0;--forest:#11393b;--forest-2:#1d5557;--green-dark:#3f7a6b;--aqua:#6dbba7;--aqua-dark:#87d6c2;--shadow:0 12px 35px rgba(2,10,12,.5);--shadow-sm:0 5px 18px rgba(2,10,12,.45);--shadow-md:0 8px 24px rgba(2,10,12,.55)}
+main .greeting{margin-top:34px}
+@media(max-width:860px){main .greeting{margin-top:24px}}
+
+/* ---- Leitura com tempo mínimo e fim do texto ---- */
+.read-gate{position:sticky;top:0;z-index:2;margin:0 0 16px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:0 6px 14px -10px rgba(23,63,50,.35)}
+.read-gate-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:11.5px;font-weight:800;color:var(--heading)}
+.read-gate-time{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.read-gate-bar{height:7px;margin-top:9px;border-radius:99px;background:var(--bg-edf1ee);overflow:hidden}
+.read-gate-bar i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--aqua),#7db7a5)}
+.read-end{height:1px;margin:0;padding:0}
+.read-check{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:7px;font-size:11.5px;font-weight:700;color:var(--muted)}
+.read-check li{display:flex;align-items:center;gap:9px}
+.read-check li::before{content:"";flex:none;box-sizing:border-box;width:18px;height:18px;border-radius:50%;border:2px solid var(--line)}
+.read-check li.ok{color:var(--heading)}
+.read-check li.ok::before{content:"\2713";display:grid;place-items:center;font-size:11px;line-height:1;color:#fff;background:var(--forest);border-color:var(--forest)}
+.read-meta{margin:0;font-size:11.04px;font-weight:700;color:var(--muted)}

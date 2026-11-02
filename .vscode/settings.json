@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": false,
+  "files.eol": "\n",
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma", "editor.formatOnSave": true },
+  "search.exclude": { "**/node_modules": true, "frontend/assets/images": true }
+}

@@ -1,0 +1,32 @@
+/* Tokens da identidade visual EcoClick (tema claro e escuro) — fonte única de referência da paleta.
+   Os nomes --eco-* são novos e não substituem as variáveis que cada página já usa; use-os em telas e componentes novos.
+   O tema é aplicado por <html data-theme="light|dark"> (definido pelos scripts theme-init/theme-follow de cada página,
+   a partir da escolha feita em Configurações). */
+:root {
+  --eco-navy: #1c2e4a;
+  --eco-blue: #2d5fa4;
+  --eco-green: #4a8476;
+  --eco-aqua: #8fd3bf;
+  --eco-mint: #85cfb0;
+  --eco-bg: #eefbff;
+  --eco-surface: #ffffff;
+  --eco-text: #1c2e4a;
+  --eco-muted: #4b6a62;
+  --eco-line: #bfdccf;
+  --eco-font: 'Plus Jakarta Sans', system-ui, sans-serif;
+  /* escala tipográfica padrão */
+  --eco-h1-hero: clamp(2.5rem, 4vw + 1rem, 3.25rem);
+  --eco-h1-page: clamp(2rem, 3vw + .5rem, 2.5rem);
+  --eco-h2: clamp(1.5rem, 2vw + .5rem, 2rem);
+  --eco-h3: 1.125rem;
+  --eco-body: 1rem;
+  --eco-caption: .8125rem;
+}
+:root[data-theme="dark"] {
+  --eco-bg: #0d1e20;
+  --eco-surface: #152a30;
+  --eco-text: #eefbff;
+  --eco-muted: #9db8c0;
+  --eco-line: #33585f;
+  --eco-green: #6dbba7;
+}

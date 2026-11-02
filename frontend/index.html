@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-eco-page="home" data-eco-route="home">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EcoClick</title>
+<meta name="description" content="EcoClick: encontre pontos de coleta de eletrônicos, agende descartes, cumpra missões e acompanhe seu impacto ambiental.">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/themes.css">
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/page-context.js"></script>
+<script src="js/main.js"></script>
+<script src="js/components/form-fix.js"></script>
+<script src="js/components/fx.js"></script>
+<script src="js/pages/home/02-theme-init.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/pages/home/03-home.css">
+<link rel="stylesheet" href="css/pages/home/04-palette.css"></head>
+<body>
+
+  <header>
+    <a class="logo-text" href="#" aria-label="EcoClick"><img class="eco-logo eco-logo-light" src="assets/images/home-a253eadfa9.png" alt="EcoClick"><img class="eco-logo eco-logo-dark" src="assets/images/home-0659191392.png" alt="" aria-hidden="true"></a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#materiais">Materiais</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#pontos-de-coleta">Pontos de coleta</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#comunidade">Comunidade</a>
+      <a href="#sobre">Sobre nós</a>
+    </nav>
+    <div class="auth-actions">
+      <a href="#" class="login-link">Entrar</a>
+      <a class="btn-signup" href="#">Criar conta</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <img class="hero-bg" alt="" aria-hidden="true" decoding="async" fetchpriority="high" src="assets/images/home-98beeb02c5.jpg">
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-content">
+        <h1 class="reveal">Seu descarte de hoje pode transformar o futuro de amanhã.</h1>
+        <p class="subtitle reveal delay-1">Encontre pontos de coleta, descubra onde descartar seus eletrônicos, ganhe recompensas e faça parte de uma mudança mais sustentável.</p>
+        <div class="search-bar reveal delay-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="text" placeholder="O que você deseja descartar?">
+          <button class="search-btn">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="beneficios">
+    <div class="wrap center">
+      <h2 class="section-heading reveal">Do descarte à transformação.</h2>
+      <p class="section-lead reveal delay-1">O EcoClick facilita cada etapa: encontre onde descartar, faça a entrega corretamente e acompanhe o impacto da sua ação.</p>
+      <div class="feature-grid">
+        <div class="feature-card reveal-sm delay-2">
+          <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+          <span class="feature-tag">— Encontre</span>
+          <h3>Encontre pontos de coleta</h3>
+          <p>Localize pontos de coleta próximos e descubra quais materiais podem ser entregues.</p>
+        </div>
+        <div class="feature-card reveal-sm delay-3">
+          <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><path d="M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"/><path d="M10 11v6M14 11v6"/></svg></div>
+          <span class="feature-tag">— Descarte</span>
+          <h3>Descarte corretamente</h3>
+          <p>Saiba como preparar seus eletrônicos e faça o descarte de forma responsável.</p>
+        </div>
+        <div class="feature-card reveal-sm delay-4">
+          <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2v6M12 22v-6M5 12a7 7 0 0 1 12-5M19 12a7 7 0 0 1-12 5"/><path d="M15 5l2 2-2 2M9 19l-2-2 2-2"/></svg></div>
+          <span class="feature-tag">— Transforme</span>
+          <h3>Transforme seu impacto</h3>
+          <p>Registre seus descartes, acumule pontos e acompanhe sua contribuição para o meio ambiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ PODE DESCARTAR -->
+  <section class="benefits" id="materiais">
+    <div class="wrap center">
+      <h2 class="section-heading reveal">O que você pode descartar?</h2>
+      <p class="section-lead reveal delay-1">Encontre informações sobre materiais que podem receber um destino adequado.</p>
+
+      <div class="materials-carousel reveal delay-2" data-materials-carousel>
+        <div class="materials-track">
+          <!-- sequência de 4 cards repetida 4x, para o loop nunca mostrar costura -->
+          <div class="material-item"><div class="material-image mi-cel" aria-hidden="true"></div><h3>Celulares</h3><span>Eletrônicos pessoais</span></div>
+          <div class="material-item"><div class="material-image mi-pc" aria-hidden="true"></div><h3>Computadores</h3><span>Equipamentos de informática</span></div>
+          <div class="material-item"><div class="material-image mi-cab" aria-hidden="true"></div><h3>Cabos e carregadores</h3><span>Acessórios eletrônicos</span></div>
+          <div class="material-item"><div class="material-image mi-ele" aria-hidden="true"></div><h3>Eletrodomésticos</h3><span>Aparelhos de uso doméstico</span></div>
+          <div class="material-item"><div class="material-image mi-cel" aria-hidden="true"></div><h3>Celulares</h3><span>Eletrônicos pessoais</span></div>
+          <div class="material-item"><div class="material-image mi-pc" aria-hidden="true"></div><h3>Computadores</h3><span>Equipamentos de informática</span></div>
+          <div class="material-item"><div class="material-image mi-cab" aria-hidden="true"></div><h3>Cabos e carregadores</h3><span>Acessórios eletrônicos</span></div>
+          <div class="material-item"><div class="material-image mi-ele" aria-hidden="true"></div><h3>Eletrodomésticos</h3><span>Aparelhos de uso doméstico</span></div>
+          <div class="material-item"><div class="material-image mi-cel" aria-hidden="true"></div><h3>Celulares</h3><span>Eletrônicos pessoais</span></div>
+          <div class="material-item"><div class="material-image mi-pc" aria-hidden="true"></div><h3>Computadores</h3><span>Equipamentos de informática</span></div>
+          <div class="material-item"><div class="material-image mi-cab" aria-hidden="true"></div><h3>Cabos e carregadores</h3><span>Acessórios eletrônicos</span></div>
+          <div class="material-item"><div class="material-image mi-ele" aria-hidden="true"></div><h3>Eletrodomésticos</h3><span>Aparelhos de uso doméstico</span></div>
+          <div class="material-item"><div class="material-image mi-cel" aria-hidden="true"></div><h3>Celulares</h3><span>Eletrônicos pessoais</span></div>
+          <div class="material-item"><div class="material-image mi-pc" aria-hidden="true"></div><h3>Computadores</h3><span>Equipamentos de informática</span></div>
+          <div class="material-item"><div class="material-image mi-cab" aria-hidden="true"></div><h3>Cabos e carregadores</h3><span>Acessórios eletrônicos</span></div>
+          <div class="material-item"><div class="material-image mi-ele" aria-hidden="true"></div><h3>Eletrodomésticos</h3><span>Aparelhos de uso doméstico</span></div>
+        </div>
+      </div>
+
+      <button type="button" class="btn-elevate reveal delay-2" style="margin-top:44px;">Ver todos</button>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="how-funciona" id="como-funciona">
+    <div class="wrap center">
+      <h2 class="section-heading reveal">Como funciona?</h2>
+      <p class="section-lead reveal delay-1">Do descarte à transformação, veja como o EcoClick funciona.</p>
+
+      <div class="steps-row">
+        <div class="steps-line" style="transition-delay:.2s;"></div>
+        <div class="step-item reveal-sm" style="transition-delay:1s;">
+          <div class="step-number">01</div>
+          <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div>
+          <h3>Encontre</h3>
+          <p>Localize um ponto próximo.</p>
+        </div>
+        <div class="step-item reveal-sm" style="transition-delay:1.12s;">
+          <div class="step-number">02</div>
+          <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
+          <h3>Prepare</h3>
+          <p>Separe seu material.</p>
+        </div>
+        <div class="step-item reveal-sm" style="transition-delay:1.24s;">
+          <div class="step-number">03</div>
+          <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <h3>Descarte</h3>
+          <p>Entregue seu material.</p>
+        </div>
+        <div class="step-item reveal-sm" style="transition-delay:1.36s;">
+          <div class="step-number">04</div>
+          <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M4 20c8 0 14-6 16-16-10 2-16 8-16 16z"/><path d="M4 20c4-4 8-8 12-12"/></svg></div>
+          <h3>Acompanhe</h3>
+          <p>Registre sua ação e acompanhe seu impacto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCONTRE UM PONTO DE COLETA -->
+  <section class="info" id="pontos-de-coleta">
+    <div class="wrap">
+      <div class="info-visual map-visual reveal" role="img" aria-label="Mapa com pontos de coleta próximos">
+        <div class="map-roads"></div>
+        <div class="map-pin--me pin-reveal" style="top:52%;left:46%;transition-delay:.45s;" title="Sua localização"></div>
+        <button type="button" class="map-pin pin-reveal" style="top:36%;left:26%;transition-delay:.6s;" aria-label="Ponto de coleta">
+          <svg viewBox="0 0 24 24"><path d="M12 22s7-7.6 7-13a7 7 0 1 0-14 0c0 5.4 7 13 7 13z"/><circle cx="12" cy="9" r="2.6" fill="#454d5d"/></svg>
+        </button>
+        <button type="button" class="map-pin pin-reveal" style="top:62%;left:60%;transition-delay:.75s;" aria-label="Ponto de coleta">
+          <svg viewBox="0 0 24 24"><path d="M12 22s7-7.6 7-13a7 7 0 1 0-14 0c0 5.4 7 13 7 13z"/><circle cx="12" cy="9" r="2.6" fill="#454d5d"/></svg>
+        </button>
+        <button type="button" class="map-pin pin-reveal" style="top:22%;left:68%;transition-delay:.9s;" aria-label="Ponto de coleta">
+          <svg viewBox="0 0 24 24"><path d="M12 22s7-7.6 7-13a7 7 0 1 0-14 0c0 5.4 7 13 7 13z"/><circle cx="12" cy="9" r="2.6" fill="#454d5d"/></svg>
+        </button>
+      </div>
+      <div class="info-content">
+        <h2 class="info-title reveal">Encontre um ponto de coleta perto de você</h2>
+        <p class="info-text reveal delay-1">Localize pontos de coleta próximos, confira os materiais aceitos e escolha o melhor lugar para fazer seu descarte.</p>
+        <button type="button" class="btn-elevate reveal delay-2">Ver pontos de coleta</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACOMPANHE O IMPACTO -->
+  <section class="gallery" id="impacto">
+    <div class="wrap benefit-split">
+      <div class="benefit-intro">
+        <h2 class="section-heading reveal">Cada descarte gera um impacto.</h2>
+        <p class="section-lead reveal delay-1">Descubra tudo o que você pode conquistar ao fazer parte do EcoClick.</p>
+        <button type="button" class="btn-elevate reveal delay-2">Ver mais</button>
+      </div>
+
+      <div class="benefit-col">
+      <div class="benefit-carousel reveal delay-2" data-benefit-carousel>
+        <button type="button" class="benefit-arrow prev" aria-label="Benefício anterior">
+          <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+
+        <div class="benefit-viewport">
+          <div class="benefit-track">
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+                <h3>Descarte responsável</h3>
+                <p>Dê um destino adequado aos seus eletrônicos e contribua para uma forma mais consciente de descartar.</p>
+              </div>
+            </div>
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 20c8 0 14-6 16-16-10 2-16 8-16 16z"/><path d="M4 20c4-4 8-8 12-12"/></svg></div>
+                <h3>Impacto acompanhado</h3>
+                <p>Registre suas ações e acompanhe a contribuição que você está construindo.</p>
+              </div>
+            </div>
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17l-6.2 3.3 1.6-6.8-5.2-4.6 6.9-.6z"/></svg></div>
+                <h3>Pontos e recompensas</h3>
+                <p>Acumule pontos a partir dos seus descartes e participe de benefícios.</p>
+              </div>
+            </div>
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="8.5" cy="8" r="3"/><circle cx="17" cy="9.2" r="2.5"/><path d="M2.5 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M14.7 14.3c2.4.5 4.3 2.6 4.3 5.7"/></svg></div>
+                <h3>Comunidade</h3>
+                <p>Conecte-se com outras pessoas e participe de uma comunidade que acredita em atitudes mais sustentáveis.</p>
+              </div>
+            </div>
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 1-2-2V5z"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 0 2-2V5z"/></svg></div>
+                <h3>Conteúdos educativos</h3>
+                <p>Aprenda mais sobre descarte, reciclagem, reaproveitamento e sustentabilidade.</p>
+              </div>
+            </div>
+            <div class="benefit-slide">
+              <div class="benefit-card">
+                <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M8 4h8v4a4 4 0 0 1-8 0V4z"/><path d="M8 5H5a3 3 0 0 0 3 5"/><path d="M16 5h3a3 3 0 0 1-3 5"/><path d="M12 12v4"/><path d="M9 20h6"/><path d="M10 16h4v1.5a2 2 0 0 1-4 0V16z"/></svg></div>
+                <h3>Conquistas</h3>
+                <p>Participe de desafios, acompanhe sua evolução e conquiste reconhecimento por suas ações.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="benefit-arrow next" aria-label="Próximo benefício">
+          <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="benefit-dots reveal delay-3" role="group" aria-label="Escolher benefício">
+        <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMUNIDADE -->
+  <section class="options" id="comunidade">
+    <div class="wrap community-row">
+      <div class="community-content">
+        <h2 class="section-heading reveal" style="text-align:left;">Juntos, o impacto cresce.</h2>
+        <p class="info-text reveal delay-1">O EcoClick conecta pessoas que acreditam que pequenas atitudes podem gerar mudanças. Participe da comunidade, compartilhe suas conquistas e acompanhe o impacto que construímos juntos.</p>
+        <button type="button" class="btn-elevate reveal delay-2">Conheça a comunidade</button>
+      </div>
+      <div class="community-visual img-ph reveal delay-1">
+        <img src="assets/images/home-b1646755a0.jpg" alt="Pessoas conversando em um ambiente colaborativo">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE O ECOCLICK -->
+  <section class="about" id="sobre">
+    <div class="wrap center">
+      <h2 class="section-heading reveal">Sobre o EcoClick</h2>
+      <p class="section-lead reveal delay-1">Uma iniciativa criada para tornar o descarte de eletrônicos mais simples, consciente e acessível.</p>
+    </div>
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-col reveal delay-2">
+          <div class="img-ph about-image">
+            <img src="assets/images/home-55f0cdbee5.jpg" alt="Celulares antigos empilhados" width="900" height="600">
+          </div>
+          <h3 class="about-heading">Uma ideia que nasceu para transformar uma necessidade em solução</h3>
+          <p class="about-text">O EcoClick é um projeto desenvolvido por estudantes do ensino médio técnico em Tecnologia da Informação, criado a partir da necessidade de facilitar o descarte correto de resíduos eletrônicos. A proposta é aproximar as pessoas de informações, pontos de coleta e recursos que incentivem atitudes mais conscientes no dia a dia.</p>
+        </div>
+        <div class="about-col about-col-right reveal delay-3">
+          <div class="img-ph about-image">
+            <img src="assets/images/home-0812ea6fce.jpg" alt="Mão organizando componentes eletrônicos em uma caixa" width="500" height="333">
+          </div>
+          <h3 class="about-heading">Tecnologia a favor de escolhas mais sustentáveis</h3>
+          <p class="about-text">Por meio de uma plataforma digital, o EcoClick busca tornar o processo de descarte mais simples e participativo. A ideia reúne localização de pontos de coleta, informações sobre materiais, registro de descartes, acompanhamento do impacto, recompensas e uma comunidade onde os usuários podem compartilhar ideias e experiências. Assim, cada pessoa pode transformar uma ação cotidiana em uma contribuição para um futuro mais sustentável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <div class="wrap center">
+      <h2 class="cta-title reveal">Pronto para fazer parte da mudança?</h2>
+      <p class="cta-sub reveal delay-1">Junte-se a quem já está transformando pequenas atitudes em grandes mudanças.</p>
+      <button type="button" class="btn-cta reveal delay-2">Começar agora <span aria-hidden="true">→</span></button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid reveal">
+        <div class="footer-col footer-brand">
+          <h3>EcoClick</h3>
+          <p class="footer-tagline">Descarte melhor. Transforme o futuro.</p>
+          <p class="footer-desc">Uma plataforma para facilitar o descarte correto e conectar pessoas a iniciativas mais sustentáveis.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="#">Início</a>
+          <a href="#">Materiais</a>
+          <a href="#">Pontos de coleta</a>
+          <a href="#">Recompensas</a>
+        </div>
+        <div class="footer-col">
+          <h4>Conheça</h4>
+          <a href="#">Como funciona</a>
+          <a href="#">Impacto</a>
+          <a href="#">Comunidade</a>
+        </div>
+        <div class="footer-col">
+          <h4>Suporte</h4>
+          <a href="#">Central de ajuda</a>
+          <a href="#">Perguntas frequentes</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <span>© 2026 EcoClick. Todos os direitos reservados.</span>
+        <div class="footer-legal">
+          <a href="#">Privacidade</a><span>·</span><a href="#">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIEW CODE -->
+  <button id="view-code-btn" class="view-code-btn" type="button">&lt;/&gt; Ver código</button>
+  <div id="code-modal" class="code-modal" hidden>
+    <div class="code-modal-inner">
+      <div class="code-modal-header">
+        <span>Código HTML da estrutura</span>
+        <div class="actions">
+          <button id="copy-code-btn" class="code-btn-sm" type="button">Copiar</button>
+          <button id="close-code-btn" class="code-btn-sm" type="button">Fechar</button>
+        </div>
+      </div>
+      <pre id="code-output"></pre>
+    </div>
+  </div>
+
+  <script src="js/pages/home/05-reveal-on-scroll.js"></script>
+
+  <script src="js/pages/home/06-carrossel-beneficios.js"></script>
+
+  <script src="js/pages/home/07-header-nav-ativo.js"></script>
+
+  <script src="js/pages/home/08-carrossel-materiais.js"></script>
+
+  <script src="js/pages/home/09-ver-codigo.js"></script>
+
+<link rel="stylesheet" href="css/pages/home/10-ver-codigo-oculto.css">
+<script src="js/pages/home/11-scroll-links.js"></script></body>
+</html>

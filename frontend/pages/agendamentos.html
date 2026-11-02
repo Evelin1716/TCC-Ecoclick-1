@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-eco-page="dashboard" data-eco-route="dash_agenda" data-eco-protected data-eco-start-view="agenda" data-fx-reveal=".cs-panel, .art-card, .pcard">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meus agendamentos — EcoClick</title>
+<meta name="description" content="EcoClick: encontre pontos de coleta de eletrônicos, agende descartes, cumpra missões e acompanhe seu impacto ambiental.">
+<link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/themes.css">
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/page-context.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/components/form-fix.js"></script>
+<script src="../js/components/fx.js"></script>
+<script src="../js/pages/dashboard/02-theme-init.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/pages/dashboard/03-dashboard.css">
+<link rel="stylesheet" href="../css/pages/dashboard/04-palette.css"><link rel="stylesheet" href="../css/pages/dashboard/05-coleta-mapa.css"><link rel="stylesheet" href="../css/pages/dashboard/06-coleta-painel.css"><link rel="stylesheet" href="../css/components/sidebar-pill.css"></head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="eco-leaf" viewBox="0 0 120 120">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 104C14 52 50 18 106 12c0 52-30 90-90 92z" stroke-width="2.6"/>
+      <path d="M18 102L52 68h14l22-22" stroke-width="2.6"/>
+      <path d="M52 68V54H40M66 68v14h14M78 56h10" stroke-width="2"/>
+    </g>
+    <circle cx="40" cy="54" r="3.4" fill="currentColor"/><circle cx="80" cy="82" r="3.4" fill="currentColor"/>
+    <circle cx="88" cy="56" r="3.4" fill="currentColor"/><circle cx="88" cy="46" r="4.2" fill="currentColor"/>
+  </symbol>
+</svg>
+
+
+  <div class="app" data-view="dashboard">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-head">
+        <button type="button" class="logo-text" id="logo-btn"><span class="logo-full"><img class="eco-logo eco-logo-light" src="../assets/images/dashboard-a253eadfa9.png" alt="EcoClick"><img class="eco-logo eco-logo-dark" src="../assets/images/dashboard-0659191392.png" alt="" aria-hidden="true"></span><span class="logo-mini" aria-hidden="true"><span class="logo-mini-mark"><img class="eco-mark eco-mark-light" src="../assets/images/dashboard-034e8508d8.png" alt="" width="62" height="112"><img class="eco-mark eco-mark-dark" src="../assets/images/dashboard-68b6ffc6e4.png" alt="" width="62" height="112"></span><span class="logo-mini-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M5.6 10l2 2-2 2"/></svg></span></span></button>
+        <div class="head-actions">
+          <button type="button" class="icon-btn" id="collapse-btn" aria-label="Fechar barra lateral" aria-expanded="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M7.6 10l-2 2 2 2"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="side-scroll">
+        <nav class="side-nav">
+          <a href="#" data-nav="coleta" class="active" aria-current="page">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span class="nav-label">Pontos de coleta</span>
+          </a>
+          <a href="#" data-eco-nav="missions">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg>
+            <span class="nav-label">Minha jornada</span>
+          </a>
+          <a href="#" data-nav="recompensas">
+            <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg>
+            <span class="nav-label">Recompensas</span>
+          </a>
+          <a href="#" data-nav="progresso">
+            <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+            <span class="nav-label">Meu progresso</span>
+          </a>
+          <a href="#" data-nav="conteudos">
+            <svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 1-2-2V5z"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 0 2-2V5z"/></svg>
+            <span class="nav-label">Conteúdos</span>
+          </a>
+          <a href="#" data-eco-nav="community">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3 3 0 0 1 0 5.6M18 14.2c2 .7 3.5 2.6 3.5 5.8"/></svg>
+            <span class="nav-label">Comunidade</span>
+          </a>
+        </nav>
+      </div>
+
+      <nav class="side-nav side-foot" aria-label="Conta">
+        <a href="#configuracoes" id="settings-link">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>
+          <span class="nav-label">Configurações</span>
+        </a>
+        <a href="#" id="logout-link">
+          <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+          <span class="nav-label">Sair</span>
+        </a>
+      </nav>
+    </aside>
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+    <main class="main">
+      <div class="topbar">
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <div class="search-input-wrap">
+            <input type="text" id="dashboard-search" placeholder="Buscar" autocomplete="off">
+            <span class="search-suggest" id="search-suggest" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <div class="notif-wrap">
+            <button type="button" class="icon-btn" id="notif-btn" aria-haspopup="true" aria-expanded="false" aria-controls="notif-panel" aria-label="Notificações">
+              <svg viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+              <span class="notif-dot" id="notif-dot" hidden></span>
+            </button>
+            <div class="notif-panel" id="notif-panel" role="dialog" aria-label="Notificações" inert>
+              <div class="notif-panel-head"><span>Notificações</span><span class="notif-count" id="notif-count" data-no-i18n hidden></span></div>
+              <ul class="notif-list" id="notif-list" data-no-i18n></ul>
+              <div class="notif-empty" id="notif-empty" hidden>
+                <svg viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+                <p>Nenhuma notificação por aqui ainda.</p>
+              </div>
+              <div class="notif-foot"><button type="button" class="notif-readall" id="notif-readall">Marcar todas como lidas</button></div>
+            </div>
+          </div>
+
+          <div class="account-wrap">
+            <button type="button" class="icon-btn" id="account-btn" aria-haspopup="true" aria-expanded="false" aria-controls="account-menu" aria-label="Menu da conta">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </button>
+            <div class="account-menu" id="account-menu" role="dialog" aria-label="Menu da conta" inert>
+              <div class="account-info"><strong id="account-name" data-no-i18n></strong><span>Membro EcoClick</span></div>
+              <button type="button" class="account-link" id="account-profile">Meu perfil →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="view-dashboard" class="view">
+      <section class="promo" id="promo" aria-roledescription="carousel" aria-label="Destaques">
+        <div class="promo-banner">
+          <button type="button" class="promo-arrow prev" aria-label="Slide anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <div class="promo-stage">
+          <div class="promo-slide banner-slide active" role="group" aria-roledescription="slide" aria-label="Slide 1 de 4">
+            <img class="banner-img banner-light" src="../assets/images/dashboard-92950181f7.webp" alt="Quer aprender mais sobre reciclagem? Aprenda sobre sustentabilidade e descubra como pequenas atitudes podem transformar o futuro do planeta!" width="2000" height="522"><img class="banner-img banner-dark" src="../assets/images/dashboard-8552f6c43d.webp" alt="Quer aprender mais sobre reciclagem? Aprenda sobre sustentabilidade e descubra como pequenas atitudes podem transformar o futuro do planeta!" width="2000" height="519" decoding="async">
+<button type="button" class="banner-cta cta-light" data-banner-go="conteudos" aria-label="Explorar conteúdos" style="left:5.3%;top:75.9%;width:13.6%;height:13.8%;"></button>
+<button type="button" class="banner-cta cta-dark" data-banner-go="conteudos" aria-label="Explorar conteúdos" style="left:5.2%;top:75.9%;width:13.7%;height:13.8%;"></button>
+          </div>
+          <div class="promo-slide banner-slide" role="group" aria-roledescription="slide" aria-label="Slide 2 de 4" aria-hidden="true" inert>
+            <img class="banner-img banner-light" src="../assets/images/dashboard-16c90f9d19.webp" alt="O próximo ponto de coleta está mais perto do que você imagina. Encontre locais de recebimento de resíduos eletrônicos e confira quais materiais são aceitos antes de realizar seu descarte." width="2000" height="523"><img class="banner-img banner-dark" src="../assets/images/dashboard-067dac7a8c.webp" alt="O próximo ponto de coleta está mais perto do que você imagina. Encontre locais de recebimento de resíduos eletrônicos e confira quais materiais são aceitos antes de realizar seu descarte." width="2000" height="519" decoding="async">
+<button type="button" class="banner-cta cta-light" data-banner-go="coleta" aria-label="Encontrar pontos de coleta" style="left:5.41%;top:72.54%;width:13.57%;height:14.20%;"></button>
+<button type="button" class="banner-cta cta-dark" data-banner-go="coleta" aria-label="Encontrar pontos de coleta" style="left:5.15%;top:72.5%;width:13.7%;height:15.0%;"></button>
+          </div>
+          <div class="promo-slide banner-slide" role="group" aria-roledescription="slide" aria-label="Slide 3 de 4" aria-hidden="true" inert>
+            <img class="banner-img banner-light" src="../assets/images/dashboard-3f3555b7c7.webp" alt="Transforme boas atitudes em conquistas. Participe de missões, acumule experiência e desbloqueie conquistas enquanto desenvolve hábitos mais sustentáveis. Sua jornada começa com uma pequena ação!" width="2000" height="523"><img class="banner-img banner-dark" src="../assets/images/dashboard-e0ca7e8d53.webp" alt="Transforme boas atitudes em conquistas. Participe de missões, acumule experiência e desbloqueie conquistas enquanto desenvolve hábitos mais sustentáveis. Sua jornada começa com uma pequena ação!" width="2000" height="519" decoding="async">
+<button type="button" class="banner-cta cta-light" data-banner-go="jornada" aria-label="Acessar minha jornada" style="left:5.41%;top:75.79%;width:13.57%;height:14.20%;"></button>
+<button type="button" class="banner-cta cta-dark" data-banner-go="jornada" aria-label="Acessar minha jornada" style="left:5.15%;top:75.83%;width:13.7%;height:15.17%;"></button>
+          </div>
+          <div class="promo-slide banner-slide" role="group" aria-roledescription="slide" aria-label="Slide 4 de 4" aria-hidden="true" inert>
+            <img class="banner-img banner-light" src="../assets/images/dashboard-e314fe748f.webp" alt="Compartilhe, Conecte-se e Transforme o Mundo! Compartilhe ideias, publique conteúdos, tire dúvidas e interaja com pessoas que também acreditam em um futuro mais sustentável." width="2000" height="516"><img class="banner-img banner-dark" src="../assets/images/dashboard-ae5527ed35.webp" alt="Compartilhe, Conecte-se e Transforme o Mundo! Compartilhe ideias, publique conteúdos, tire dúvidas e interaja com pessoas que também acreditam em um futuro mais sustentável." width="2000" height="517" decoding="async">
+<button type="button" class="banner-cta cta-light" data-banner-go="comunidade" aria-label="Conhecer nossa comunidade" style="left:5.06%;top:75.96%;width:13.81%;height:15.41%;"></button>
+<button type="button" class="banner-cta cta-dark" data-banner-go="comunidade" aria-label="Conhecer nossa comunidade" style="left:5.06%;top:75.82%;width:13.81%;height:15.38%;"></button>
+          </div>
+          </div>
+          <button type="button" class="promo-arrow next" aria-label="Próximo slide"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="promo-dots"><button type="button" class="active" aria-label="Ir para o slide 1"></button><button type="button" class="" aria-label="Ir para o slide 2"></button><button type="button" class="" aria-label="Ir para o slide 3"></button><button type="button" class="" aria-label="Ir para o slide 4"></button></div>
+      </section>
+
+      
+
+      
+
+      <div class="progress-row">
+        <section class="coleta-card" id="coleta-card" aria-labelledby="coleta-title">
+          <div class="coleta-head">
+            <div>
+              <h2 id="coleta-title">Pontos de coleta próximos</h2>
+              <p>Encontre um local para fazer seu próximo descarte.</p>
+            </div>
+            <div class="coleta-head-actions"><button type="button" class="coleta-all" id="coleta-agenda">Meus agendamentos</button><button type="button" class="coleta-all" id="coleta-all">Ver todos →</button></div>
+          </div>
+          <div class="coleta-filters" id="coleta-filters" role="group" aria-label="Filtros dos pontos de coleta" data-no-i18n>
+            <div class="cf-row" id="cf-mats" role="group" aria-label="Material aceito"></div>
+            <div class="cf-row">
+              <label class="cf-sel"><span>Distância</span><select id="cf-dist" aria-label="Distância máxima"><option value="0">Qualquer</option><option value="2">Até 2 km</option><option value="5">Até 5 km</option><option value="10">Até 10 km</option></select></label>
+              <button type="button" class="cf-tog" id="cf-open" aria-pressed="false">Abertos agora</button>
+              <button type="button" class="cf-tog" id="cf-fav" aria-pressed="false">★ Favoritos</button>
+              <button type="button" class="cf-clear" id="cf-clear" hidden>Limpar filtros</button>
+            </div>
+            <p class="cf-note" id="cf-note" hidden></p>
+          </div>
+          <div class="coleta-body">
+
+            <!-- Card 1: mapa offline (SVG) -->
+            <div class="map-card" id="coleta-map-card">
+              <div id="coleta-map" role="application" aria-label="Mapa de Salvador com pontos de coleta" data-no-i18n></div>
+              <div class="map-tools">
+                <label class="map-search">
+                  <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                  <input type="text" id="coleta-search" placeholder="Buscar ponto, material ou bairro" autocomplete="off" list="bairro-list" aria-label="Buscar ponto de coleta, material ou bairro"><datalist id="bairro-list"></datalist>
+                </label>
+                <button type="button" class="map-locate" id="coleta-locate" aria-label="Usar minha localização" title="Minha localização">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22"/></svg>
+                </button>
+              </div>
+              <p class="map-empty" id="coleta-none" hidden>Nenhum ponto encontrado.</p>
+              <div class="geo-ask" id="geo-ask" role="dialog" aria-label="Permissão de localização" hidden data-no-i18n>
+                <p><b>Usar sua localização?</b><br>O EcoClick usa sua posição só neste aparelho para calcular a distância até os pontos e traçar rotas. Em seguida o navegador vai pedir sua permissão.</p>
+                <div class="acts"><button type="button" id="geo-no">Agora não</button><button type="button" id="geo-yes">Continuar</button></div>
+              </div>
+              <p class="geo-msg" id="geo-msg" role="status" hidden data-no-i18n></p>
+              <details class="cov-legend" id="cov-legend" open data-no-i18n><summary>Cobertura de descarte</summary><ul id="cov-list"></ul><p class="cov-sub" id="cov-sub"></p></details>
+              <div class="bairro-card" id="bairro-card" hidden data-no-i18n></div>
+              <div class="geo-ask bairro-ask" id="bairro-ask" role="alertdialog" aria-label="Bairro sem ponto de coleta" hidden data-no-i18n>
+                <p id="ba-text">Não há ponto de coleta nesse bairro, deseja observar o mais próximo?</p>
+                <div class="acts"><button type="button" id="ba-later">Mais tarde</button><button type="button" id="ba-yes">Sim</button></div>
+              </div>
+            </div>
+
+            <!-- Card 2: informações → agendamento (somente este card muda) -->
+            <aside class="coleta-panel" id="coleta-panel" aria-live="polite">
+
+              <div class="cview coleta-panel-empty is-active has-list" data-view="empty" data-no-i18n>
+                <strong>Pontos de coleta em Salvador</strong>
+                <p id="cl-sub">Selecione um ponto no mapa ou na lista.</p>
+                <ul class="cl-list" id="coleta-list"></ul>
+              </div>
+
+              <div class="cview coleta-info" data-view="info" inert data-no-i18n>
+                <div class="ci-bar"><button type="button" class="sched-back" id="info-back">← Todos os pontos</button><button type="button" class="ci-fav" id="coleta-fav" aria-pressed="false" aria-label="Salvar como favorito"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8 6.8 19.6l1-5.8L3.5 9.7l5.9-.8z"/></svg></button></div>
+                <div>
+                  <div class="coleta-top"><h3 id="coleta-name"></h3><span class="coleta-status" id="coleta-status"></span></div>
+                  <p class="ci-small" id="ci-op"></p>
+                  <div class="coleta-meta">
+                    <div class="coleta-dist"><svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg><span id="coleta-dist"></span></div>
+                    <div><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span id="coleta-address"></span></div>
+                  </div>
+                  <div class="ci-flags" id="ci-flags"></div>
+                  <p class="ci-pend" id="ci-pend" hidden></p>
+                </div>
+                <div><div class="coleta-label">Materiais aceitos</div><div class="coleta-chips" id="coleta-materials"></div><p class="ci-small" id="ci-restr"></p></div>
+                <div><div class="coleta-label">Horário de funcionamento</div><dl class="coleta-hours" id="coleta-hours"></dl></div>
+                <div><div class="coleta-label">Contato</div><p class="ci-small" id="ci-phone"></p></div>
+                <div><div class="coleta-label">Como preparar os itens</div><ul class="ci-prep" id="ci-prep"></ul></div>
+                <div class="ci-actions"><a class="coleta-route" id="coleta-call" hidden>Ligar</a><button type="button" class="coleta-details" id="coleta-details">Planejar descarte →</button></div>
+                <div class="ci-rate" id="ci-rate"></div>
+                <div><div class="coleta-label">Fontes dos dados</div><ul class="ci-src" id="ci-src"></ul></div>
+              </div>
+
+              <div class="cview" data-view="schedule" inert data-no-i18n>
+                <div class="sched-head">
+                  <button type="button" class="sched-back" id="sched-back">← Voltar</button>
+                  <div class="sched-title"><h3 id="sched-title">Planejar descarte</h3><p id="sched-point"></p></div>
+                </div>
+                <div class="sched-form" id="sched-form">
+                  <p class="sched-who" id="sched-who" hidden></p>
+                  <div id="sched-fields" class="sched-fields">
+                    <div class="sched-user" id="sched-user">
+                      <label class="sched-field"><span class="coleta-label">Nome</span><input type="text" id="sched-name" placeholder="Seu nome" autocomplete="name"></label>
+                      <label class="sched-field"><span class="coleta-label">E-mail</span><input type="email" id="sched-email" placeholder="voce@email.com" autocomplete="email"></label>
+                    </div>
+                    <div class="sched-sec"><span class="coleta-label">Materiais (um ou mais)</span><div class="chips" id="sched-materials" role="group" aria-label="Materiais"></div></div>
+                    <div class="sched-sec"><label class="sched-field"><span class="coleta-label">Quantidade estimada de itens</span><input type="number" id="sched-qty" min="1" max="999" inputmode="numeric" placeholder="Ex.: 3"></label></div>
+                    <div class="sched-sec"><span class="coleta-label">Quando pretende ir</span><div class="chips chips--days" id="sched-days" role="radiogroup" aria-label="Dia"></div>
+                      <label class="sched-field"><span class="coleta-label">Horário</span><input type="time" id="sched-time"></label></div>
+                    <div class="sched-sec"><label class="sched-field"><span class="coleta-label">Observação (opcional)</span><input type="text" id="sched-note-in" maxlength="200" placeholder="Ex.: levarei também um carregador"></label></div>
+                    <p class="sched-disc">Este ponto não informou agendamento. O EcoClick registra o seu <b>plano</b> de descarte e lembra você; a reserva de horário no local não é feita.</p>
+                  </div>
+                  <div class="sched-review" id="sched-review" hidden></div>
+                  <div class="sched-error" id="sched-error" role="alert"></div>
+                  <button type="button" class="sched-confirm" id="sched-confirm">Revisar plano</button>
+                  <button type="button" class="sched-back" id="sched-edit" hidden>← Editar informações</button>
+                </div>
+              </div>
+
+              <div class="cview done-wrap" data-view="done" inert data-no-i18n>
+                <div class="done-ico"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+                <strong>Plano de descarte registrado</strong>
+                <p id="done-text"></p>
+                <button type="button" class="coleta-details" id="done-agenda" style="margin-top:6px;align-self:center;">Ver meus agendamentos</button>
+                <button type="button" class="sched-back" id="done-close">Voltar ao ponto</button>
+              </div>
+
+            </aside>
+          </div>
+        </section>
+
+        <section class="cs-dash" id="coleta-dash" aria-label="Painel de descarte" data-no-i18n>
+          <div class="cs-head"><div><h2>Painel de descarte</h2><p>Resumo dos seus planos de descarte. Todos os números vêm dos agendamentos que você registrou.</p></div></div>
+          <div class="cs-cards" id="cs-cards"></div>
+          <div class="cs-row">
+            <article class="cs-panel" id="cs-var">
+              <header><span class="cs-ico dark"><svg viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><h3>Planos por material</h3><span class="cs-sub" id="cs-var-sub"></span></header>
+              <div id="cs-var-list"></div>
+              <p class="cs-foot">Um plano com vários materiais conta em cada um deles.</p>
+            </article>
+            <article class="cs-panel" id="cs-next">
+              <header><span class="cs-ico dark"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></svg></span><h3>Próximos agendamentos</h3><button type="button" class="cs-plus" id="cs-plus" aria-expanded="false" aria-controls="cs-quick" aria-label="Agendar rapidamente" title="Agendar rapidamente">+</button></header>
+              <form class="cs-quick" id="cs-quick" hidden novalidate>
+                <label class="cq-f"><span>Ponto de coleta</span><select id="cq-point"></select></label>
+                <div class="cq-sec"><span>Materiais (um ou mais)</span><div class="chips" id="cq-mats" role="group" aria-label="Materiais"></div></div>
+                <div class="cq-grid"><label class="cq-f"><span>Quantidade de itens</span><input type="number" id="cq-qty" min="1" max="999" inputmode="numeric" placeholder="Ex.: 3"></label><label class="cq-f"><span>Horário</span><input type="time" id="cq-time"></label></div>
+                <div class="cq-sec"><span>Dia</span><div class="chips chips--days" id="cq-days" role="radiogroup" aria-label="Dia"></div></div>
+                <p class="cq-who" id="cq-who"></p>
+                <p class="cq-msg" id="cq-msg" role="alert"></p>
+                <div class="cq-acts"><button type="button" class="ag-btn" id="cq-cancel">Fechar</button><button type="submit" class="ag-btn primary" id="cq-save">Registrar plano</button></div>
+              </form>
+              <div class="cs-prog"><div class="cs-prog-top"><span>Preparação dos itens</span><b id="cs-prog-val">0%</b></div>
+                <div class="cs-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="cs-track"><span class="cs-fill" id="cs-fill"></span></div>
+                <div class="cs-ticks"><span>0%</span><span>50%</span><span>100%</span></div><p class="cs-hint" id="cs-prog-hint"></p></div>
+              <ul class="cs-next-list" id="cs-next-list"></ul>
+              <p class="cs-empty" id="cs-next-empty" hidden></p>
+              <div class="cs-alls"><button type="button" class="cs-all" id="cs-all">Ver todos os agendamentos →</button><button type="button" class="cs-all" id="cs-all2" hidden>Abrir agenda completa →</button></div>
+            </article>
+          </div>
+        </section>
+
+      </div>
+
+            </div>
+
+      <div id="view-articles" class="view" hidden>
+        <div class="art-page">
+<link rel="stylesheet" href="../css/pages/dashboard/08-conteudos-hub.css">
+<link rel="stylesheet" href="../css/pages/dashboard/09-missao-leitura.css">
+<section class="ch" id="ch" data-no-i18n aria-labelledby="ch-h1">
+  <div class="ch-hero">
+    <div>
+      <h1 id="ch-h1">Olá! O que vamos aprender hoje?</h1>
+      <p>Esta área foi pensada para reunir tudo o que você precisa para aprender a descartar eletrônicos do jeito certo.</p>
+    </div>
+    <div class="ch-tiles" role="list">
+      <button type="button" class="ch-tile" role="listitem" data-go="ch-artigos"><span class="ico"><img src="../assets/images/dashboard-789930d44f.svg" alt=""></span><b>Artigos</b><span>Leituras sobre descarte e reciclagem</span></button>
+      <button type="button" class="ch-tile" role="listitem" data-go="ch-dicas"><span class="ico"><img src="../assets/images/dashboard-503e3ac258.svg" alt=""></span><b>Dicas e curiosidades</b><span>Aprenda em poucos minutos</span></button>
+    </div>
+  </div>
+
+  <div class="ch-articles">
+          <div class="art-toolbar" id="ch-artigos" style="scroll-margin-top:16px">
+            <div class="art-toolbar-l">
+              <h2>Conteúdos e artigos</h2>
+              <div class="art-seg" role="group" aria-label="Modo de exibição">
+                <button type="button" data-mode="list" aria-pressed="false" aria-label="Ver em lista"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg></button>
+                <button type="button" data-mode="grid" aria-pressed="true" aria-label="Ver em grade"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></button>
+              </div>
+              <button type="button" class="art-filter-btn" id="art-filter-btn" aria-expanded="false" aria-controls="art-filters" aria-label="Filtrar por categoria"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6 7.5V19l-4 1.5v-8z"/></svg></button>
+            </div>
+            <label class="art-sort"><span>Ordenar por</span>
+              <select id="art-sort">
+                <option value="default">Todos os conteúdos</option>
+                <option value="az">Título (A–Z)</option>
+                <option value="short">Leitura mais curta</option>
+              </select>
+            </label>
+          </div>
+          <p class="art-lead">Descubra dicas, curiosidades e novas formas de contribuir para um futuro mais sustentável.</p>
+          <div class="art-filters" id="art-filters" role="group" aria-label="Filtrar por categoria" data-no-i18n hidden></div>
+          <div class="art-grid" id="art-grid" role="list" data-no-i18n></div>
+          <p class="art-empty" id="art-empty" hidden>Nenhum conteúdo nesta categoria ainda.</p>
+          <div class="art-more"><button type="button" id="art-more" hidden>Carregar mais</button></div>
+  </div>
+
+  <div class="ch-grid">
+    <article class="ch-card s4" aria-labelledby="ch-c1"><header><h2 id="ch-c1" style="font-size:var(--fs-h3)">Continue de onde parou</h2></header><div id="ch-continue"></div></article>
+    <article class="ch-card s4" aria-labelledby="ch-c2"><header><h2 id="ch-c2" style="font-size:var(--fs-h3)">Recomendados para você</h2></header><div id="ch-reco"></div></article>
+    <article class="ch-card s4" aria-labelledby="ch-c3"><header><h2 id="ch-c3" style="font-size:var(--fs-h3)">Metas da semana</h2></header>
+      <div class="ch-week" id="ch-week" role="list" aria-label="Dias estudados nesta semana"></div>
+      <div class="ch-goal"><label for="ch-goal">Meta:</label><select id="ch-goal"></select><span class="cap" id="ch-goal-t" aria-live="polite"></span></div>
+      <div class="ch-bar" role="progressbar" aria-label="Progresso da meta semanal" id="ch-goal-bar" aria-valuemin="0" aria-valuemax="100"><i></i></div>
+      <div class="ch-badges" id="ch-badges"></div>
+    </article>
+
+    <article class="ch-card s5" aria-labelledby="ch-c4"><header><h2 id="ch-c4" style="font-size:var(--fs-h3)">Sua evolução</h2></header>
+      <div class="ch-rings" id="ch-rings"></div><div class="ch-list" id="ch-evo" style="margin-top:4px"></div>
+    </article>
+    <article class="ch-card s7" aria-labelledby="ch-c5"><header><h2 id="ch-c5" style="font-size:var(--fs-h3)">Favoritos e estudar depois</h2></header>
+      <div class="ch-tabs" role="tablist" aria-label="Coleção pessoal"><button type="button" role="tab" id="ch-tab-fav" aria-selected="true" data-tab="fav">Favoritos</button><button type="button" role="tab" id="ch-tab-later" aria-selected="false" data-tab="later">Estudar depois</button></div>
+      <div id="ch-coll" role="tabpanel" aria-labelledby="ch-tab-fav"></div>
+    </article>
+  </div>
+
+  <div class="ch-sec" id="ch-dicas"><h2>Dicas e curiosidades</h2><p>Conteúdos rápidos para aprender sem pressa.</p></div>
+  <div class="ch-cards3" id="ch-tips"></div>
+
+  <div class="ch-sec" id="ch-novidades"><h2>Novidades</h2><p>Conteúdos publicados recentemente.</p></div>
+  <div class="ch-cards3" id="ch-news"></div>
+
+  <div class="ch-sec" id="ch-duvidas"><h2>Espaço para dúvidas</h2><p>Pergunte, comente e converse sobre os materiais. Conteúdos denunciados ficam ocultos até a moderação revisar.</p></div>
+  <div class="ch-grid">
+    <article class="ch-card s5"><h3>Nova pergunta</h3>
+      <form class="ch-form" id="ch-qform" novalidate>
+        <label class="cap" for="ch-qtopic">Sobre qual material?</label><select id="ch-qtopic"></select>
+        <label class="cap" for="ch-qtext">Sua dúvida ou comentário</label><textarea id="ch-qtext" maxlength="600" placeholder="Escreva aqui"></textarea>
+        <p class="cap" id="ch-qmsg" role="alert"></p>
+        <button type="submit" class="ch-btn">Publicar</button>
+      </form>
+    </article>
+    <article class="ch-card s7"><h3>Discussões</h3><div class="ch-list" id="ch-posts"></div></article>
+  </div>
+
+  <footer class="ch-foot" aria-label="Rodapé de conteúdos">
+    <nav aria-label="Links do rodapé">
+      <a href="#" data-eco-nav="home">Sobre a plataforma</a>
+      <a href="#" data-go="ch-duvidas">Contato</a>
+      <a href="#" id="ch-a11y">Acessibilidade</a>
+      <a href="#" data-eco-nav="privacy">Política de privacidade</a>
+      <a href="#" data-eco-nav="terms">Termos de uso</a>
+    </nav>
+  </footer>
+</section>
+
+
+        </div>
+      </div>
+
+      <div id="view-article" class="view" hidden>
+        <article class="art-read" id="art-read" data-no-i18n></article>
+      </div>
+
+      <div id="view-progress" class="view" hidden>
+        <iframe id="prog-frame" class="prog-frame" title="Meu progresso"></iframe>
+      </div>
+
+      <div id="view-recompensas" class="view" hidden data-no-i18n>
+        <div id="rw-host"></div>
+        <template id="rw-tpl"><link rel="stylesheet" href="../css/pages/dashboard/10-tema-escuro-wireframe.css"><svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z" fill="#f5b800" stroke="#c98f00" stroke-width="1" stroke-linejoin="round"/></symbol>
+    <symbol id="turtle" viewBox="0 0 341 560"><image width="341" height="560" href="../assets/images/dashboard-3ec5d9fdf2.webp"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+    <section class="hero">
+      <svg class="hero-bg" viewBox="0 0 900 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="hSky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d3447"/><stop offset=".55" stop-color="#0f4a48"/><stop offset="1" stop-color="#14614f"/></linearGradient>
+          <radialGradient id="hSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#b6f0d2" stop-opacity=".55"/><stop offset="1" stop-color="#b6f0d2" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="900" height="320" fill="url(#hSky)"/>
+        <circle cx="710" cy="140" r="190" fill="url(#hSun)"/>
+        <g fill="none" stroke="#8fd6b3" stroke-opacity=".16"><circle cx="710" cy="140" r="120"/><circle cx="710" cy="140" r="170"/><circle cx="710" cy="140" r="220"/></g>
+        <circle cx="90" cy="40" r="120" fill="#7aa2f0" fill-opacity=".12"/>
+        <path d="M0 236C120 200 250 210 370 236S620 262 760 214 860 200 900 210V320H0z" fill="#1d7a60" opacity=".55"/>
+        <path d="M0 262C150 232 290 276 450 258S730 232 900 262V320H0z" fill="#15604f"/>
+        <path d="M0 292C200 272 380 300 560 284S800 272 900 288V320H0z" fill="#0d4439"/>
+        <path transform="translate(430 70) rotate(25)" d="M0 0c-14-10-14-30 0-42 14 12 14 32 0 42z" fill="#8fd6b3" opacity="0.35"/><path transform="translate(520 150) rotate(-40)" d="M0 0c-14-10-14-30 0-42 14 12 14 32 0 42z" fill="#7aa2f0" opacity="0.3"/><path transform="translate(600 52) rotate(60)" d="M0 0c-14-10-14-30 0-42 14 12 14 32 0 42z" fill="#8fd6b3" opacity="0.28"/><path transform="translate(860 70) rotate(-20)" d="M0 0c-14-10-14-30 0-42 14 12 14 32 0 42z" fill="#8fd6b3" opacity="0.3"/><path transform="translate(300 40) rotate(-30)" d="M0 0c-14-10-14-30 0-42 14 12 14 32 0 42z" fill="#7aa2f0" opacity="0.22"/>
+        <g fill="#e6fff3"><circle class="twk" cx="560" cy="96" r="2.4"/><circle class="twk" cx="810" cy="40" r="2" style="animation-delay:.8s"/><circle class="twk" cx="470" cy="200" r="2" style="animation-delay:1.6s"/><circle class="twk" cx="880" cy="180" r="2.4" style="animation-delay:2.2s"/></g>
+      </svg>
+      <div>
+        <span class="tag"><i></i>Pequenos gestos, grandes mudanças</span>
+        <h1>Recompensas</h1>
+        <p>Cada eletrônico descartado do jeito certo vira pontos. Junte, escolha seu item e resgate.</p>
+        <div class="balance">
+          <div class="star"><svg width="28" height="28"><use href="#star"/></svg></div>
+          <div><span>Seu saldo</span><strong id="balance">0</strong></div>
+        </div>
+      </div>
+      <svg class="hero-art" viewBox="0 0 360 250" aria-hidden="true">
+        <ellipse cx="180" cy="218" rx="92" ry="10" fill="#000" opacity=".28"/>
+        <g class="bob">
+          <path d="M120 134h120v76a8 8 0 0 1-8 8H128a8 8 0 0 1-8-8z" fill="#157a58"/>
+          <path d="M120 134h60v84h-52a8 8 0 0 1-8-8z" fill="#22a678"/>
+          <path d="M118 108h62v30h-62a8 8 0 0 1-8-8v-14a8 8 0 0 1 8-8z" fill="#a9c5ff"/>
+          <path d="M180 108h62a8 8 0 0 1 8 8v14a8 8 0 0 1-8 8h-62z" fill="#6f98ea"/>
+          <rect x="167" y="108" width="26" height="110" fill="#ffd45c"/>
+          <rect x="167" y="108" width="9" height="110" fill="#fff" opacity=".28"/>
+          <path d="M180 108c-8-28-42-36-55-19 11 17 36 23 55 19z" fill="#9be3bf"/>
+          <path d="M180 108c8-28 42-36 55-19-11 17-36 23-55 19z" fill="#5fbf93"/>
+          <path d="M180 108c-14-12-26-14-40-12" stroke="#2f8f69" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="180" cy="108" r="9" fill="#f5b800"/><circle cx="180" cy="108" r="4" fill="#ffe38a"/>
+        </g>
+        <g stroke="#f5b800" stroke-width="3"><circle cx="66" cy="84" r="21" fill="#ffd45c"/><circle cx="306" cy="66" r="16" fill="#ffd45c"/><circle cx="314" cy="170" r="23" fill="#ffd45c"/><circle cx="62" cy="178" r="14" fill="#ffd45c"/></g>
+        <g fill="none" stroke="#fff3c4" stroke-opacity=".7" stroke-width="1.6"><circle cx="66" cy="84" r="14"/><circle cx="314" cy="170" r="16"/></g>
+        <use href="#star" x="51" y="69" width="30" height="30"/><use href="#star" x="294" y="54" width="24" height="24"/>
+        <use href="#star" x="297" y="153" width="34" height="34"/><use href="#star" x="54" y="170" width="16" height="16"/>
+        <g fill="#e6fff3"><path d="M250 34l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/><path d="M112 22l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/><path d="M344 112l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></g>
+      </svg>
+    </section>
+
+    <div class="tools">
+      <label class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7aa2f0" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="q" type="search" placeholder="Buscar recompensas..." aria-label="Buscar recompensas" autocomplete="off">
+      </label>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>
+      <svg viewBox="0 0 341 560"><use href="#turtle" width="341" height="560"/></svg>
+      <h3>Nenhum resultado encontrado</h3>
+      <p>Não achamos recompensas com esse nome. Tente outra palavra.</p>
+    </div>
+  </div><div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal">
+    <div class="art" id="mImg"></div>
+    <div class="in">
+      <h2 id="mTitle"></h2>
+      <p id="mDesc"></p>
+      <div class="rows">
+        <div class="row"><span>Custo unitário</span><strong id="mUnit"></strong></div>
+        <div class="row"><span>Quantidade</span>
+          <span class="qty"><button type="button" id="minus" aria-label="Diminuir quantidade">&minus;</button><output id="qty">1</output><button type="button" id="plus" aria-label="Aumentar quantidade">+</button></span></div>
+        <div class="row total" id="totalRow"><span>Total necessário</span><strong id="mTotal"></strong></div>
+        <div class="row"><span>Seu saldo</span><strong id="mBal"></strong></div>
+      </div>
+      <p class="msg" id="msg" aria-live="polite"></p>
+      <div class="actions">
+        <button class="btn ghost" id="cancel" type="button">Cancelar</button>
+        <button class="btn primary" id="confirm" type="button">Confirmar resgate</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</template>
+      </div>
+
+      <div id="view-agenda" class="view" hidden data-no-i18n>
+        <section class="ag-wrap">
+          <div class="ag-top"><div><h1>Meus agendamentos</h1><p>Planos de descarte registrados no EcoClick. Um plano não é uma reserva no ponto e só vira descarte concluído depois de validado.</p></div><button type="button" class="coleta-all" id="ag-map">← Pontos de coleta</button></div>
+          <div class="ag-tabs" role="tablist" aria-label="Situação">
+            <button type="button" role="tab" data-atab="up" aria-selected="true">Próximos <span class="ag-n" id="ag-n-up">0</span></button>
+            <button type="button" role="tab" data-atab="done" aria-selected="false">Concluídos <span class="ag-n" id="ag-n-done">0</span></button>
+            <button type="button" role="tab" data-atab="canc" aria-selected="false">Cancelados <span class="ag-n" id="ag-n-canc">0</span></button>
+          </div>
+          <ul class="ag-list" id="ag-list"></ul>
+          <p class="ag-empty" id="ag-empty" hidden></p>
+        </section>
+      </div>
+
+      <div id="view-settings" class="view" hidden>
+        <h1 class="sr-only">Configurações</h1>
+        <div class="st" id="st">
+
+          <nav class="st-nav" aria-label="Menu de configurações">
+            <label class="st-search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+              <input type="search" id="st-q" placeholder="Procurar" aria-label="Procurar nas configurações" autocomplete="off">
+            </label>
+            <div class="st-tabs" id="st-tabs">
+              <div class="st-label">Configurações</div>
+              <button type="button" class="st-tab" data-pane="geral" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><span>Geral</span></button>
+              <button type="button" class="st-tab" data-pane="conta"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><span>Conta</span></button>
+              <button type="button" class="st-tab" data-pane="notificacoes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><span>Notificações</span></button>
+              <button type="button" class="st-tab" data-pane="coleta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Pontos de coleta</span></button>
+              <button type="button" class="st-tab" data-pane="privacidade"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v5c0 5-3.4 8.7-8 10-4.6-1.3-8-5-8-10V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><span>Privacidade</span></button>
+              <div class="st-label">Ajuda</div>
+              <button type="button" class="st-tab" data-pane="ajuda"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"/></svg><span>Suporte</span></button>
+            </div>
+          </nav>
+
+          <div class="st-main">
+            <button type="button" class="st-close" id="st-close" aria-label="Fechar configurações"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+            <p class="st-none" id="st-none" hidden>Nenhum resultado para a busca.</p>
+
+            <!-- GERAL -->
+            <section class="st-pane is-active" id="pane-geral" data-pane="geral">
+              <div class="st-group">
+                <h2 class="st-h">Aparência</h2>
+                <div class="st-item" data-search="tema aparência claro escuro sistema modo">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Tema</strong></div>
+                    <div class="st-seg" id="theme-seg" role="radiogroup" aria-label="Tema">
+                      <button type="button" role="radio" aria-checked="false" aria-label="Sistema" title="Sistema" data-theme-opt="system"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></button>
+                      <button type="button" role="radio" aria-checked="false" aria-label="Claro" title="Claro" data-theme-opt="light"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+                      <button type="button" role="radio" aria-checked="false" aria-label="Escuro" title="Escuro" data-theme-opt="dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="st-item" data-search="movimento animações reduzir acessibilidade transições">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Movimento</strong><span>Reduz as animações e transições da interface.</span></div>
+                    <div class="st-seg" id="motion-seg" role="radiogroup" aria-label="Movimento">
+                      <button type="button" role="radio" aria-checked="false" data-motion="system">Sistema</button>
+                      <button type="button" role="radio" aria-checked="false" data-motion="reduced">Reduzido</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="st-item" data-search="alto contraste acessibilidade leitura">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Alto contraste</strong><span>Reforça textos e bordas para leitura mais fácil.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Alto contraste" data-pref="highContrast"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Idioma e região</h2>
+                <div class="st-item" data-search="idioma língua language português english español">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Idioma</strong><span>Idioma da interface.</span></div>
+                    <select class="select" id="sel-lang" aria-label="Idioma">
+                      <option value="pt-BR">Português (Brasil)</option><option value="en">English</option><option value="es">Español</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- CONTA -->
+            <section class="st-pane" id="pane-conta" data-pane="conta">
+              <div class="st-hero">
+                <div class="st-avatar" aria-hidden="true"><img id="st-av-img" alt="" hidden><span id="st-av-ini" data-no-i18n></span></div>
+                <div class="st-hero-txt"><strong id="st-name" data-no-i18n></strong><span id="st-email" data-no-i18n></span></div>
+                <button type="button" class="btn btn-primary" id="st-edit-profile">Editar perfil</button>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Acesso</h2>
+                <div class="st-item" data-search="conta e-mail email alterar">
+                  <div class="st-row">
+                    <div class="st-text"><strong>E-mail</strong><span id="val-email" data-no-i18n>—</span></div>
+                    <button type="button" class="btn btn-ghost" data-open="edit-email" aria-expanded="false" aria-controls="edit-email">Alterar</button>
+                  </div>
+                  <div class="set-edit" id="edit-email" inert>
+                    <form id="form-email" novalidate>
+                      <div class="field"><label for="in-email">Novo e-mail</label><input id="in-email" type="email" autocomplete="email" placeholder="voce@email.com"><div class="field-err" data-err="email"></div></div>
+                      <div class="field"><label for="in-email-pass">Senha atual</label><input id="in-email-pass" type="password" autocomplete="current-password" placeholder="Confirme com sua senha"><div class="field-err" data-err="pass"></div></div>
+                      <div class="form-actions"><button type="button" class="btn btn-ghost" data-close>Cancelar</button><button type="submit" class="btn btn-primary">Salvar</button></div>
+                    </form>
+                  </div>
+                </div>
+                <div class="st-item" data-search="conta senha alterar password segurança">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Senha</strong><span>Use ao menos 8 caracteres, com letras e números.</span></div>
+                    <button type="button" class="btn btn-ghost" data-open="edit-pass" aria-expanded="false" aria-controls="edit-pass">Alterar</button>
+                  </div>
+                  <div class="set-edit" id="edit-pass" inert>
+                    <form id="form-pass" novalidate>
+                      <div class="field"><label for="in-pass-cur">Senha atual</label><input id="in-pass-cur" type="password" autocomplete="current-password"><div class="field-err" data-err="cur"></div></div>
+                      <div class="field"><label for="in-pass-new">Nova senha</label><input id="in-pass-new" type="password" autocomplete="new-password"><div class="field-err" data-err="next"></div></div>
+                      <div class="field"><label for="in-pass-rep">Confirmar nova senha</label><input id="in-pass-rep" type="password" autocomplete="new-password"><div class="field-err" data-err="rep"></div></div>
+                      <div class="form-actions"><button type="button" class="btn btn-ghost" data-close>Cancelar</button><button type="submit" class="btn btn-primary">Salvar</button></div>
+                    </form>
+                  </div>
+                </div>
+                <div class="st-item" data-search="conta telefone celular alterar">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Telefone</strong><span id="val-phone" data-no-i18n>—</span></div>
+                    <button type="button" class="btn btn-ghost" data-open="edit-phone" aria-expanded="false" aria-controls="edit-phone">Alterar</button>
+                  </div>
+                  <div class="set-edit" id="edit-phone" inert>
+                    <form id="form-phone" novalidate>
+                      <div class="field"><label for="in-phone">Novo telefone</label><input id="in-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(71) 99999-9999"><div class="field-err" data-err="phone"></div></div>
+                      <div class="form-actions"><button type="button" class="btn btn-ghost" data-close>Cancelar</button><button type="submit" class="btn btn-primary">Salvar</button></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Seus dados</h2>
+                <div class="st-item" data-search="exportar baixar dados privacidade lgpd cópia">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Exportar meus dados</strong><span>Baixe uma cópia dos seus dados do EcoClick em um arquivo.</span></div>
+                    <button type="button" class="btn btn-ghost" id="st-export">Baixar</button>
+                  </div>
+                </div>
+                <div class="st-item" data-search="excluir apagar conta remover dados">
+                  <div class="st-row">
+                    <div class="st-text"><strong>Excluir conta</strong><span>Remove seus dados deste navegador e encerra a sessão.</span></div>
+                    <button type="button" class="btn btn-danger" data-open="edit-delete" data-label="Excluir" aria-expanded="false" aria-controls="edit-delete">Excluir</button>
+                  </div>
+                  <div class="set-edit" id="edit-delete" inert>
+                    <form id="form-delete" novalidate>
+                      <div class="field"><label for="in-delete">Digite EXCLUIR para confirmar</label><input id="in-delete" type="text" autocomplete="off" placeholder="EXCLUIR"><div class="field-err" data-err="del"></div></div>
+                      <div class="form-actions"><button type="button" class="btn btn-ghost" data-close>Cancelar</button><button type="submit" class="btn btn-danger">Excluir conta</button></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- NOTIFICAÇÕES -->
+            <section class="st-pane" id="pane-notificacoes" data-pane="notificacoes">
+              <div class="st-group">
+                <h2 class="st-h">Avisos do EcoClick</h2>
+                <div class="st-item" data-search="notificações agendamentos descarte lembretes">
+                  <div class="st-row"><div class="st-text"><strong>Agendamentos</strong><span>Confirmações e lembretes dos seus descartes.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Notificações de agendamentos" data-notif="appointments"></button></div>
+                </div>
+                <div class="st-item" data-search="notificações missões">
+                  <div class="st-row"><div class="st-text"><strong>Missões</strong><span>Novas missões e progresso das atuais.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Notificações de missões" data-notif="missions"></button></div>
+                </div>
+                <div class="st-item" data-search="notificações recompensas prêmios">
+                  <div class="st-row"><div class="st-text"><strong>Recompensas</strong><span>Quando você ganhar ou puder resgatar prêmios.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Notificações de recompensas" data-notif="rewards"></button></div>
+                </div>
+                <div class="st-item" data-search="notificações novidades dicas">
+                  <div class="st-row"><div class="st-text"><strong>Novidades</strong><span>Novos pontos de coleta, recursos e dicas.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Notificações de novidades" data-notif="news"></button></div>
+                </div>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Histórico</h2>
+                <div class="st-item" data-search="ver minhas notificações lista avisos recebidos">
+                  <button type="button" class="st-link" data-go-profile="notifications"><span class="st-text"><strong>Ver minhas notificações</strong><span>Abra a lista completa de avisos que você recebeu.</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </section>
+
+            <!-- PONTOS DE COLETA -->
+            <section class="st-pane" id="pane-coleta" data-pane="coleta">
+              <div class="st-group">
+                <h2 class="st-h">Mapa</h2>
+                <div class="st-item" data-search="localização mapa gps minha localização ao abrir">
+                  <div class="st-row"><div class="st-text"><strong>Usar minha localização ao abrir o mapa</strong><span>Seleciona o ponto mais próximo assim que o mapa carrega.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Usar minha localização ao abrir o mapa" data-pref="autoLocate"></button></div>
+                </div>
+                <div class="st-item" data-search="pontos abertos agora horário funcionamento filtro mapa">
+                  <div class="st-row"><div class="st-text"><strong>Mostrar apenas pontos abertos agora</strong><span>Oculta do mapa os pontos fora do horário de funcionamento.</span></div>
+                    <button type="button" class="toggle" role="switch" aria-checked="false" aria-label="Mostrar apenas pontos abertos agora" data-pref="onlyOpen"></button></div>
+                </div>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Atalhos</h2>
+                <div class="st-item" data-search="ir para o mapa pontos de coleta próximos">
+                  <button type="button" class="st-link" data-go-dash="coleta-card"><span class="st-text"><strong>Ir para o mapa</strong><span>Veja os pontos de coleta próximos e agende seu descarte.</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+                <div class="st-item" data-search="agendamentos meus descartes marcados">
+                  <button type="button" class="st-link" data-go-agenda="1"><span class="st-text"><strong>Meus agendamentos</strong><span>Consulte e cancele os descartes que você marcou.</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </section>
+
+            <!-- PRIVACIDADE -->
+            <section class="st-pane" id="pane-privacidade" data-pane="privacidade">
+              <div class="st-group">
+                <h2 class="st-h">Sessões conectadas</h2>
+                <div class="st-item" data-search="privacidade segurança sessões conectadas dispositivos encerrar">
+                  <div class="sessions" id="sessions" data-no-i18n aria-live="polite"></div>
+                  <div class="sessions-foot"><button type="button" class="btn btn-danger" id="revoke-others" hidden>Encerrar as outras sessões</button></div>
+                </div>
+              </div>
+              <div class="st-group">
+                <h2 class="st-h">Documentos</h2>
+                <div class="st-item" data-search="privacidade política de privacidade">
+                  <a class="st-link" href="#" data-eco-nav="privacy"><span class="st-text"><strong>Política de privacidade</strong></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+                </div>
+                <div class="st-item" data-search="privacidade termos de uso">
+                  <a class="st-link" href="#" data-eco-nav="terms"><span class="st-text"><strong>Termos de uso</strong></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- SUPORTE -->
+            <section class="st-pane" id="pane-ajuda" data-pane="ajuda">
+              <div class="st-group">
+                <h2 class="st-h">Suporte</h2>
+                <div class="st-item" data-search="central de ajuda perguntas frequentes dúvidas suporte">
+                  <button type="button" class="st-link" data-go-profile="help"><span class="st-text"><strong>Central de ajuda</strong><span>Perguntas frequentes</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+                <div class="st-item" data-search="sobre o ecoclick projeto quem somos">
+                  <button type="button" class="st-link" data-go-profile="about"><span class="st-text"><strong>Sobre o EcoClick</strong><span>Conheça o projeto e a proposta do EcoClick.</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="view-profile" class="view" hidden>
+        <div class="prof-wrap">
+
+          <!-- INÍCIO -->
+          <section class="pscreen" data-pscreen="home">
+            <h1 class="prof-title">Perfil</h1>
+            <div class="pf-layout">
+              <aside class="pf-hero" aria-label="Meu perfil">
+                <svg class="leaf-mark" viewBox="0 0 120 120" aria-hidden="true"><use href="#eco-leaf"/></svg>
+                <span class="pf-badge">Membro EcoClick</span>
+                <div class="eco-ring eco-ring--lg"><svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-ticks" cx="60" cy="60" r="62"/><circle class="ring-fg" id="prof-ring" cx="60" cy="60" r="52"/></svg>
+                  <div class="avatar ring-avatar" aria-hidden="true"><img id="prof-img" alt="" hidden><span id="prof-initials" data-no-i18n></span></div>
+                </div>
+                <h2 class="pf-name" id="prof-name" data-no-i18n></h2>
+                <p class="pf-email" id="prof-email" data-no-i18n></p>
+                <div class="pf-stats">
+                  <div><strong id="prof-points" data-no-i18n></strong><span>Pontos</span></div>
+                  <div><strong id="prof-level" data-no-i18n></strong><span>Nível</span></div>
+                </div>
+                <div class="pf-progress"><div class="bar" aria-hidden="true"><i id="prof-bar"></i></div><p id="prof-next" data-no-i18n></p></div>
+                <button type="button" class="pf-edit" data-go="manage">Editar perfil →</button>
+              </aside>
+
+              <div class="pf-sections">
+                <h2 class="pf-h">Conta</h2>
+                <div class="pf-tiles">
+            <button type="button" class="pf-tile wide" data-go="manage" data-tone="forest"><span class="pf-tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><span class="pf-tile-txt"><span class="pf-tile-lbl">Gerenciar perfil</span><span class="pf-tile-val" id="row-manage" data-no-i18n></span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+            <button type="button" class="pf-tile" data-go="security" data-tone="ocean"><span class="pf-tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><span class="pf-tile-txt"><span class="pf-tile-lbl">Senha e segurança</span><span class="pf-tile-val" id="row-sec" data-no-i18n></span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+            <button type="button" class="pf-tile" data-go="notifications" data-tone="sand"><span class="pf-tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10a6 6 0 0 1 12 0c0 4 1.5 5.5 2 6H4c.5-.5 2-2 2-6z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></span><span class="pf-tile-txt"><span class="pf-tile-lbl">Notificações</span><span class="pf-tile-val" id="row-notif" data-no-i18n></span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+            <button type="button" class="pf-tile wide" data-go="language" data-tone="mint"><span class="pf-tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></span><span class="pf-tile-txt"><span class="pf-tile-lbl">Idioma</span><span class="pf-tile-val" id="row-lang" data-no-i18n></span></span><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+                </div>
+
+                <h2 class="pf-h">Preferências</h2>
+                <div class="prof-list">
+              <button type="button" class="prof-row" data-go="about"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M9 9h6M9 13h6M9 17h3"/></svg><span class="lbl">Sobre nós</span><span class="val" id="row-about" data-no-i18n></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+              <button type="button" class="prof-row" data-go="theme"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none" opacity=".35"/></svg><span class="lbl">Tema</span><span class="val" id="row-theme" data-no-i18n></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+              <button type="button" class="prof-row" data-go="appointments"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg><span class="lbl">Agendamentos</span><span class="val" id="row-appt" data-no-i18n></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+                </div>
+
+                <h2 class="pf-h">Suporte</h2>
+                <button type="button" class="pf-help" data-go="help">
+                  <svg class="leaf-mark" viewBox="0 0 120 120" aria-hidden="true"><use href="#eco-leaf"/></svg>
+                  <span class="tx"><strong>Central de ajuda</strong><span class="s">Perguntas frequentes</span></span>
+                  <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- GERENCIAR PERFIL -->
+          <section class="pscreen" data-pscreen="manage" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Gerenciar perfil</h1><span></span></div>
+            <div class="pcard">
+              <form class="prof-form" id="prof-form" novalidate>
+                <div class="photo-row">
+                  <div class="avatar" aria-hidden="true"><img id="form-img" alt="" hidden><span id="form-initials" data-no-i18n></span></div>
+                  <button type="button" class="btn btn-ghost" id="photo-pick">Alterar foto</button>
+                  <button type="button" class="btn btn-ghost" id="photo-clear">Remover foto</button>
+                  <input type="file" id="photo-file" accept="image/*" aria-label="Foto de perfil">
+                </div>
+                <div class="field-err" id="photo-err"></div>
+                <div class="field"><label for="pf-name">Nome completo</label><input id="pf-name" type="text" autocomplete="name"><div class="field-err" data-err="name"></div></div>
+                <div class="field"><label for="pf-email">E-mail</label><input id="pf-email" type="email" autocomplete="email"><div class="field-err" data-err="email"></div></div>
+                <div class="field"><label for="pf-phone">Telefone</label><input id="pf-phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(71) 99999-9999"><div class="field-err" data-err="phone"></div></div>
+                <div class="field"><label for="pf-cpf">CPF</label><input id="pf-cpf" type="text" inputmode="numeric" placeholder="000.000.000-00"><div class="field-err" data-err="cpf"></div></div>
+                <div class="field"><label for="pf-address">Endereço</label><input id="pf-address" type="text" autocomplete="street-address" placeholder="Rua, número, bairro, cidade"><div class="field-err" data-err="address"></div></div>
+                <div class="form-actions"><button type="button" class="btn btn-ghost" id="prof-reset">Cancelar</button><button type="submit" class="btn btn-primary">Salvar</button></div>
+              </form>
+            </div>
+          </section>
+
+          <!-- NOTIFICAÇÕES -->
+          <section class="pscreen" data-pscreen="notifications" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Notificações</h1><span></span></div>
+            <ul class="pn-list" id="pn-list" data-no-i18n></ul>
+            <div class="pn-empty" id="pn-empty" hidden>Nenhuma notificação por aqui ainda.</div>
+            <div class="pn-foot">
+              <button type="button" class="btn btn-ghost" id="pn-readall">Marcar todas como lidas</button>
+              <button type="button" class="btn btn-primary" id="pn-config">Configurar preferências →</button>
+            </div>
+          </section>
+
+          <!-- IDIOMA -->
+          <section class="pscreen" data-pscreen="language" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Idioma</h1><span></span></div>
+            <p class="phint">Idioma da plataforma.</p>
+            <div class="opt-list" id="lang-list" role="radiogroup" aria-label="Idioma">
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-lang="pt-BR"><span>Português (Brasil)</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-lang="en"><span>English</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-lang="es"><span>Español</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            </div>
+          </section>
+
+          <!-- TEMA -->
+          <section class="pscreen" data-pscreen="theme" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Tema</h1><span></span></div>
+            <p class="phint">Aparência do EcoClick neste navegador.</p>
+            <div class="opt-list" id="theme-list" role="radiogroup" aria-label="Tema">
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-theme-pick="system"><span>🖥️ Sistema</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-theme-pick="light"><span>☀️ Claro</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+              <button type="button" class="opt-row" role="radio" aria-checked="false" data-theme-pick="dark"><span>🌙 Escuro</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button>
+            </div>
+          </section>
+
+          <!-- SOBRE NÓS -->
+          <section class="pscreen" data-pscreen="about" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Sobre nós</h1><span></span></div>
+            <div class="pcard">
+              <p>O EcoClick conecta pessoas a pontos de coleta de lixo eletrônico, para que o descarte correto seja simples e acessível.</p>
+              <p>Encontre o ponto mais próximo no mapa, agende seu descarte, cumpra missões e ganhe recompensas por cuidar do planeta.</p>
+              <p>Nosso objetivo é reduzir o impacto do lixo eletrônico e construir uma comunidade mais sustentável, começando por Salvador.</p>
+              <div class="coleta-chips"><span>Mapa de pontos</span><span>Agendamento de descarte</span><span>Missões e recompensas</span></div>
+            </div>
+          </section>
+
+          <!-- AGENDAMENTOS -->
+          <section class="pscreen" data-pscreen="appointments" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Agendamentos</h1><span></span></div>
+            <div id="appt-root" data-no-i18n></div>
+          </section>
+
+          <!-- CENTRAL DE AJUDA -->
+          <section class="pscreen" data-pscreen="help" hidden>
+      <div class="psub-head"><button type="button" class="psub-back" data-back>← Voltar</button><h1>Central de ajuda</h1><span></span></div>
+            <p class="phint">Perguntas frequentes</p>
+        <div class="acc"><button type="button" class="acc-btn" aria-expanded="false"><span class="acc-main"><strong>Como agendo um descarte?</strong></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><div class="collapse"><div><div class="acc-body">No Dashboard, escolha um ponto no mapa, toque em “Agendar descarte →”, informe seus dados, o material e um horário disponível.</div></div></div></div>
+        <div class="acc"><button type="button" class="acc-btn" aria-expanded="false"><span class="acc-main"><strong>Quais materiais posso levar?</strong></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><div class="collapse"><div><div class="acc-body">Cada ponto informa os materiais aceitos, como celulares, computadores, pilhas, baterias, cabos e eletrodomésticos. Confira no card do ponto.</div></div></div></div>
+        <div class="acc"><button type="button" class="acc-btn" aria-expanded="false"><span class="acc-main"><strong>Como cancelo um agendamento?</strong></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><div class="collapse"><div><div class="acc-body">Em Perfil, abra Agendamentos, selecione o agendamento e toque em “Cancelar agendamento”.</div></div></div></div>
+        <div class="acc"><button type="button" class="acc-btn" aria-expanded="false"><span class="acc-main"><strong>Como funcionam os pontos e os níveis?</strong></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><div class="collapse"><div><div class="acc-body">Você acumula pontos ao concluir descartes e missões e sobe de nível conforme sua pontuação.</div></div></div></div>
+        <div class="acc"><button type="button" class="acc-btn" aria-expanded="false"><span class="acc-main"><strong>Como mudo o idioma ou o tema?</strong></span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button><div class="collapse"><div><div class="acc-body">Em Perfil, abra Idioma ou Tema. A escolha fica salva neste navegador.</div></div></div></div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/pages/dashboard/11-i18n.js"></script>
+
+  <script src="../js/pages/dashboard/12-theme-follow.js"></script>
+
+  <script src="../js/pages/dashboard/13-sidebar-nav.js"></script>
+
+
+  <script src="../js/pages/dashboard/14-banner-carousel.js"></script>
+
+
+    <script src="../js/pages/dashboard/15-banner-buttons.js"></script>
+    <div class="toast" id="toast" role="status" aria-live="polite"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="toast-text" data-no-i18n></span></div>
+  <script src="../js/pages/dashboard/16-svg-map.js"></script>
+  <script src="../js/pages/dashboard/17-pontos-coleta.js"></script>
+
+  <script src="../js/pages/dashboard/18-configuracoes.js"></script>
+  <script src="../js/pages/dashboard/19-menus-topo-perfil.js"></script>
+
+  <script src="../js/pages/dashboard/20-meus-conteudos.js"></script>
+
+  <script src="../js/pages/dashboard/21-conteudos-artigos.js"></script>
+
+  <script src="../js/pages/dashboard/22-artigos-setas.js"></script>
+
+  <script src="../js/pages/dashboard/23-progresso-resumo.js"></script>
+<script src="../js/pages/dashboard/24-recompensas.js"></script>
+<script src="../js/pages/dashboard/25-hub-conteudos.js"></script>
+<script src="../js/components/nav-indicator.js"></script></body>
+</html>

@@ -1,0 +1,959 @@
+[
+  {
+    "id": "reciclagem",
+    "type": "ARTICLE",
+    "category": "Reciclagem",
+    "title": "Reciclagem: seu eletrônico pode ter uma segunda vida",
+    "description": "Um eletrônico descartado ainda pode ter materiais que podem ser reaproveitados.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjE1NyIgY3k9IjMxMSIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI2Ii8+PGNpcmNsZSBjeD0iMTQwIiBjeT0iMjczIiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzMiLz48Y2lyY2xlIGN4PSI2ODciIGN5PSIyMTQiIHI9IjQiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMSIvPjxjaXJjbGUgY3g9IjUxOSIgY3k9IjM0IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzEiLz48Y2lyY2xlIGN4PSI2NDIiIGN5PSI0MTAiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii40MCIvPjxjaXJjbGUgY3g9IjQ3NiIgY3k9IjE1NiIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iNjI1IiBjeT0iNzIiIHI9IjUiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4xOCIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMzMiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNSIvPjxjaXJjbGUgY3g9IjI5IiBjeT0iNDcxIiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzkiLz48Y2lyY2xlIGN4PSIyNDEiIGN5PSIyMzYiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4xOCIvPjxjaXJjbGUgY3g9IjU2MCIgY3k9IjEzMyIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMzIi8+PGNpcmNsZSBjeD0iNTg2IiBjeT0iMTM5IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjUiLz48Y2lyY2xlIGN4PSI3MTMiIGN5PSIxMzIiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNyIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iMjMzIiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzgiLz48cGF0aCBkPSJNMjc5LjcxOSAyMTEuMjIxQTEyOCAxMjggMCAwIDEgNTEwLjg1MSAxOTEiIHN0cm9rZT0iIzJmNmI1YyIgc3Ryb2tlLXdpZHRoPSIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTUyMC4yODEgMjk4Ljc3OUExMjggMTI4IDAgMCAxIDI4OS4xNDkgMzE5IiBzdHJva2U9IiMyZjZiNWMiIHN0cm9rZS13aWR0aD0iMTYiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwb2x5Z29uIHBvaW50cz0iNTIyLjg1MSwyMTEuNzg1IDQ5MS4wMTUsMTg0Ljc0MiA1MTUuMzUsMTcwLjY5MiIgZmlsbD0iIzJmNmI1YyIvPjxwb2x5Z29uIHBvaW50cz0iMjc3LjE0OSwyOTguMjE1IDMwOC45ODUsMzI1LjI1OCAyODQuNjUsMzM5LjMwOCIgZmlsbD0iIzJmNmI1YyIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQwMCAyNTUpIHJvdGF0ZSgwKSI+PHJlY3QgeD0iLTQ2IiB5PSItODAiIHdpZHRoPSI5MiIgaGVpZ2h0PSIxNjAiIHJ4PSIxMi44OCIgZmlsbD0iIzFkMmU0YiIvPjxyZWN0IHg9Ii0zOS41NiIgeT0iLTcwLjQiIHdpZHRoPSI3OS4xMiIgaGVpZ2h0PSIxNDAuOCIgcng9IjguMzcyIiBmaWxsPSIjODVjZmIwIi8+PHJlY3QgeD0iLTEyLjg4IiB5PSItNjgiIHdpZHRoPSIyNS43NiIgaGVpZ2h0PSIzLjIiIHJ4PSIxLjYiIGZpbGw9IiMxZDJlNGIiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUwIDE1MCkgcm90YXRlKC0zMCkiPjxwYXRoIGQ9Ik0wIDBDNiAtNTQgNjAgLTU0IDcyIC02QzU0IDIxIDE1IDEyIDAgMHoiIGZpbGw9IiM0YTg0NzYiLz48cGF0aCBkPSJNMCAwTDU0IC0xNi44IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iMi4xIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTYwIDM2MCkgcm90YXRlKDE0MCkiPjxwYXRoIGQ9Ik0wIDBDNi42IC01OS40IDY2IC01OS40IDc5LjIgLTYuNkM1OS40IDIzLjEgMTYuNSAxMy4yIDAgMHoiIGZpbGw9IiM2ZGJhYTgiLz48cGF0aCBkPSJNMCAwTDU5LjQgLTE4LjQ4IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iMi4zMSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4MCAxNTApIHJvdGF0ZSgxMCkiPjxwYXRoIGQ9Ik0wIDBDNC40IC0zOS42IDQ0IC0zOS42IDUyLjggLTQuNEMzOS42IDE1LjQgMTEgOC44IDAgMHoiIGZpbGw9IiM4NWNmYjAiLz48cGF0aCBkPSJNMCAwTDM5LjYgLTEyLjMyIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iMS41NCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==",
+    "body": [
+      [
+        "p",
+        "Sabe aquele celular antigo guardado na gaveta? Ou aquele computador que parou de funcionar e você não sabe o que fazer com ele? Antes de considerar tudo isso simplesmente “lixo”, vale lembrar de uma coisa: um eletrônico descartado ainda pode ter materiais que podem ser reaproveitados."
+      ],
+      [
+        "p",
+        "O lixo eletrônico, também chamado de e-lixo, inclui celulares, computadores, televisores, eletrodomésticos, baterias e vários outros aparelhos. E a quantidade gerada no mundo está crescendo bastante. Em 2022, foram produzidas cerca de 62 milhões de toneladas de lixo eletrônico no planeta. O mais preocupante é que apenas 22,3% desse material foi oficialmente coletado e reciclado. [[Global E-waste Monitor 2024 – ITU|https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx]]"
+      ],
+      [
+        "h",
+        "Mas o que acontece quando um eletrônico é reciclado?"
+      ],
+      [
+        "p",
+        "Um aparelho antigo não é simplesmente colocado em uma máquina e transformado em outro aparelho. Primeiro, ele passa por processos de coleta e tratamento, nos quais diferentes componentes e materiais podem ser separados."
+      ],
+      [
+        "p",
+        "Isso é importante porque os eletrônicos possuem materiais que podem ser recuperados e reutilizados, além de componentes que precisam de cuidados especiais. Quando são descartados de qualquer maneira, podem representar riscos para o ambiente e para a saúde."
+      ],
+      [
+        "p",
+        "Por isso, reciclar não significa apenas “jogar no lugar certo”. É uma forma de evitar desperdícios e aproveitar melhor os recursos que já foram utilizados para fabricar aquele produto."
+      ],
+      [
+        "h",
+        "E o meio ambiente nisso?"
+      ],
+      [
+        "p",
+        "O problema do lixo eletrônico vai muito além da nossa casa. Quando esses resíduos são manejados de forma inadequada, podem contribuir para a contaminação do solo, da água e do ar."
+      ],
+      [
+        "p",
+        "Isso também se relaciona com a proteção dos ecossistemas. A ONU, por meio dos Objetivos de Desenvolvimento Sustentável, destaca a importância de proteger tanto os oceanos e recursos marinhos, no ODS 14, quanto os ecossistemas terrestres, no ODS 15. [[ONU – ODS 14: Vida na Água|https://sdgs.un.org/goals/goal14]] [[ONU – ODS 15: Vida Terrestre|https://sdgs.un.org/goals/goal15]]"
+      ],
+      [
+        "p",
+        "E tem outro detalhe importante: o lixo eletrônico pode conter substâncias perigosas. Quando esses resíduos não recebem o tratamento adequado, podem causar impactos tanto ambientais quanto à saúde humana. [[Organização Mundial da Saúde – Electronic waste (e-waste)|https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)]]"
+      ],
+      [
+        "h",
+        "Então, o que eu posso fazer?"
+      ],
+      [
+        "p",
+        "Não precisa começar fazendo algo complicado. Quando tiver um eletrônico que não usa mais, evite colocá-lo no lixo comum. Procure pontos de coleta ou locais que façam o recebimento e a destinação adequada desses materiais."
+      ],
+      [
+        "p",
+        "Também vale pensar antes de trocar um aparelho: ele realmente precisa ser substituído ou ainda pode ser consertado ou reutilizado?"
+      ],
+      [
+        "p",
+        "Cada aparelho que recebe o destino correto é um pouco menos de material sendo desperdiçado e um pouco mais de recursos podendo voltar para a cadeia produtiva."
+      ],
+      [
+        "p",
+        "Da próxima vez que encontrar um eletrônico velho, pense duas vezes antes de chamá-lo de lixo. Talvez ele ainda tenha muita coisa para oferecer."
+      ]
+    ],
+    "refs": [
+      {
+        "t": "International Telecommunication Union (ITU). The Global E-waste Monitor 2024.",
+        "url": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx"
+      },
+      {
+        "t": "World Health Organization (WHO). Electronic waste (e-waste).",
+        "url": "https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)"
+      },
+      {
+        "t": "United Nations. Goal 14: Life Below Water.",
+        "url": "https://sdgs.un.org/goals/goal14"
+      },
+      {
+        "t": "United Nations. Goal 15: Life on Land.",
+        "url": "https://sdgs.un.org/goals/goal15"
+      }
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "lixo-celular",
+    "type": "ARTICLE",
+    "category": "Curiosidades",
+    "title": "Adivinhe quanto lixo um celular pode gerar",
+    "description": "Quanto lixo um celular pode gerar? A resposta depende do que acontece com ele depois do uso.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9Ijc3IiBjeT0iNjYiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yOSIvPjxjaXJjbGUgY3g9IjE5MyIgY3k9IjM5NiIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI3Ii8+PGNpcmNsZSBjeD0iMjc3IiBjeT0iMzMwIiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzciLz48Y2lyY2xlIGN4PSI1NiIgY3k9IjMxNyIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIzIi8+PGNpcmNsZSBjeD0iNDYxIiBjeT0iMzQ2IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzQiLz48Y2lyY2xlIGN4PSI0MDAiIGN5PSIyOTgiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNCIvPjxjaXJjbGUgY3g9IjI5NCIgY3k9IjM4IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjkiLz48Y2lyY2xlIGN4PSI0OTYiIGN5PSIxODMiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zMSIvPjxjaXJjbGUgY3g9IjU1OCIgY3k9IjEwNCIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIzIi8+PGNpcmNsZSBjeD0iMjYxIiBjeT0iMTM4IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjMiLz48Y2lyY2xlIGN4PSIzNTIiIGN5PSIxMDgiIHI9IjQiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNCIvPjxjaXJjbGUgY3g9IjU0MiIgY3k9IjIwNCIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM5Ii8+PGNpcmNsZSBjeD0iNTkzIiBjeT0iMTEzIiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzEiLz48Y2lyY2xlIGN4PSI3NzIiIGN5PSIyODgiIHI9IjUiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCAyNDApIHJvdGF0ZSgtOCkiPjxyZWN0IHg9Ii01MCIgeT0iLTg4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE3NiIgcng9IjE0IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTQzIiB5PSItNzcuNDQiIHdpZHRoPSI4NiIgaGVpZ2h0PSIxNTQuODgiIHJ4PSI5LjEiIGZpbGw9IiM4NWNmYjAiLz48cmVjdCB4PSItMTQiIHk9Ii03NC44IiB3aWR0aD0iMjgiIGhlaWdodD0iMy41MiIgcng9IjEuNzYiIGZpbGw9IiMxZDJlNGIiLz48L2c+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMjMwIiByPSI3MiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIuNTUiIHN0cm9rZT0iIzFkMmU0YiIgc3Ryb2tlLXdpZHRoPSIxNCIvPjxwYXRoIGQ9Ik0zNTIgMjgyTDQxMiAzNDIiIHN0cm9rZT0iIzFkMmU0YiIgc3Ryb2tlLXdpZHRoPSIxOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHRleHQgeD0iMzAwIiB5PSIyNTYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9Ijg0IiBmaWxsPSIjMmY2YjVjIj4/PC90ZXh0PjxyZWN0IHg9IjUyMCIgeT0iMzMwIiB3aWR0aD0iNTAiIGhlaWdodD0iMjYiIHJ4PSI0IiBmaWxsPSIjNGE4NDc2IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTIgNTIwIDMzMCkiLz48cmVjdCB4PSI1ODAiIHk9IjM0NSIgd2lkdGg9IjM0IiBoZWlnaHQ9IjM0IiByeD0iNCIgZmlsbD0iIzZkYmFhOCIgdHJhbnNmb3JtPSJyb3RhdGUoMjAgNTgwIDM0NSkiLz48cmVjdCB4PSI1NDUiIHk9IjI5NiIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjIyIiByeD0iNCIgZmlsbD0iIzFkMmU0YiIgdHJhbnNmb3JtPSJyb3RhdGUoOCA1NDUgMjk2KSIvPjxyZWN0IHg9IjYxMCIgeT0iMzEwIiB3aWR0aD0iMjgiIGhlaWdodD0iMjgiIHJ4PSI0IiBmaWxsPSIjODVjZmIwIiB0cmFuc2Zvcm09InJvdGF0ZSgtMjUgNjEwIDMxMCkiLz48cmVjdCB4PSI1MDAiIHk9IjM1OCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzJmNmI1YyIgdHJhbnNmb3JtPSJyb3RhdGUoNCA1MDAgMzU4KSIvPjwvc3ZnPg==",
+    "body": [
+      [
+        "p",
+        "Vamos fazer um desafio: quanto lixo você acha que um celular pode gerar?"
+      ],
+      [
+        "p",
+        "500 gramas? 1 quilo? 5 quilos?"
+      ],
+      [
+        "p",
+        "A resposta pode ser um pouco diferente do que você está imaginando. As fontes oficiais não definem uma quantidade única de lixo gerada por cada celular, porque isso depende do aparelho, de quanto tempo ele é usado e, principalmente, do que acontece com ele depois que deixa de ser útil."
+      ],
+      [
+        "p",
+        "Mas tem um número que ajuda a entender o tamanho do problema: em 2022, o mundo produziu cerca de 62 milhões de toneladas de lixo eletrônico. E apenas 22,3% desse material foi oficialmente coletado e reciclado."
+      ],
+      [
+        "p",
+        "Ou seja: aquele celular esquecido na gaveta parece pequeno, mas ele faz parte de uma montanha de resíduos que está crescendo cada vez mais."
+      ],
+      [
+        "h",
+        "Mas celular velho é só “lixo”?"
+      ],
+      [
+        "p",
+        "Não necessariamente!"
+      ],
+      [
+        "p",
+        "Um aparelho que você não usa mais pode seguir diferentes caminhos. Pela chamada logística reversa, ele pode ser coletado e passar por uma triagem. Se ainda tiver condições, pode ser reutilizado ou recondicionado. Caso contrário, seus componentes podem ser desmontados e separados para reaproveitamento ou reciclagem."
+      ],
+      [
+        "p",
+        "Plásticos, metais, vidros e outros materiais presentes nos equipamentos podem voltar para processos produtivos, em vez de simplesmente serem descartados. É como dar uma segunda chance para aquilo que parecia ter chegado ao fim da linha."
+      ],
+      [
+        "h",
+        "E se ele for parar no lugar errado?"
+      ],
+      [
+        "p",
+        "Aí a história muda."
+      ],
+      [
+        "p",
+        "O lixo eletrônico pode conter substâncias perigosas. Quando é desmontado, queimado ou reciclado de maneira inadequada, pode liberar poluentes que contaminam o ar, a água e o solo. A Organização Mundial da Saúde alerta que mais de 1.000 substâncias nocivas podem estar presentes no lixo eletrônico ou ser produzidas durante práticas inadequadas de reciclagem."
+      ],
+      [
+        "p",
+        "Por isso, jogar aquele celular velho no lixo comum não é exatamente um “problema resolvido”. É só o começo de outra etapa — e ela pode ser bem ruim para o meio ambiente e para a saúde."
+      ],
+      [
+        "h",
+        "Então, qual é a resposta?"
+      ],
+      [
+        "p",
+        "Talvez a melhor pergunta não seja “quanto lixo um celular gera?”, mas sim:"
+      ],
+      [
+        "quote",
+        "“Quanto desse lixo precisa realmente virar lixo?”"
+      ],
+      [
+        "p",
+        "Um celular pode ser reutilizado, recondicionado ou ter seus materiais recuperados quando recebe a destinação adequada. No Brasil, a logística reversa existe justamente para organizar esse caminho depois do uso."
+      ],
+      [
+        "p",
+        "E não precisa fazer uma operação secreta na gaveta para descobrir o que fazer com seu aparelho antigo. Existem pontos de recebimento onde produtos eletroeletrônicos podem ser entregues para a destinação correta. A ABREE, por exemplo, disponibiliza uma ferramenta para encontrar pontos de recebimento de acordo com o produto e o CEP."
+      ],
+      [
+        "p",
+        "Então, da próxima vez que olhar para aquele celular velho, lembre:"
+      ],
+      [
+        "quote",
+        "Ele pode até estar fora de uso, mas isso não significa que tudo nele perdeu o valor."
+      ]
+    ],
+    "refs": [
+      {
+        "t": "Organização Mundial da Saúde (WHO). Electronic waste (e-waste).",
+        "url": "https://www.who.int/vietnam/news/fact-sheets/detail/electronic-waste-%28e-waste%29"
+      },
+      {
+        "t": "Organização Mundial da Saúde (WHO). Electronic waste: Digital dumpsites and children’s health.",
+        "url": "https://www.who.int/news-room/questions-and-answers/item/children-and-digital-dumpsites-e-waste-and-health"
+      },
+      {
+        "t": "SINIR – Sistema Nacional de Informações sobre a Gestão de Resíduos Sólidos. Logística Reversa – Eletroeletrônicos.",
+        "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/eletroeletronicos"
+      },
+      {
+        "t": "Ministério das Comunicações. Logística reversa: entenda como funciona o reaproveitamento de equipamentos eletrônicos.",
+        "url": "https://www.gov.br/mcom/pt-br/noticias/noticias_alt/2026/julho/logistica-reversa-entenda-como-funciona-o-reaproveitamento-de-equipamentos-eletronicos"
+      },
+      {
+        "t": "ABREE – Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos.",
+        "url": "https://www.abree.org.br/"
+      }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "baterias",
+    "type": "ARTICLE",
+    "category": "Baterias",
+    "title": "O que as baterias têm a ver com a poluição?",
+    "description": "Pequenas, mas com grande responsabilidade: o que fazer quando uma bateria chega ao fim da vida útil.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjI2MyIgY3k9IjMyMyIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIyIi8+PGNpcmNsZSBjeD0iMzk4IiBjeT0iMzI5IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzgiLz48Y2lyY2xlIGN4PSI2MTQiIGN5PSI1MyIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjE4Ii8+PGNpcmNsZSBjeD0iNTAwIiBjeT0iMTUyIiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjUiLz48Y2lyY2xlIGN4PSIyMTYiIGN5PSIzODciIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNSIvPjxjaXJjbGUgY3g9IjU4MiIgY3k9IjI2MyIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM4Ii8+PGNpcmNsZSBjeD0iMTc0IiBjeT0iMTM4IiByPSI4IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjIiLz48Y2lyY2xlIGN4PSI1NTUiIGN5PSIyMTkiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4xOCIvPjxjaXJjbGUgY3g9IjcwNyIgY3k9IjQxNyIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIzIi8+PGNpcmNsZSBjeD0iNjI1IiBjeT0iNDEiIHI9IjUiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4xOCIvPjxjaXJjbGUgY3g9IjI5NSIgY3k9IjI2MiIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMwIi8+PGNpcmNsZSBjeD0iNzUxIiBjeT0iNDIzIiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzAiLz48Y2lyY2xlIGN4PSI3NjUiIGN5PSI0MzAiIHI9IjciIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zMiIvPjxjaXJjbGUgY3g9IjE1NyIgY3k9IjQ2OSIgcj0iNSIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIxIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwIDI3MCkgcm90YXRlKC0xMCkiPjxyZWN0IHg9Ii00MCIgeT0iLTg1IiB3aWR0aD0iODAiIGhlaWdodD0iMTcwIiByeD0iMTcuNiIgZmlsbD0iIzRhODQ3NiIvPjxyZWN0IHg9Ii0xNy42IiB5PSItOTYuOSIgd2lkdGg9IjM1LjIiIGhlaWdodD0iMTUuMyIgcng9IjQuOCIgZmlsbD0iIzFkMmU0YiIvPjxyZWN0IHg9Ii0yOC44IiB5PSItNjQuNiIgd2lkdGg9IjEyLjgiIGhlaWdodD0iMTI5LjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4yOCIvPjxwYXRoIGQ9Ik00LjggLTQ0LjJMLTE2IDEwLjJMMCAxMC4yTC00LjggNTF6IiBmaWxsPSIjZmZmIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxMCAyNTApIHJvdGF0ZSgwKSI+PHJlY3QgeD0iLTQwIiB5PSItODUiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzAiIHJ4PSIxNy42IiBmaWxsPSIjNmRiYWE4Ii8+PHJlY3QgeD0iLTE3LjYiIHk9Ii05Ni45IiB3aWR0aD0iMzUuMiIgaGVpZ2h0PSIxNS4zIiByeD0iNC44IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTI4LjgiIHk9Ii02NC42IiB3aWR0aD0iMTIuOCIgaGVpZ2h0PSIxMjkuMiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI4Ii8+PHBhdGggZD0iTTQuOCAtNDQuMkwtMTYgMTAuMkwwIDEwLjJMLTQuOCA1MXoiIGZpbGw9IiNmZmYiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTIwIDI3MCkgcm90YXRlKDEwKSI+PHJlY3QgeD0iLTQwIiB5PSItODUiIHdpZHRoPSI4MCIgaGVpZ2h0PSIxNzAiIHJ4PSIxNy42IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTE3LjYiIHk9Ii05Ni45IiB3aWR0aD0iMzUuMiIgaGVpZ2h0PSIxNS4zIiByeD0iNC44IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTI4LjgiIHk9Ii02NC42IiB3aWR0aD0iMTIuOCIgaGVpZ2h0PSIxMjkuMiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI4Ii8+PHBhdGggZD0iTTQuOCAtNDQuMkwtMTYgMTAuMkwwIDEwLjJMLTQuOCA1MXoiIGZpbGw9IiNmZmYiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjIwIDE1MCkgcm90YXRlKDIwKSI+PHBhdGggZD0iTTAgMEM2IC01NCA2MCAtNTQgNzIgLTZDNTQgMjEgMTUgMTIgMCAweiIgZmlsbD0iIzRhODQ3NiIvPjxwYXRoIGQ9Ik0wIDBMNTQgLTE2LjgiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii41NSIgc3Ryb2tlLXdpZHRoPSIyLjEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDAgMTcwKSByb3RhdGUoLTQwKSI+PHBhdGggZD0iTTAgMEM1IC00NSA1MCAtNDUgNjAgLTVDNDUgMTcuNSAxMi41IDEwIDAgMHoiIGZpbGw9IiM4NWNmYjAiLz48cGF0aCBkPSJNMCAwTDQ1IC0xNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjU1IiBzdHJva2Utd2lkdGg9IjEuNzUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvZz48cmVjdCB4PSIyNTAiIHk9IjM2MCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSIyNiIgcng9IjEzIiBmaWxsPSIjMmY2YjVjIiBvcGFjaXR5PSIuMjUiLz48L3N2Zz4=",
+    "body": [
+      [
+        "p",
+        "Você já parou para pensar no que acontece com uma bateria quando ela deixa de funcionar? Será que ela simplesmente desaparece quando vai para o lixo? E o que um objeto tão pequeno pode ter a ver com a poluição do planeta? A resposta é mais importante do que parece!"
+      ],
+      [
+        "p",
+        "As baterias estão por toda parte: nos celulares, notebooks, brinquedos, controles remotos, relógios e até nos carros elétricos. Elas são essenciais para o funcionamento de muitos aparelhos, mas existe um detalhe que nem todo mundo lembra: quando uma bateria chega ao fim da vida útil, ela precisa receber o destino correto."
+      ],
+      [
+        "p",
+        "O problema começa quando pilhas e baterias são jogadas no lixo comum ou descartadas em locais inadequados. Dependendo do tipo, elas podem conter substâncias perigosas, como chumbo, que representam riscos para o meio ambiente e para a saúde humana. Quando esses resíduos não são tratados corretamente, seus componentes podem contaminar o solo e a água, prejudicando os ecossistemas e os seres vivos que dependem deles."
+      ],
+      [
+        "p",
+        "E não pense que o perigo está apenas na contaminação! As baterias de íons de lítio, muito utilizadas em celulares, tablets e notebooks, também podem provocar incêndios quando são danificadas, esmagadas ou descartadas incorretamente. Imagine uma bateria descartada no lixo comum que acaba sendo comprimida durante o transporte ou o processamento dos resíduos. Dependendo das condições, isso pode provocar um acidente e colocar trabalhadores em risco."
+      ],
+      [
+        "p",
+        "Mas será que uma bateria usada não serve mais para nada?"
+      ],
+      [
+        "p",
+        "Calma! Ela não precisa terminar sua história no lixo. Muitas baterias podem passar por processos de reciclagem que recuperam materiais úteis, permitindo que eles sejam reaproveitados na fabricação de novos produtos. Isso ajuda a diminuir o desperdício e pode reduzir a necessidade de extrair novas matérias-primas da natureza."
+      ],
+      [
+        "p",
+        "É aí que entra a chamada logística reversa. Esse sistema permite que produtos usados, como pilhas e baterias, retornem aos responsáveis por sua destinação adequada, em vez de seguirem para o lixo comum. Por meio de pontos de coleta e sistemas específicos, esses resíduos podem ser encaminhados para tratamento, reciclagem ou outras formas de destinação ambientalmente apropriadas."
+      ],
+      [
+        "p",
+        "No Brasil, existem sistemas de logística reversa voltados para pilhas, baterias e baterias de chumbo-ácido. Cada tipo exige cuidados específicos, por isso é importante não tratar todas as baterias como se fossem iguais. As orientações de descarte podem variar conforme o produto e o sistema de coleta disponível."
+      ],
+      [
+        "p",
+        "E o que você pode fazer para ajudar? Primeiro, evite jogar pilhas e baterias usadas no lixo doméstico ou misturá-las aos materiais recicláveis comuns sem verificar as orientações locais. Procure pontos de coleta apropriados, como os disponibilizados por estabelecimentos participantes dos sistemas de logística reversa. Se uma bateria estiver estufada, danificada ou aquecendo, não tente abri-la, perfurá-la ou consertá-la: evite manuseá-la e procure orientação especializada para o descarte seguro."
+      ],
+      [
+        "p",
+        "Outra atitude importante é cuidar melhor dos eletrônicos que você já tem. Conservar os aparelhos, evitar trocas desnecessárias e encaminhar as baterias usadas para a destinação correta são formas de reduzir os impactos associados ao consumo de recursos naturais e à geração de resíduos."
+      ],
+      [
+        "p",
+        "No fim das contas, a poluição causada pelas baterias não depende apenas do que existe dentro delas, mas também do que fazemos quando deixam de funcionar. Um descarte irresponsável pode gerar problemas; uma destinação adequada, por outro lado, ajuda a prevenir riscos e possibilita o reaproveitamento de materiais."
+      ],
+      [
+        "p",
+        "Agora você já sabe: uma bateria pode ser pequena, mas a responsabilidade por seu descarte é enorme! Da próxima vez que seu celular ou outro eletrônico ficar sem bateria definitivamente, lembre-se de que a atitude correta não termina quando o aparelho para de funcionar."
+      ]
+    ],
+    "refs": [
+      {
+        "t": "Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos (SINIR) — Pilhas e baterias",
+        "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/pilhas-e-baterias/"
+      },
+      {
+        "t": "Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (Ibama) — Pilhas e baterias",
+        "url": "https://www.gov.br/ibama/pt-br/assuntos/emissoes-e-residuos/residuos/pilhas-e-baterias"
+      },
+      {
+        "t": "Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos (SINIR) — Baterias de chumbo-ácido",
+        "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/baterias-de-chumbo-acido/"
+      },
+      {
+        "t": "Agência de Proteção Ambiental dos Estados Unidos (EPA) — Perguntas frequentes sobre baterias de íons de lítio",
+        "url": "https://www.epa.gov/recycle/frequent-questions-lithium-ion-batteries"
+      },
+      {
+        "t": "Agência de Proteção Ambiental dos Estados Unidos (EPA) — Reciclagem de baterias de íons de lítio",
+        "url": "https://www.epa.gov/hw/lithium-ion-battery-recycling"
+      }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "biodiversidade",
+    "type": "ARTICLE",
+    "category": "Biodiversidade",
+    "title": "O efeito dominó do lixo eletrônico: como nossos aparelhos afetam a biodiversidade",
+    "description": "Como um celular descartado incorretamente pode afetar rios, florestas e a vida que depende deles.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjI2MSIgY3k9IjE3NSIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMwIi8+PGNpcmNsZSBjeD0iNTEwIiBjeT0iOTkiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMCIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iMjI1IiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjciLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjEzMyIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iMzg4IiBjeT0iMTYxIiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjEiLz48Y2lyY2xlIGN4PSIyODgiIGN5PSIxMjkiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zOCIvPjxjaXJjbGUgY3g9IjI4NiIgY3k9IjQyOSIgcj0iNSIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI0Ii8+PGNpcmNsZSBjeD0iMTg4IiBjeT0iMTc4IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzgiLz48Y2lyY2xlIGN4PSI3NjkiIGN5PSI0NTciIHI9IjUiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMCIvPjxjaXJjbGUgY3g9IjY0MCIgY3k9IjE5MiIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMwIi8+PGNpcmNsZSBjeD0iNTM4IiBjeT0iMTQ3IiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjUiLz48Y2lyY2xlIGN4PSI1MDQiIGN5PSIxNjMiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNSIvPjxjaXJjbGUgY3g9IjMyNyIgY3k9IjIzIiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzYiLz48Y2lyY2xlIGN4PSI3NDEiIGN5PSI0NzEiIHI9IjUiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNCIvPjxwYXRoIGQ9Ik0wIDM4MFE1MCAzOTYgMTAwIDM4MFExNTAgMzY0IDIwMCAzODBRMjUwIDM5NiAzMDAgMzgwUTM1MCAzNjQgNDAwIDM4MFE0NTAgMzk2IDUwMCAzODBRNTUwIDM2NCA2MDAgMzgwUTY1MCAzOTYgNzAwIDM4MFE3NTAgMzY0IDgwMCAzODBMODAwIDUwMEwwIDUwMHoiIGZpbGw9IiM2ZGJhYTgiIG9wYWNpdHk9IjAuNyIvPjxwYXRoIGQ9Ik0wIDQxMFE1MCAzOTYgMTAwIDQxMFExNTAgNDI0IDIwMCA0MTBRMjUwIDM5NiAzMDAgNDEwUTM1MCA0MjQgNDAwIDQxMFE0NTAgMzk2IDUwMCA0MTBRNTUwIDQyNCA2MDAgNDEwUTY1MCAzOTYgNzAwIDQxMFE3NTAgNDI0IDgwMCA0MTBMODAwIDUwMEwwIDUwMHoiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9IjAuOSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2MCAzODApIj48cmVjdCB4PSItMTAuNSIgeT0iLTc1IiB3aWR0aD0iMjEiIGhlaWdodD0iODIuNSIgcng9IjcuNSIgZmlsbD0iIzFkMmU0YiIvPjxjaXJjbGUgY3g9IjAiIGN5PSItOTMiIHI9IjU3IiBmaWxsPSIjNGE4NDc2Ii8+PGNpcmNsZSBjeD0iLTM5IiBjeT0iLTYwIiByPSIzOSIgZmlsbD0iIzZkYmFhOCIvPjxjaXJjbGUgY3g9IjQyIiBjeT0iLTYzIiByPSIzNy41IiBmaWxsPSIjODVjZmIwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4MCAzOTApIj48cmVjdCB4PSItNy43IiB5PSItNTUiIHdpZHRoPSIxNS40IiBoZWlnaHQ9IjYwLjUiIHJ4PSI1LjUiIGZpbGw9IiMxZDJlNGIiLz48Y2lyY2xlIGN4PSIwIiBjeT0iLTY4LjIiIHI9IjQxLjgiIGZpbGw9IiMyZjZiNWMiLz48Y2lyY2xlIGN4PSItMjguNiIgY3k9Ii00NCIgcj0iMjguNiIgZmlsbD0iIzZkYmFhOCIvPjxjaXJjbGUgY3g9IjMwLjgiIGN5PSItNDYuMiIgcj0iMjcuNSIgZmlsbD0iIzg1Y2ZiMCIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MjAgMzg1KSI+PHJlY3QgeD0iLTkuMSIgeT0iLTY1IiB3aWR0aD0iMTguMiIgaGVpZ2h0PSI3MS41IiByeD0iNi41IiBmaWxsPSIjMWQyZTRiIi8+PGNpcmNsZSBjeD0iMCIgY3k9Ii04MC42IiByPSI0OS40IiBmaWxsPSIjNGE4NDc2Ii8+PGNpcmNsZSBjeD0iLTMzLjgiIGN5PSItNTIiIHI9IjMzLjgiIGZpbGw9IiM2ZGJhYTgiLz48Y2lyY2xlIGN4PSIzNi40IiBjeT0iLTU0LjYiIHI9IjMyLjUiIGZpbGw9IiM4NWNmYjAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTYwIDE0MCkiPjxwYXRoIGQ9Ik0wIDBRMjAgLTI2IDQ0IC02UTI2IC00IDE4IDEyUTEwIC0yIDAgMHoiIGZpbGw9IiMxZDJlNGIiLz48Y2lyY2xlIGN4PSI0MCIgY3k9Ii04IiByPSIzIiBmaWxsPSIjZmZmIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2MCAxODApIHJvdGF0ZSgtMjApIj48cGF0aCBkPSJNMCAwQzUuNiAtNTAuNCA1NiAtNTAuNCA2Ny4yIC01LjZDNTAuNCAxOS42IDE0IDExLjIgMCAweiIgZmlsbD0iIzg1Y2ZiMCIvPjxwYXRoIGQ9Ik0wIDBMNTAuNCAtMTUuNjgiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii41NSIgc3Ryb2tlLXdpZHRoPSIxLjk2IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjUwIDMzNSkgcm90YXRlKDI0KSI+PHJlY3QgeD0iLTIwIiB5PSItMzUiIHdpZHRoPSI0MCIgaGVpZ2h0PSI3MCIgcng9IjUuNiIgZmlsbD0iIzFkMmU0YiIvPjxyZWN0IHg9Ii0xNy4yIiB5PSItMzAuOCIgd2lkdGg9IjM0LjQiIGhlaWdodD0iNjEuNiIgcng9IjMuNjQiIGZpbGw9IiM4NWNmYjAiLz48cmVjdCB4PSItNS42IiB5PSItMjkuNzUiIHdpZHRoPSIxMS4yIiBoZWlnaHQ9IjEuNCIgcng9IjAuNyIgZmlsbD0iIzFkMmU0YiIvPjwvZz48L3N2Zz4=",
+    "body": [
+      [
+        "p",
+        "Imagine uma floresta cheia de vida, com pássaros cantando, insetos polinizando flores e pequenos animais procurando alimento. Agora, imagine que um celular descartado incorretamente contribua para contaminar um rio próximo a esse ambiente. Parece que uma coisa não tem nada a ver com a outra, né? Mas é justamente aí que começa o problema!"
+      ],
+      [
+        "h",
+        "Tudo na natureza está conectado"
+      ],
+      [
+        "p",
+        "A biodiversidade é a variedade de seres vivos do planeta, incluindo animais, plantas, fungos e os ecossistemas onde vivem. No Brasil, essa riqueza é enorme, mas muitas espécies enfrentam ameaças que colocam sua sobrevivência em risco."
+      ],
+      [
+        "p",
+        "E sabe o que torna essa situação ainda mais preocupante? Na natureza, nenhum ser vivo está completamente isolado. Os animais dependem de ambientes saudáveis para encontrar alimento, água e abrigo. As plantas precisam de solo e água em boas condições para crescer. Quando um desses elementos é prejudicado, outros também podem sentir os efeitos."
+      ],
+      [
+        "p",
+        "É como um efeito dominó: uma mudança no ambiente pode afetar várias espécies ao mesmo tempo. E o descarte inadequado de lixo eletrônico pode contribuir para esse desequilíbrio."
+      ],
+      [
+        "h",
+        "Como um celular pode afetar uma floresta ou um oceano?"
+      ],
+      [
+        "p",
+        "Celulares, computadores, carregadores e baterias contêm diferentes materiais, alguns dos quais podem ser perigosos quando liberados no ambiente sem controle."
+      ],
+      [
+        "p",
+        "Quando o lixo eletrônico é abandonado em terrenos, descartado em locais inadequados ou tratado de maneira incorreta, determinadas substâncias podem contaminar o solo e a água. A partir daí, o problema deixa de ser apenas um aparelho velho: passa a ser uma ameaça potencial aos organismos que dependem desses recursos naturais."
+      ],
+      [
+        "p",
+        "Veja como essa conexão acontece:"
+      ],
+      [
+        "ul",
+        [
+          "**No solo:** a contaminação pode prejudicar organismos que vivem nele e afetar a qualidade do ambiente onde as plantas crescem.",
+          "**Nos rios e oceanos:** contaminantes que chegam à água podem afetar organismos aquáticos, incluindo espécies que servem de alimento para outros animais.",
+          "**Nas cadeias alimentares:** quando organismos são prejudicados, os efeitos podem alcançar outras espécies que dependem deles para sobreviver.",
+          "**Nos ecossistemas:** a soma desses impactos pode comprometer o equilíbrio ambiental e dificultar a sobrevivência de diferentes formas de vida."
+        ]
+      ],
+      [
+        "p",
+        "Isso não significa que todo eletrônico descartado incorretamente vá contaminar um rio ou provocar a extinção de uma espécie. O impacto depende dos materiais envolvidos, das condições de descarte e da exposição dos organismos. Porém, quando o descarte inadequado se acumula, os riscos ambientais também aumentam."
+      ],
+      [
+        "p",
+        "E existe outro detalhe importante: a fabricação de eletrônicos exige a extração de recursos naturais. Quanto mais aparelhos substituímos sem necessidade, maior pode ser a demanda por novas matérias-primas, cuja extração pode causar alterações nos habitats e pressionar a biodiversidade."
+      ],
+      [
+        "p",
+        "Ou seja, o impacto não começa necessariamente quando jogamos um celular fora. Ele pode estar presente desde a retirada dos recursos usados para fabricá-lo até o destino que damos ao aparelho no fim de sua vida útil."
+      ],
+      [
+        "h",
+        "Reciclar eletrônicos também é cuidar dos animais"
+      ],
+      [
+        "p",
+        "Agora vem a parte boa: podemos ajudar a interromper esse efeito dominó!"
+      ],
+      [
+        "p",
+        "Quando um eletrônico é encaminhado para a destinação correta, seus materiais podem ser recuperados e reaproveitados, conforme as possibilidades de cada componente. Isso ajuda a reduzir o desperdício, diminui a necessidade de extrair novos recursos e evita que resíduos sejam abandonados em ambientes naturais."
+      ],
+      [
+        "p",
+        "A reciclagem, sozinha, não resolve todas as ameaças à biodiversidade, mas faz parte de um conjunto de atitudes que contribuem para proteger os ecossistemas. É uma maneira de reduzir os impactos do nosso consumo e cuidar dos ambientes dos quais tantas espécies dependem."
+      ],
+      [
+        "p",
+        "Você pode fazer sua parte com atitudes simples:"
+      ],
+      [
+        "ul",
+        [
+          "**Procure pontos de coleta:** não descarte celulares, baterias e outros eletrônicos no lixo comum.",
+          "**Use seus aparelhos por mais tempo:** consertar um eletrônico pode evitar uma substituição desnecessária.",
+          "**Reutilize quando possível:** um aparelho antigo ainda pode ser útil para outra pessoa.",
+          "**Descarte com responsabilidade:** procure locais que recebam cada tipo de resíduo eletrônico adequadamente."
+        ]
+      ],
+      [
+        "h",
+        "Salvar a biodiversidade também começa na sua gaveta"
+      ],
+      [
+        "p",
+        "A proteção dos animais ameaçados e dos ambientes naturais depende de muitas ações, desde políticas de conservação até mudanças na forma como produzimos e consumimos."
+      ],
+      [
+        "p",
+        "Pode parecer pouco levar um celular antigo a um ponto de coleta, mas essa atitude ajuda a dar um destino adequado aos materiais e reduz o risco de que eles acabem poluindo o ambiente. Quando milhões de pessoas fazem escolhas mais responsáveis, o impacto coletivo pode ser significativo."
+      ],
+      [
+        "p",
+        "Cuidar do lixo eletrônico é também pensar na floresta, no rio, no oceano e em cada ser vivo que depende deles. Afinal, proteger a biodiversidade não significa apenas salvar animais: significa preservar as conexões que tornam a vida no planeta possível!"
+      ]
+    ],
+    "refs": [
+      {
+        "t": "ICMBio — Fauna Brasileira",
+        "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/fauna-brasileira"
+      },
+      {
+        "t": "IBGE — Espécies ameaçadas de extinção",
+        "url": "https://educa.ibge.gov.br/jovens/materias-especiais/22384-especies-ameacadas-de-extincao.html"
+      },
+      {
+        "t": "IUCN — Natureza, oceanos e clima",
+        "url": "https://iucn.org/news/202609/iucn-advances-nature-ocean-and-climate-agenda-unga-and-nyc-climate-week"
+      },
+      {
+        "t": "Nações Unidas no Brasil — Objetivos de Desenvolvimento Sustentável",
+        "url": "https://brasil.un.org/pt-br/sdgs"
+      }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "marinha",
+    "type": "ARTICLE",
+    "category": "Oceanos",
+    "title": "Poluição marinha: o problema que vai muito além da praia",
+    "description": "O lixo pode chegar ao oceano sem ser jogado no mar — e já foi encontrado até no mar profundo.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjY1NyIgY3k9IjE1MCIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI5Ii8+PGNpcmNsZSBjeD0iNzI3IiBjeT0iNDUwIiByPSI4IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzgiLz48Y2lyY2xlIGN4PSI1NjIiIGN5PSIzNCIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI1Ii8+PGNpcmNsZSBjeD0iNjg0IiBjeT0iNDYiIHI9IjQiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMSIvPjxjaXJjbGUgY3g9IjQwMCIgY3k9IjI2MCIgcj0iNCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMwIi8+PGNpcmNsZSBjeD0iNTc2IiBjeT0iNzIiIHI9IjciIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjMzIiBjeT0iMzk0IiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzEiLz48Y2lyY2xlIGN4PSIzMDYiIGN5PSIxMTMiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMyIvPjxjaXJjbGUgY3g9IjkzIiBjeT0iOTEiIHI9IjciIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNyIvPjxjaXJjbGUgY3g9IjQ3NSIgY3k9Ijg0IiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMTgiLz48Y2lyY2xlIGN4PSIyNSIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIzIi8+PGNpcmNsZSBjeD0iMTkwIiBjeT0iMTY4IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjQiLz48Y2lyY2xlIGN4PSI1NzIiIGN5PSI0NjgiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zOCIvPjxjaXJjbGUgY3g9IjIyOSIgY3k9IjExMyIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI0Ii8+PGNpcmNsZSBjeD0iNjQwIiBjeT0iMTMwIiByPSI0MiIgZmlsbD0iI2YzZGZiNCIvPjxwYXRoIGQ9Ik0wIDMwMFE1MCAzMTggMTAwIDMwMFExNTAgMjgyIDIwMCAzMDBRMjUwIDMxOCAzMDAgMzAwUTM1MCAyODIgNDAwIDMwMFE0NTAgMzE4IDUwMCAzMDBRNTUwIDI4MiA2MDAgMzAwUTY1MCAzMTggNzAwIDMwMFE3NTAgMjgyIDgwMCAzMDBMODAwIDUwMEwwIDUwMHoiIGZpbGw9IiM2ZGJhYTgiIG9wYWNpdHk9IjAuNTUiLz48cGF0aCBkPSJNMCAzNDBRNTAgMzI0IDEwMCAzNDBRMTUwIDM1NiAyMDAgMzQwUTI1MCAzMjQgMzAwIDM0MFEzNTAgMzU2IDQwMCAzNDBRNDUwIDMyNCA1MDAgMzQwUTU1MCAzNTYgNjAwIDM0MFE2NTAgMzI0IDcwMCAzNDBRNzUwIDM1NiA4MDAgMzQwTDgwMCA1MDBMMCA1MDB6IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIwLjc1Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAwIDQwMCkgcm90YXRlKDApIj48ZWxsaXBzZSBjeD0iMCIgY3k9IjAiIHJ4PSI0NiIgcnk9IjI1LjMiIGZpbGw9IiMxZDJlNGIiLz48cGF0aCBkPSJNLTM2LjggMEwtNjkgLTM0LjVMLTY5IDM0LjV6IiBmaWxsPSIjMWQyZTRiIi8+PGNpcmNsZSBjeD0iMjAuNyIgY3k9Ii01LjUyIiByPSI1Ljk4IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMjIuMDgiIGN5PSItNS41MiIgcj0iMi43NiIgZmlsbD0iIzFkMmU0YiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MzAgNDMwKSByb3RhdGUoMTgwKSI+PGVsbGlwc2UgY3g9IjAiIGN5PSIwIiByeD0iMzAiIHJ5PSIxNi41IiBmaWxsPSIjODVjZmIwIi8+PHBhdGggZD0iTS0yNCAwTC00NSAtMjIuNUwtNDUgMjIuNXoiIGZpbGw9IiM4NWNmYjAiLz48Y2lyY2xlIGN4PSIxMy41IiBjeT0iLTMuNiIgcj0iMy45IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMTQuNCIgY3k9Ii0zLjYiIHI9IjEuOCIgZmlsbD0iIzFkMmU0YiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjAgMjcwKSByb3RhdGUoLTI0KSI+PHJlY3QgeD0iLTE4IiB5PSItNjAiIHdpZHRoPSIzNiIgaGVpZ2h0PSIxMTAiIHJ4PSIxNCIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIuOCIgc3Ryb2tlPSIjMmY2YjVjIiBzdHJva2Utd2lkdGg9IjUiLz48cmVjdCB4PSItOSIgeT0iLTc2IiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHJ4PSI1IiBmaWxsPSIjMmY2YjVjIi8+PC9nPjxwYXRoIGQ9Ik0wIDQyMFE1MCA0MzQgMTAwIDQyMFExNTAgNDA2IDIwMCA0MjBRMjUwIDQzNCAzMDAgNDIwUTM1MCA0MDYgNDAwIDQyMFE0NTAgNDM0IDUwMCA0MjBRNTUwIDQwNiA2MDAgNDIwUTY1MCA0MzQgNzAwIDQyMFE3NTAgNDA2IDgwMCA0MjBMODAwIDUwMEwwIDUwMHoiIGZpbGw9IiMyZjZiNWMiIG9wYWNpdHk9IjAuOTUiLz48L3N2Zz4=",
+    "body": [
+      [
+        "p",
+        "Quando pensamos em poluição no oceano, é comum imaginar uma praia cheia de garrafas, sacolas e outros resíduos. Mas o problema é bem maior — e pode chegar a lugares que a gente nem consegue enxergar."
+      ],
+      [
+        "p",
+        "A poluição marinha acontece quando resíduos e diferentes tipos de substâncias chegam aos oceanos e alteram a qualidade da água, afetando animais, plantas e os próprios ecossistemas. Por isso, proteger os mares é uma das metas do ODS 14 da ONU, que busca conservar os oceanos e promover o uso sustentável dos recursos marinhos. {{ODS 14 – Vida na Água | ONU}}"
+      ],
+      [
+        "h",
+        "O lixo consegue chegar tão longe assim?"
+      ],
+      [
+        "p",
+        "Sim — e ele nem precisa ser jogado diretamente no mar."
+      ],
+      [
+        "p",
+        "Um plástico deixado na rua, por exemplo, pode ser carregado pela chuva até bueiros, córregos e rios. Esses resíduos podem percorrer grandes distâncias antes de chegar ao oceano. Por isso, o que acontece em terra firme também pode ter consequências para o ambiente marinho."
+      ],
+      [
+        "p",
+        "E existe um problema ainda mais difícil de perceber: os microplásticos. São partículas muito pequenas de plástico que podem se espalhar pelo ambiente e chegar a diferentes partes do oceano."
+      ],
+      [
+        "p",
+        "Uma pesquisa realizada na Bacia de Santos encontrou fibras de plástico e outros poluentes em sedimentos, peixes e invertebrados entre 400 e 1.500 metros de profundidade. Isso mostra que a poluição não está apenas na superfície: ela também pode chegar ao mar profundo. {{Jornal da USP – Poluição nos oceanos já atinge até mar profundo}}"
+      ],
+      [
+        "h",
+        "E os animais marinhos?"
+      ],
+      [
+        "p",
+        "Os animais podem entrar em contato com resíduos e substâncias poluentes de várias maneiras. Alguns podem ingerir partículas presentes na água ou misturadas ao alimento e ao sedimento. Outros podem ficar expostos a resíduos que permanecem no ambiente."
+      ],
+      [
+        "p",
+        "Na pesquisa realizada na Bacia de Santos, por exemplo, pesquisadores encontraram microplásticos em pepinos-do-mar, animais que vivem próximos ao fundo e se alimentam de partículas presentes no sedimento. Também foram encontrados poluentes persistentes em peixes e no próprio sedimento marinho. {{Jornal da USP – Poluição nos oceanos já atinge até mar profundo}}"
+      ],
+      [
+        "p",
+        "Isso ajuda a entender uma coisa importante: o oceano é um sistema conectado. Um resíduo que parece pequeno e sem importância pode fazer parte de um problema muito maior quando se acumula no ambiente."
+      ],
+      [
+        "p",
+        "A conservação desses ecossistemas é importante não apenas para os animais que vivem neles, mas também para as pessoas. A IUCN trabalha justamente com a conservação da natureza e destaca a importância da proteção dos ecossistemas marinhos e costeiros. {{IUCN – International Union for Conservation of Nature}}"
+      ],
+      [
+        "h",
+        "E de onde vem tanta poluição?"
+      ],
+      [
+        "p",
+        "A poluição marinha pode ter diferentes origens. Parte dela está relacionada ao descarte inadequado de resíduos e à forma como produzimos, usamos e descartamos produtos."
+      ],
+      [
+        "p",
+        "O problema também não se resume ao plástico. Diferentes tipos de poluentes podem chegar aos ambientes aquáticos e permanecer neles, afetando a qualidade dos ecossistemas. O Programa das Nações Unidas para o Meio Ambiente (PNUMA/UNEP) trata a poluição como um problema que exige mudanças na forma como produzimos, consumimos e lidamos com nossos resíduos. {{UNEP – Da Poluição à Solução}}"
+      ],
+      [
+        "p",
+        "Por isso, combater a poluição marinha não significa apenas recolher lixo das praias. É preciso pensar antes que esse lixo chegue ao oceano."
+      ],
+      [
+        "h",
+        "O que podemos fazer?"
+      ],
+      [
+        "p",
+        "Pode parecer que uma pessoa sozinha não consegue fazer muita diferença, mas nossas escolhas fazem parte de um problema coletivo."
+      ],
+      [
+        "p",
+        "Descartar resíduos corretamente, evitar desperdícios, reduzir o uso desnecessário de produtos descartáveis e dar a cada tipo de resíduo o destino adequado são algumas atitudes que ajudam a diminuir a quantidade de lixo que pode chegar aos ambientes aquáticos."
+      ],
+      [
+        "p",
+        "E existe uma ideia simples para lembrar disso:"
+      ],
+      [
+        "quote",
+        "O oceano não começa na praia."
+      ],
+      [
+        "p",
+        "O que fazemos em nossas casas, ruas e cidades pode, de alguma forma, chegar aos rios e ao mar. Cuidar do oceano, então, também começa bem longe da água — começa no jeito como cuidamos do que descartamos todos os dias."
+      ]
+    ],
+    "refs": [
+      {
+        "t": "United Nations – Sustainable Development Goals. Goal 14: Life Below Water.",
+        "url": ""
+      },
+      {
+        "t": "NOAA – National Ocean Service.",
+        "url": ""
+      },
+      {
+        "t": "IUCN – International Union for Conservation of Nature.",
+        "url": ""
+      },
+      {
+        "t": "UNEP – United Nations Environment Programme. Pollution to Solution.",
+        "url": ""
+      },
+      {
+        "t": "Jornal da USP. Poluição nos oceanos já atinge até mar profundo.",
+        "url": ""
+      }
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "infancia",
+    "type": "ARTICLE",
+    "category": "Saúde",
+    "title": "Lixo eletrônico: uma ameaça à infância que vai muito além das telas!",
+    "description": "O descarte inadequado de lixo eletrônico pode liberar substâncias tóxicas, e as crianças estão entre as mais vulneráveis.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjYwNyIgY3k9IjQ0MCIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMzIi8+PGNpcmNsZSBjeD0iMjg3IiBjeT0iMzgiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMiIvPjxjaXJjbGUgY3g9IjY5OCIgY3k9IjMyMCIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI5Ii8+PGNpcmNsZSBjeD0iMzQ3IiBjeT0iNDE0IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjYiLz48Y2lyY2xlIGN4PSI1MjAiIGN5PSI0MzAiIHI9IjQiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zMSIvPjxjaXJjbGUgY3g9IjU3MSIgY3k9IjI5NiIgcj0iOCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIxIi8+PGNpcmNsZSBjeD0iMjE3IiBjeT0iMzA4IiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuNDAiLz48Y2lyY2xlIGN4PSI3NjYiIGN5PSIxNTUiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNyIvPjxjaXJjbGUgY3g9IjcyMiIgY3k9IjY1IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjgiLz48Y2lyY2xlIGN4PSIxMTUiIGN5PSIyMDUiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNiIvPjxjaXJjbGUgY3g9IjQ3NSIgY3k9IjM3OCIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjI0Ii8+PGNpcmNsZSBjeD0iNzM3IiBjeT0iMzQ1IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjEiLz48Y2lyY2xlIGN4PSI2NiIgY3k9IjMyMSIgcj0iNCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM4Ii8+PGNpcmNsZSBjeD0iMzg5IiBjeT0iMjY5IiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzQiLz48cGF0aCBkPSJNNDAwIDEyMEw1MjAgMTYwVjI2MEM1MjAgMzMwIDQ3MCAzNzUgNDAwIDQwMEMzMzAgMzc1IDI4MCAzMzAgMjgwIDI2MFYxNjB6IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii44IiBzdHJva2U9IiMyZjZiNWMiIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik00MDAgMzMwQzM2MCAzMDAgMzQwIDI3NSAzNDAgMjUwQzM0MCAyMjggMzU2IDIxNiAzNzIgMjE2QzM4NiAyMTYgMzk2IDIyNCA0MDAgMjM0QzQwNCAyMjQgNDE0IDIxNiA0MjggMjE2QzQ0NCAyMTYgNDYwIDIyOCA0NjAgMjUwQzQ2MCAyNzUgNDQwIDMwMCA0MDAgMzMweiIgZmlsbD0iI2U4YTU4YSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNSAzMTApIj48cmVjdCB4PSItMzkuNiIgeT0iLTEuNzYiIHdpZHRoPSI3OS4yIiBoZWlnaHQ9IjcwLjQiIHJ4PSIzNS4yIiBmaWxsPSIjODVjZmIwIi8+PGNpcmNsZSBjeD0iMCIgY3k9Ii0zMy40NCIgcj0iMjYuNCIgZmlsbD0iI2YwYzlhNCIvPjxwYXRoIGQ9Ik0tMjYuNCAtMzYuOTZBMjYuNCAyNi40IDAgMCAxIDI2LjQgLTM2Ljk2eiIgZmlsbD0iIzFkMmU0YiIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1OTAgMzIwKSI+PHJlY3QgeD0iLTM2LjkiIHk9Ii0xLjY0IiB3aWR0aD0iNzMuOCIgaGVpZ2h0PSI2NS42IiByeD0iMzIuOCIgZmlsbD0iIzZkYmFhOCIvPjxjaXJjbGUgY3g9IjAiIGN5PSItMzEuMTYiIHI9IjI0LjYiIGZpbGw9IiNkOWE2N2UiLz48cGF0aCBkPSJNLTI0LjYgLTM0LjQ0QTI0LjYgMjQuNiAwIDAgMSAyNC42IC0zNC40NHoiIGZpbGw9IiMxZDJlNGIiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjUyIDMzMCkgcm90YXRlKDEyKSI+PHJlY3QgeD0iLTE1IiB5PSItMjYiIHdpZHRoPSIzMCIgaGVpZ2h0PSI1MiIgcng9IjQuMiIgZmlsbD0iIzFkMmU0YiIvPjxyZWN0IHg9Ii0xMi45IiB5PSItMjIuODgiIHdpZHRoPSIyNS44IiBoZWlnaHQ9IjQ1Ljc2IiByeD0iMi43MyIgZmlsbD0iIzg1Y2ZiMCIvPjxyZWN0IHg9Ii00LjIiIHk9Ii0yMi4xIiB3aWR0aD0iOC40IiBoZWlnaHQ9IjEuMDQiIHJ4PSIwLjUyIiBmaWxsPSIjMWQyZTRiIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY2MCAxNjApIHJvdGF0ZSgzMCkiPjxwYXRoIGQ9Ik0wIDBDNC44IC00My4yIDQ4IC00My4yIDU3LjYgLTQuOEM0My4yIDE2LjggMTIgOS42IDAgMHoiIGZpbGw9IiM0YTg0NzYiLz48cGF0aCBkPSJNMCAwTDQzLjIgLTEzLjQ0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iMS42OCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==",
+    "body": [
+      [
+        "p",
+        "Celular que parou de funcionar, fone de ouvido quebrado, computador antigo encostado no quarto… Quem nunca teve um eletrônico sem utilidade ocupando espaço em casa? Parece inofensivo, mas o destino desses aparelhos pode ter consequências bem maiores do que imaginamos, principalmente para as crianças."
+      ],
+      [
+        "p",
+        "Quando o lixo eletrônico é descartado de qualquer jeito, ele pode liberar substâncias tóxicas que prejudicam o meio ambiente e a saúde humana. E tem um detalhe preocupante: as crianças estão entre as mais vulneráveis a esses perigos!"
+      ],
+      [
+        "h",
+        "O que tem de tão perigoso nesses aparelhos?"
+      ],
+      [
+        "p",
+        "Por fora, um celular velho pode parecer apenas um objeto quebrado. Por dentro, porém, ele contém diferentes materiais, incluindo substâncias perigosas, como chumbo e mercúrio."
+      ],
+      [
+        "p",
+        "Quando esses aparelhos são queimados, desmontados sem proteção ou reciclados de maneira inadequada, essas substâncias podem contaminar o ar, o solo e a água. Assim, o problema não fica restrito ao eletrônico: pode chegar às pessoas que vivem e circulam por perto."
+      ],
+      [
+        "p",
+        "E por que isso preocupa tanto quando falamos de crianças? Simples: elas ainda estão em fase de crescimento e desenvolvimento. A exposição a substâncias tóxicas pode prejudicar esse processo e provocar problemas de saúde, incluindo alterações no desenvolvimento do cérebro, dificuldades de aprendizagem e problemas respiratórios."
+      ],
+      [
+        "p",
+        "Ou seja, aquele eletrônico que parece não servir para mais nada pode se tornar um risco quando não recebe o destino adequado."
+      ],
+      [
+        "h",
+        "Quando o lixo eletrônico invade a infância"
+      ],
+      [
+        "p",
+        "Agora, imagine uma criança que mora perto de um local onde aparelhos são queimados para recuperar seus materiais. Enquanto ela brinca, estuda ou passa o dia com a família, pode acabar exposta à poluição produzida por essas atividades."
+      ],
+      [
+        "p",
+        "Essa não é apenas uma situação imaginária. Em diferentes lugares do mundo, crianças vivem ou trabalham perto de áreas de processamento informal de lixo eletrônico. Algumas chegam a participar da coleta e da desmontagem desses materiais, muitas vezes sem equipamentos de proteção."
+      ],
+      [
+        "p",
+        "Em 2021, a Organização Mundial da Saúde (OMS) alertou que milhões de crianças e adolescentes estavam em risco devido à exposição a resíduos eletrônicos. A preocupação é ainda maior porque os efeitos da exposição a substâncias tóxicas podem acompanhar uma pessoa por muito tempo."
+      ],
+      [
+        "p",
+        "E não são apenas as crianças que mexem diretamente nos aparelhos que correm riscos. A contaminação do ambiente também pode afetar outras pessoas que vivem nas proximidades."
+      ],
+      [
+        "quote",
+        "A infância deveria ser feita de brincadeiras, descobertas e aprendizado — não de contato com resíduos perigosos."
+      ],
+      [
+        "h",
+        "Tá, mas como podemos mudar essa história?"
+      ],
+      [
+        "p",
+        "A boa notícia é que não precisamos abandonar a tecnologia para diminuir esse problema! Celulares, computadores e outros aparelhos são úteis no nosso dia a dia. O importante é aprender a usá-los e descartá-los com responsabilidade."
+      ],
+      [
+        "p",
+        "Quando um eletrônico é encaminhado para uma reciclagem adequada, seus materiais podem ser recuperados com mais segurança. Isso ajuda a evitar o descarte irregular e reduz os riscos de contaminação para trabalhadores, crianças e comunidades."
+      ],
+      [
+        "p",
+        "Quer fazer sua parte? Olha só algumas atitudes que ajudam de verdade:"
+      ],
+      [
+        "ul",
+        [
+          "**Dê um destino certo aos eletrônicos:** procure pontos de coleta específicos em vez de jogá-los no lixo comum.",
+          "**Nada de queimar ou desmontar aparelhos em casa:** isso pode liberar substâncias perigosas.",
+          "**Conserte antes de substituir:** se o aparelho ainda puder ser reparado, você pode prolongar sua vida útil e evitar gerar mais resíduos.",
+          "**Reutilize quando possível:** aquele eletrônico antigo pode continuar sendo útil para outra pessoa.",
+          "**Espalhe a ideia:** converse com amigos e familiares sobre os riscos do descarte inadequado."
+        ]
+      ],
+      [
+        "p",
+        "São atitudes simples, mas que ajudam a construir uma relação mais responsável com a tecnologia."
+      ],
+      [
+        "h",
+        "Mais cuidado com o lixo, mais proteção para as crianças!"
+      ],
+      [
+        "p",
+        "O lixo eletrônico não é apenas um problema de aparelhos quebrados ou de poluição. Ele também envolve saúde, segurança e qualidade de vida, especialmente para crianças que vivem em comunidades expostas ao processamento inadequado desses resíduos."
+      ],
+      [
+        "p",
+        "Por isso, a solução depende de governos, empresas e serviços de reciclagem que garantam processos seguros. Mas nossas escolhas também fazem parte dessa mudança: descartar corretamente, evitar desperdícios e usar os aparelhos por mais tempo são bons pontos de partida."
+      ],
+      [
+        "p",
+        "No fim das contas, a tecnologia deveria tornar nossas vidas melhores, e não colocar a saúde de ninguém em risco."
+      ],
+      [
+        "p",
+        "Seu celular pode até ficar velho, mas sua responsabilidade com o planeta nunca sai de moda!"
+      ]
+    ],
+    "refs": [
+      {
+        "t": "Organização Mundial da Saúde (OMS). Children and digital dumpsites: e-waste and health.",
+        "url": "https://www.who.int/news-room/questions-and-answers/item/children-and-digital-dumpsites-e-waste-and-health"
+      },
+      {
+        "t": "Organização Pan-Americana da Saúde (OPAS/OMS). Aumento do lixo eletrônico afeta saúde de milhões de crianças, alerta OMS.",
+        "url": "https://www.paho.org/pt/noticias/15-6-2021-aumento-do-lixo-eletronico-afeta-saude-milhoes-criancas-alerta-oms"
+      },
+      {
+        "t": "Nações Unidas no Brasil. Aumento do lixo eletrônico afeta saúde de milhões de crianças, alerta OMS.",
+        "url": "https://brasil.un.org/pt-br/131782-aumento-do-lixo-eletr%C3%B4nico-afeta-sa%C3%BAde-de-milh%C3%B5es-de-crian%C3%A7as-alerta-oms"
+      }
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "destralhe",
+    "type": "ARTICLE",
+    "category": "Desafios",
+    "title": "Operação Destralhe: a missão de descobrir o que fazer com seus eletrônicos esquecidos!",
+    "description": "Sua missão: investigar os eletrônicos esquecidos na gaveta e descobrir o destino certo para cada um.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjM1MSIgY3k9Ijk3IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzgiLz48Y2lyY2xlIGN4PSI2OSIgY3k9IjU3IiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjEiLz48Y2lyY2xlIGN4PSIzOTQiIGN5PSIzMTgiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zNCIvPjxjaXJjbGUgY3g9IjIzOSIgY3k9IjM5IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzEiLz48Y2lyY2xlIGN4PSI0NDgiIGN5PSI1NSIgcj0iNCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIwIi8+PGNpcmNsZSBjeD0iNTg0IiBjeT0iMjM3IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzYiLz48Y2lyY2xlIGN4PSIxNDYiIGN5PSIxMzQiIHI9IjgiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zOCIvPjxjaXJjbGUgY3g9IjYxNiIgY3k9IjUxIiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzYiLz48Y2lyY2xlIGN4PSI0MjYiIGN5PSI0NSIgcj0iNCIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjE5Ii8+PGNpcmNsZSBjeD0iNTkwIiBjeT0iNDU5IiByPSI0IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjciLz48Y2lyY2xlIGN4PSI0NDkiIGN5PSI5MyIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIxIi8+PGNpcmNsZSBjeD0iNjA0IiBjeT0iMTc3IiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzkiLz48Y2lyY2xlIGN4PSIyMDUiIGN5PSI3MiIgcj0iNyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM2Ii8+PGNpcmNsZSBjeD0iNjc0IiBjeT0iMTE2IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjEiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMzAgMjQwKSByb3RhdGUoLTE0KSI+PHJlY3QgeD0iLTMwIiB5PSItNTIiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMDQiIHJ4PSI4LjQiIGZpbGw9IiMxZDJlNGIiLz48cmVjdCB4PSItMjUuOCIgeT0iLTQ1Ljc2IiB3aWR0aD0iNTEuNiIgaGVpZ2h0PSI5MS41MiIgcng9IjUuNDYiIGZpbGw9IiM4NWNmYjAiLz48cmVjdCB4PSItOC40IiB5PSItNDQuMiIgd2lkdGg9IjE2LjgiIGhlaWdodD0iMi4wOCIgcng9IjEuMDQiIGZpbGw9IiMxZDJlNGIiLz48L2c+PHBhdGggZD0iTTQxMCAyNjJDNDcwIDIwMCA1MjAgMzAwIDU2MCAyMzgiIHN0cm9rZT0iIzFkMmU0YiIgc3Ryb2tlLXdpZHRoPSI5IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NjAgMjE0KSI+PHJlY3QgeD0iLTEyIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTYuOCIgeT0iLTEyIiB3aWR0aD0iMy4yIiBoZWlnaHQ9IjEyIiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iMy42IiB5PSItMTIiIHdpZHRoPSIzLjIiIGhlaWdodD0iMTIiIGZpbGw9IiMxZDJlNGIiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDYwIDIzOCkgcm90YXRlKDE2KSI+PHJlY3QgeD0iLTE3IiB5PSItMzgiIHdpZHRoPSIzNCIgaGVpZ2h0PSI3NiIgcng9IjcuNDgiIGZpbGw9IiM2ZGJhYTgiLz48cmVjdCB4PSItNy40OCIgeT0iLTQzLjMyIiB3aWR0aD0iMTQuOTYiIGhlaWdodD0iNi44NCIgcng9IjIuMDQiIGZpbGw9IiMxZDJlNGIiLz48cmVjdCB4PSItMTIuMjQiIHk9Ii0yOC44OCIgd2lkdGg9IjUuNDQiIGhlaWdodD0iNTcuNzYiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii4yOCIvPjxwYXRoIGQ9Ik0yLjA0IC0xOS43NkwtNi44IDQuNTZMMCA0LjU2TC0yLjA0IDIyLjh6IiBmaWxsPSIjZmZmIi8+PC9nPjxyZWN0IHg9IjI1MCIgeT0iMjcwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjEzMCIgcng9IjE4IiBmaWxsPSIjMmY2YjVjIi8+PHJlY3QgeD0iMjYyIiB5PSIyODIiIHdpZHRoPSIyNzYiIGhlaWdodD0iMTA2IiByeD0iMTIiIGZpbGw9IiM0YTg0NzYiLz48cmVjdCB4PSIzNTAiIHk9IjMyNiIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxOCIgcng9IjkiIGZpbGw9IiNhNGU0ZDQiLz48Y2lyY2xlIGN4PSI2MTAiIGN5PSIxNjgiIHI9IjQ4IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9Ii42IiBzdHJva2U9IiMxZDJlNGIiIHN0cm9rZS13aWR0aD0iMTAiLz48cGF0aCBkPSJNNjQ0IDIwMkw2OTAgMjQ4IiBzdHJva2U9IiMxZDJlNGIiIHN0cm9rZS13aWR0aD0iMTQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5MCAxOTApIHJvdGF0ZSgtMzApIj48cGF0aCBkPSJNMCAwQzUgLTQ1IDUwIC00NSA2MCAtNUM0NSAxNy41IDEyLjUgMTAgMCAweiIgZmlsbD0iIzg1Y2ZiMCIvPjxwYXRoIGQ9Ik0wIDBMNDUgLTE0IiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==",
+    "body": [
+      [
+        "h",
+        "ALERTA, AGENTE! TEM ELETRÔNICO SUSPEITO NA SUA GAVETA!"
+      ],
+      [
+        "p",
+        "Um celular que não liga desde 2022, um fone que só funciona quando o fio fica dobrado em um ângulo misterioso e carregadores que ninguém sabe de qual aparelho são. Familiar?"
+      ],
+      [
+        "p",
+        "Parabéns! Você pode estar diante de um caso clássico de gaveta-museu da tecnologia. Mas chegou a hora de acabar com essa exposição! Sua missão é investigar esses objetos e descobrir qual será o próximo capítulo da história deles."
+      ],
+      [
+        "h",
+        "Fase 1: Quem são esses sujeitos?"
+      ],
+      [
+        "p",
+        "Reúna os eletrônicos esquecidos pela casa. Vale celular antigo, teclado quebrado, controle sem utilidade, fone aposentado e até aquele cabo que você guarda “vai que um dia precisa”."
+      ],
+      [
+        "p",
+        "Agora, investigue: algum deles ainda funciona? Algum pode ser consertado? Existe alguém que poderia aproveitar um aparelho que você não usa mais?"
+      ],
+      [
+        "p",
+        "Cuidado: não é porque um eletrônico saiu de moda que ele precisa ser condenado à gaveta eterna!"
+      ],
+      [
+        "h",
+        "Fase 2: Escolha o futuro do suspeito"
+      ],
+      [
+        "p",
+        "Cada aparelho pode ter um destino diferente. Confira as possibilidades:"
+      ],
+      [
+        "ul",
+        [
+          "**Ainda funciona?** Continue usando ou considere doá-lo para alguém que precise.",
+          "**Está com defeito?** Veja se o conserto vale a pena. Às vezes, o problema tem solução!",
+          "**Não tem mais utilidade?** Procure um ponto de recebimento de lixo eletrônico.",
+          "**É um carregador misterioso?** Tente identificar para qual aparelho serve, mas não use acessórios danificados ou inseguros."
+        ]
+      ],
+      [
+        "p",
+        "Antes de doar ou entregar um celular, lembre-se de fazer backup dos arquivos e apagar seus dados pessoais. Afinal, ninguém precisa herdar suas fotos e conversas junto com o aparelho!"
+      ],
+      [
+        "h",
+        "Fase 3: Nada de abandonar o suspeito por aí!"
+      ],
+      [
+        "p",
+        "Atenção, agente: eletrônicos sem utilidade não devem ser descartados automaticamente no lixo comum. Eles precisam receber a destinação adequada."
+      ],
+      [
+        "p",
+        "É aí que entra a logística reversa: um sistema que permite que determinados produtos e seus resíduos retornem aos canais apropriados para destinação ambientalmente correta."
+      ],
+      [
+        "p",
+        "Organizações como a ABREE ajudam consumidores a encontrar orientações e locais de recebimento de produtos eletroeletrônicos. Antes de sair de casa, confira quais aparelhos são aceitos no ponto escolhido."
+      ],
+      [
+        "p",
+        "Missão importante: nada de jogar o celular quebrado no lixo e fingir que ele desapareceu por mágica!"
+      ],
+      [
+        "h",
+        "Fase 4: O chefão final — o lixo eletrônico mundial"
+      ],
+      [
+        "p",
+        "O problema vai muito além da sua gaveta. O lixo eletrônico é um desafio mundial, e o descarte inadequado pode causar impactos ambientais e à saúde."
+      ],
+      [
+        "p",
+        "Por isso, prolongar a vida útil dos aparelhos, consertar o que for possível e encaminhar os resíduos para os locais corretos são atitudes que ajudam a reduzir o desperdício e melhorar a destinação desses materiais."
+      ],
+      [
+        "p",
+        "Pode parecer pouco resolver o mistério de um celular esquecido, mas mudanças assim fazem parte de uma missão muito maior: consumir com mais consciência e descartar melhor."
+      ],
+      [
+        "h",
+        "Desafio final: conclua a Operação Destralhe!"
+      ],
+      [
+        "p",
+        "Marque as tarefas conforme concluir sua missão:"
+      ],
+      [
+        "check",
+        [
+          "Reunir os eletrônicos esquecidos pela casa.",
+          "Separar os aparelhos que ainda funcionam.",
+          "Investigar possibilidades de conserto e reutilização.",
+          "Verificar quais aparelhos podem ser doados.",
+          "Encontrar um ponto de recebimento adequado para os eletrônicos sem utilidade.",
+          "Dar adeus à gaveta-museu!"
+        ]
+      ],
+      [
+        "h",
+        "Caso encerrado?"
+      ],
+      [
+        "p",
+        "Se você chegou até aqui, parabéns, agente! Sua gaveta está um passo mais perto de deixar de ser um cemitério tecnológico."
+      ],
+      [
+        "p",
+        "Agora, passe a missão adiante: desafie alguém da família ou um amigo a investigar os próprios eletrônicos esquecidos. Afinal, sempre existe aquela pessoa que guarda um celular de cinco gerações atrás “porque ainda pode precisar”."
+      ],
+      [
+        "p",
+        "E aí, quantos suspeitos você encontrou na sua casa?"
+      ]
+    ],
+    "refs": [
+      {
+        "t": "SINIR — Logística reversa de eletroeletrônicos",
+        "url": ""
+      },
+      {
+        "t": "ABREE — Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos",
+        "url": ""
+      },
+      {
+        "t": "Ministério das Comunicações — Como descartar eletrônicos sem utilidade",
+        "url": ""
+      },
+      {
+        "t": "PNUMA — Notícias e reportagens",
+        "url": ""
+      },
+      {
+        "t": "Global E-waste Monitor",
+        "url": ""
+      },
+      {
+        "t": "Decreto nº 10.240/2020",
+        "url": ""
+      }
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "celular-velho",
+    "type": "ARTICLE",
+    "category": "Consumo consciente",
+    "title": "Seu celular é velho ou você só enjoou dele?",
+    "description": "Você precisa de um celular novo ou só ficou com vontade da novidade? Pense antes de trocar.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2U0ZjNlYyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2E0ZTRkNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSJ1cmwoI2JnKSIvPjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTAiIHI9IjIxMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjM1Ii8+PGNpcmNsZSBjeD0iNzIwIiBjeT0iNDUwIiByPSIyNTAiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNSIvPjxjaXJjbGUgY3g9IjI1MiIgY3k9IjIwOSIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjIyIi8+PGNpcmNsZSBjeD0iMjE3IiBjeT0iMzgwIiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjAiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNDYiIHI9IjciIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yNCIvPjxjaXJjbGUgY3g9IjQzMCIgY3k9IjM0OCIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjMyIi8+PGNpcmNsZSBjeD0iNTE5IiBjeT0iMjUyIiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzMiLz48Y2lyY2xlIGN4PSI2MDYiIGN5PSIxMTgiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMCIvPjxjaXJjbGUgY3g9IjUxNiIgY3k9IjEzOSIgcj0iMyIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjQwIi8+PGNpcmNsZSBjeD0iMjkzIiBjeT0iMjg2IiByPSI2IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzMiLz48Y2lyY2xlIGN4PSI0MDgiIGN5PSIzOTEiIHI9IjMiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4zOSIvPjxjaXJjbGUgY3g9IjI4NCIgY3k9IjY5IiByPSIzIiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMzAiLz48Y2lyY2xlIGN4PSI2NTUiIGN5PSI0NDQiIHI9IjYiIGZpbGw9IiM0YTg0NzYiIG9wYWNpdHk9Ii4yMSIvPjxjaXJjbGUgY3g9IjY5NiIgY3k9IjQ5IiByPSI1IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjUiLz48Y2lyY2xlIGN4PSI3MjciIGN5PSI2NCIgcj0iNiIgZmlsbD0iIzRhODQ3NiIgb3BhY2l0eT0iLjM4Ii8+PGNpcmNsZSBjeD0iNTQ5IiBjeT0iMTI2IiByPSI3IiBmaWxsPSIjNGE4NDc2IiBvcGFjaXR5PSIuMjIiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyOTAgMjU1KSByb3RhdGUoLTgpIj48cmVjdCB4PSItNDgiIHk9Ii04NSIgd2lkdGg9Ijk2IiBoZWlnaHQ9IjE3MCIgcng9IjEzLjQ0IiBmaWxsPSIjMmY2YjVjIi8+PHJlY3QgeD0iLTQxLjI4IiB5PSItNzQuOCIgd2lkdGg9IjgyLjU2IiBoZWlnaHQ9IjE0OS42IiByeD0iOC43MzYiIGZpbGw9IiNjZmUzZGMiLz48cmVjdCB4PSItMTMuNDQiIHk9Ii03Mi4yNSIgd2lkdGg9IjI2Ljg4IiBoZWlnaHQ9IjMuNCIgcng9IjEuNyIgZmlsbD0iIzJmNmI1YyIvPjwvZz48cGF0aCBkPSJNMjcwIDIwMEwzMDAgMjQwTDI4NCAyNzYiIHN0cm9rZT0iIzFkMmU0YiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBvcGFjaXR5PSIuNTUiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MjAgMjUwKSByb3RhdGUoNikiPjxyZWN0IHg9Ii01MCIgeT0iLTg4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE3NiIgcng9IjE0IiBmaWxsPSIjMWQyZTRiIi8+PHJlY3QgeD0iLTQzIiB5PSItNzcuNDQiIHdpZHRoPSI4NiIgaGVpZ2h0PSIxNTQuODgiIHJ4PSI5LjEiIGZpbGw9IiM4NWNmYjAiLz48cmVjdCB4PSItMTQiIHk9Ii03NC44IiB3aWR0aD0iMjgiIGhlaWdodD0iMy41MiIgcng9IjEuNzYiIGZpbGw9IiMxZDJlNGIiLz48Y2lyY2xlIGN4PSIwIiBjeT0iLTEwIiByPSIyMiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNLTEwIC0xMGw4IDkgMTUgLTE3IiBzdHJva2U9IiMyZjZiNWMiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9nPjxwYXRoIGQ9Ik0zNTYgMTk2UTQwNSAxNjAgNDUyIDE5MiIgc3Ryb2tlPSIjMmY2YjVjIiBzdHJva2Utd2lkdGg9IjEwIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48cG9seWdvbiBwb2ludHM9IjQ1MiwxNzIgNDgwLDE5NiA0NDYsMjE0IiBmaWxsPSIjMmY2YjVjIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAwIDM4MCkgcm90YXRlKC05MCkiPjxwYXRoIGQ9Ik0wIDBDNS42IC01MC40IDU2IC01MC40IDY3LjIgLTUuNkM1MC40IDE5LjYgMTQgMTEuMiAwIDB6IiBmaWxsPSIjNmRiYWE4Ii8+PHBhdGggZD0iTTAgMEw1MC40IC0xNS42OCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utb3BhY2l0eT0iLjU1IiBzdHJva2Utd2lkdGg9IjEuOTYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvZz48L3N2Zz4=",
+    "body": [
+      [
+        "p",
+        "Imagine a cena: você abre o Instagram e dá de cara com o lançamento de um celular novo. A câmera é absurda, o design é lindo e todo mundo parece estar falando dele. Você olha para o seu aparelho e pensa: “Nossa, acho que está na hora de trocar…”"
+      ],
+      [
+        "p",
+        "Mas peraí! Ontem você estava usando o mesmo celular para tudo e ele não parecia tão ruim assim. O que aconteceu? Ele ficou ultrapassado em 24 horas ou você caiu no famoso golpe do “preciso de um celular novo porque esse já não é o mais novo”?"
+      ],
+      [
+        "h",
+        "O efeito FOMO: medo de ficar para trás"
+      ],
+      [
+        "p",
+        "A gente vive cercado de novidades. Tem celular novo, atualização nova, câmera com mais funções… Quando você percebe, parece que o seu aparelho virou uma relíquia arqueológica."
+      ],
+      [
+        "p",
+        "Só que existe uma diferença enorme entre precisar de um celular novo e simplesmente querer um."
+      ],
+      [
+        "p",
+        "Se o seu aparelho trava o tempo todo, não recebe mais atualizações importantes ou já não atende às suas necessidades, trocar pode fazer sentido. Mas, se ele funciona bem e você só ficou com vontade de ter o modelo que acabou de lançar, talvez valha a pena pensar duas vezes."
+      ],
+      [
+        "p",
+        "Afinal, você quer mesmo um celular novo ou só quer a sensação de ter uma novidade?"
+      ],
+      [
+        "h",
+        "O que a propaganda não mostra"
+      ],
+      [
+        "p",
+        "Quando você vê um celular novinho saindo da caixa, não vê tudo o que foi necessário para fabricá-lo."
+      ],
+      [
+        "p",
+        "A produção de eletrônicos utiliza matérias-primas, recursos naturais e energia. E, quando aparelhos são descartados de maneira inadequada, seus resíduos podem causar danos ao meio ambiente e riscos à saúde."
+      ],
+      [
+        "p",
+        "Além disso, o lixo eletrônico é um problema mundial. Segundo o Global E-waste Monitor, a quantidade de resíduos eletrônicos gerados no mundo tem crescido, enquanto a reciclagem documentada não acompanha esse ritmo."
+      ],
+      [
+        "p",
+        "Ou seja: trocar de aparelho por impulso pode parecer uma decisão pequena, mas o impacto dos eletrônicos vai muito além da tela que você segura na mão."
+      ],
+      [
+        "h",
+        "E o celular antigo vira o quê? Um peso de papel?"
+      ],
+      [
+        "p",
+        "Você decidiu trocar? Beleza. Mas não deixe o aparelho antigo virar morador permanente da gaveta, junto com os fones quebrados e os cabos misteriosos!"
+      ],
+      [
+        "p",
+        "Antes de dar adeus ao seu celular, pense nas possibilidades:"
+      ],
+      [
+        "ul",
+        [
+          "**Ele ainda funciona?** Continue usando ou passe o aparelho para alguém que precise.",
+          "**Está com algum problema?** Pesquise se o conserto compensa. Às vezes, ele ainda tem muita vida pela frente.",
+          "**Não tem mais jeito?** Encaminhe-o para um ponto de recebimento de eletrônicos e confira quais aparelhos são aceitos."
+        ]
+      ],
+      [
+        "p",
+        "A logística reversa ajuda a encaminhar produtos descartados para a destinação adequada, favorecendo o reaproveitamento de materiais. A ABREE, por exemplo, oferece informações sobre o descarte de eletroeletrônicos."
+      ],
+      [
+        "p",
+        "Só não vale jogar o aparelho no lixo comum e fingir que o problema virou assunto de outra pessoa."
+      ],
+      [
+        "h",
+        "DESAFIO: prove que você não troca de celular por qualquer coisa!"
+      ],
+      [
+        "p",
+        "Antes de comprar o próximo lançamento, responda sinceramente:"
+      ],
+      [
+        "ol",
+        [
+          "Meu celular realmente não atende mais às minhas necessidades?",
+          "Um conserto ou alguns ajustes poderiam resolver o problema?",
+          "Eu já queria trocar ou só fiquei com vontade depois de ver o modelo novo?",
+          "Já sei o que vou fazer com o aparelho antigo?"
+        ]
+      ],
+      [
+        "p",
+        "Se você percebeu que seu celular ainda dá conta do recado, parabéns: acabou de desbloquear a conquista “consumidor consciente”."
+      ],
+      [
+        "p",
+        "Não é proibido gostar de tecnologia, querer uma câmera melhor ou comprar um aparelho novo. A questão é não transformar cada lançamento em uma obrigação."
+      ],
+      [
+        "p",
+        "No fim das contas, seu celular está velho mesmo ou você só enjoou dele? Pense nisso antes de passar o cartão!"
+      ]
+    ],
+    "refs": [
+      {
+        "t": "Global E-waste Monitor — Dados globais sobre lixo eletrônico",
+        "url": ""
+      },
+      {
+        "t": "Organização Mundial da Saúde (OMS) — Lixo eletrônico",
+        "url": ""
+      },
+      {
+        "t": "Ministério das Comunicações — Logística reversa de equipamentos eletrônicos",
+        "url": ""
+      },
+      {
+        "t": "SINIR — Logística reversa de eletroeletrônicos",
+        "url": ""
+      },
+      {
+        "t": "ABREE — Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos",
+        "url": ""
+      }
+    ],
+    "sortOrder": 7
+  }
+]

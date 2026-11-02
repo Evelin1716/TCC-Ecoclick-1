@@ -1,0 +1,1 @@
+document.getElementById('ecoOut').addEventListener('click',function(e){e.preventDefault();try{localStorage.removeItem('ecoclick_current_user');}catch(x){}window.EcoNav('home');});

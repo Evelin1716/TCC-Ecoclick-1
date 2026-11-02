@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-eco-page="missions" data-eco-route="mission_list" data-eco-protected data-eco-start="missoes" data-fx-reveal=".card, .tile">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfaf7">
+<script src="../js/pages/missions/02-theme-init.js"></script>
+<title>Missões — EcoClick</title>
+<meta name="description" content="EcoClick: encontre pontos de coleta de eletrônicos, agende descartes, cumpra missões e acompanhe seu impacto ambiental.">
+<link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/themes.css">
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/page-context.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/components/form-fix.js"></script>
+<script src="../js/components/fx.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/pages/missions/03-jornada.css">
+<link rel="stylesheet" href="../css/pages/missions/04-botao-voltar.css"><link rel="stylesheet" href="../css/pages/missions/05-palette.css"><link rel="stylesheet" href="../css/pages/missions/06-sidebar.css"><link rel="stylesheet" href="../css/pages/missions/07-palette-2.css"></head>
+<body>
+<a class="skip-link" href="#conteudo" id="skipLink">Pular para o conteúdo</a>
+
+
+<div class="eco-backdrop" id="eco-backdrop"></div><header class="eco-mbar"><button type="button" class="icon-btn" id="eco-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><b>EcoClick</b></header><aside class="eco-side" id="sidebar" aria-label="Menu principal"><div class="sidebar-head"><button type="button" class="logo-text" id="logo-btn"><span class="logo-full"><img class="eco-logo eco-logo-light" src="../assets/images/missions-a253eadfa9.png" alt="EcoClick"><img class="eco-logo eco-logo-dark" src="../assets/images/missions-0659191392.png" alt="" aria-hidden="true"></span><span class="logo-mini" aria-hidden="true"><span class="logo-mini-mark"><img class="eco-mark eco-mark-light" src="../assets/images/missions-034e8508d8.png" alt="" width="62" height="112"><img class="eco-mark eco-mark-dark" src="../assets/images/missions-68b6ffc6e4.png" alt="" width="62" height="112"></span><span class="logo-mini-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M5.6 10l2 2-2 2"/></svg></span></span></button><div class="head-actions"><button type="button" class="icon-btn" id="collapse-btn" aria-label="Fechar barra lateral" aria-expanded="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M7.6 10l-2 2 2 2"/></svg></button></div></div><div class="side-scroll"><nav class="eco-nav">
+          <a href="#" data-eco-nav="dashboard">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span class="nav-label">Pontos de coleta</span>
+          </a>
+          <a href="#" data-eco-nav="missions" class="active" aria-current="page">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg>
+            <span class="nav-label">Minha jornada</span>
+          </a>
+          <a href="#" data-eco-nav="dash_recompensas">
+            <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg>
+            <span class="nav-label">Recompensas</span>
+          </a>
+          <a href="#" data-eco-nav="progress">
+            <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+            <span class="nav-label">Meu progresso</span>
+          </a>
+          <a href="#" data-eco-nav="dash_conteudos">
+            <svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 1-2-2V5z"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 0 2-2V5z"/></svg>
+            <span class="nav-label">Conteúdos</span>
+          </a>
+          <a href="#" data-eco-nav="community">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3 3 0 0 1 0 5.6M18 14.2c2 .7 3.5 2.6 3.5 5.8"/></svg>
+            <span class="nav-label">Comunidade</span>
+          </a>
+        </nav></div><nav class="eco-nav eco-foot" aria-label="Conta">
+        <a href="#" data-eco-nav="dash_settings" id="settings-link">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>
+          <span class="nav-label">Configurações</span>
+        </a>
+        <a href="#" id="logout-link">
+          <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+          <span class="nav-label">Sair</span>
+        </a>
+      </nav></aside>
+<div class="app">
+
+  <header class="topbar">
+      <button class="brand" data-goto="inicio" aria-label="Ir para o início"><img class="brand-logo logo-light" src="../assets/images/missions-a253eadfa9.png" alt="EcoClick — Pequenos gestos, grandes mudanças"><img class="brand-logo logo-dark" src="../assets/images/missions-0659191392.png" alt="" aria-hidden="true"></button>
+      <div class="top-actions"><button type="button" class="eco-back" data-eco-nav="dashboard">← Dashboard</button>
+        <div class="profile-chip">
+          <div class="avatar" id="avatarBox"><span id="avatarInitial">A</span></div>
+          <div class="who"><b id="chipName">Usuário</b><span id="chipLevel">Nível 1</span></div>
+        </div>
+      </div>
+    </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- INÍCIO -->
+    <div class="view active" id="view-inicio">
+
+      <div class="greeting">
+        <h1 id="greetingName">Olá!</h1>
+        <p>Continue transformando pequenas atitudes em um grande impacto.</p>
+      </div>
+
+      <div class="bento">
+        <div class="hero-card tile">
+          <div class="hero-copy">
+            <span class="eyebrow"><i></i>Pequenos gestos, grandes mudanças</span>
+            <h2 id="mascotPhrase">Vamos reciclar hoje? Cada item conta!</h2>
+            <p>Complete missões, suba de nível e conquiste selos a cada pequeno gesto pelo planeta.</p>
+            <div class="hero-actions">
+              <button class="btn-hero" data-goto="missoes">Continuar missões <span>→</span></button>
+              <button class="btn-hero ghost" data-goto="jornada">Ver minha jornada</button>
+            </div>
+          </div>
+          <div class="hero-art">
+            <span class="orb o1"></span><span class="orb o2"></span>
+            <svg class="leaf l1" viewBox="0 0 24 24"><path d="M20 3C9 3 4 9.5 4 15c0 2 .8 3.5 2 4.6C6.4 14 10 9.5 16 7c-4 3-7 6.6-8.4 12.6C9 20.5 10.4 21 12 21c6 0 8-6.500 8-18Z"/></svg>
+            <svg class="leaf l2" viewBox="0 0 24 24"><path d="M20 3C9 3 4 9.5 4 15c0 2 .8 3.5 2 4.6C6.4 14 10 9.5 16 7c-4 3-7 6.6-8.4 12.6C9 20.5 10.4 21 12 21c6 0 8-6.500 8-18Z"/></svg>
+            <svg class="leaf l3" viewBox="0 0 24 24"><path d="M20 3C9 3 4 9.5 4 15c0 2 .8 3.5 2 4.6C6.4 14 10 9.5 16 7c-4 3-7 6.6-8.4 12.6C9 20.5 10.4 21 12 21c6 0 8-6.500 8-18Z"/></svg>
+            <img src="../assets/images/missions-44b07af46d.png" alt="Turtly, a mascote do EcoClick">
+          </div>
+          <div class="hero-notch"><span class="ico" data-ico="flame" aria-hidden="true"></span><b id="streakHero">0</b> dias seguidos</div>
+        </div>
+
+        <div class="level-panel tile">
+          <div class="lvl-head">
+            <div class="lvl-emb" id="lvlOrbHome" aria-hidden="true"></div>
+            <div><span class="lvl-tag" id="lvlTagHome">NÍVEL —</span><h2 id="lvlTitleHome">—</h2></div>
+          </div>
+          <p id="lvlNextHome">—</p>
+          <div class="xp-row"><span id="xpNowHome">0 XP</span><span id="xpMaxHome">0 XP</span></div>
+          <div class="xp-track"><div class="xp-fill" id="xpFillHome"></div></div>
+          <div class="xp-limits" id="xpLimitsHome"></div>
+          <div class="lvl-chips" id="recentLineHome"></div>
+          <div class="next-unlock" id="nextUnlockHome"></div>
+        </div>
+      </div>
+
+      <div class="stat-row" id="statRow"></div>
+
+      <div class="block-head"><div><span class="kicker">Acesso rápido</span><h2>Para onde você quer ir?</h2></div></div>
+      <nav class="shortcut-grid" aria-label="Atalhos rápidos">
+        <button class="shortcut s-missoes" data-scroll="sec-missoes" style="--i:0">
+          <span class="sc-icon" data-ico="target" aria-hidden="true"></span>
+          <span class="sc-txt"><b>Missões</b><small>Desafios para ganhar XP</small></span>
+          <span class="sc-arrow"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></span>
+        </button>
+        <button class="shortcut s-jornada" data-scroll="sec-jornada" style="--i:1">
+          <span class="sc-icon" data-ico="map" aria-hidden="true"></span>
+          <span class="sc-txt"><b>Jornada</b><small>Sua trilha de reciclador</small></span>
+          <span class="sc-arrow"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></span>
+        </button>
+        <button class="shortcut s-historico" data-scroll="sec-historico" style="--i:2">
+          <span class="sc-icon" data-ico="list" aria-hidden="true"></span>
+          <span class="sc-txt"><b>Histórico</b><small>Tudo que você registrou</small></span>
+          <span class="sc-arrow"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></span>
+        </button>
+      </nav>
+
+      <div class="sec-block" id="sec-missoes">
+        <div class="block-head"><div><span class="kicker">01 · Missões</span><h2>Missões em destaque</h2></div><button class="link-btn" data-goto="missoes">Ver todas →</button></div>
+        <div class="mission-grid" id="highlightMissions"></div>
+      </div>
+
+      <div class="bento">
+        <div class="tile card journey-tile sec-block" id="sec-jornada">
+          <div class="block-head"><div><span class="kicker">02 · Jornada</span><h2>Jornada do Reciclador</h2></div><button class="link-btn" data-goto="jornada">Abrir trilha →</button></div>
+          <div id="homeJourney"></div>
+        </div>
+        <div class="badges-panel tile card">
+          <span class="kicker">Conquistas</span>
+          <h3>Selos e emblemas</h3>
+          <p><b id="badgeCount"></b> conquistados ao longo da sua jornada.</p>
+          <div class="badge-grid" id="badgeGridHome"></div>
+          <div class="badge-next" id="badgeNext"></div>
+        </div>
+      </div>
+
+      <div class="sec-block" id="sec-historico">
+        <div class="block-head"><div><span class="kicker">03 · Histórico</span><h2>Últimos registros</h2></div><button class="link-btn" data-goto="historico">Ver histórico →</button></div>
+        <div id="homeHistory"></div>
+      </div>
+    </div>
+
+    <!-- MISSÕES -->
+    <div class="view" id="view-missoes">
+      <button class="back-btn" data-goto="inicio"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7.500 3.500 3 8l4.500 4.500"/></svg> Voltar ao início</button>
+      <section>
+        <div class="section-head"><div><h1>Missões</h1><p class="subhead">Missões diárias, semanais, mensais e especiais. A Jornada do Reciclador agora tem trilha própria.</p></div><button class="link-btn" data-goto="jornada">Ver Jornada →</button></div>
+        <h2 class="sr-only">Lista de missões</h2>
+        <div class="tabbar" id="missionTabs" role="tablist" aria-label="Categorias de missões"></div>
+        <div class="mission-grid" id="missionList" role="tabpanel" aria-labelledby="mtab-diarias"></div>
+      </section>
+    </div>
+
+    <!-- JORNADA -->
+    <div class="view" id="view-jornada">
+      <button class="back-btn" data-goto="inicio"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7.500 3.500 3 8l4.500 4.500"/></svg> Voltar ao início</button>
+      <section>
+        <div class="section-head"><div><h1>Jornada do Reciclador</h1><p class="subhead">Conclua um nível para liberar o próximo. Ao final do Nível 3, o selo especial é seu.</p></div></div>
+        <h2 class="sr-only">Trilha e etapas</h2>
+        <div class="chain-note"><span class="cn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-7M12 13c0-4 3-6 7-6 0 4-3 6-7 6zM12 15c0-3-2-5-6-5 0 3 2 5 6 5z"/></svg></span><span><b>Jornada do Reciclador:</b> conclua os 3 níveis, em ordem, para conquistar o selo <b>Primeiro Ciclo de Reciclagem</b>.</span></div>
+        <div id="journeyTrail"></div>
+      </section>
+    </div>
+
+    <!-- HISTÓRICO -->
+    <div class="view" id="view-historico">
+      <button class="back-btn" data-goto="inicio"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7.500 3.500 3 8l4.500 4.500"/></svg> Voltar ao início</button>
+      <section>
+        <div class="section-head"><div><h1>Histórico de registros</h1><p class="subhead">Cada item que você registra e leva até o ponto de coleta vira uma pequena vitória para o planeta.</p></div></div>
+        <h2 class="sr-only">Resumo e linha do tempo</h2>
+        <div class="hist-summary" id="histStats"></div>
+        <p class="hist-note" id="histNote"></p>
+        <div class="hist-filters" id="histFilters"></div>
+        <button type="button" class="btn btn-primary" data-register-first style="margin:0 0 14px">Registrar um item</button>
+        <div id="histTimeline"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="sf-top">
+      <div class="sf-brand"><b>EcoClick</b><span>Pequenos gestos, grandes mudanças</span></div>
+    </div>
+    <p>Os pesos exibidos são estimativas por faixa de tamanho, não medições. Só itens entregues em um ponto de coleta, com comprovante informado, contam como reciclados.</p>
+  </footer>
+</div>
+
+<div class="modal-backdrop" id="activityBackdrop" aria-hidden="true">
+  <div class="activity-modal" role="dialog" aria-modal="true" aria-labelledby="activityTitle" tabindex="-1">
+    <div class="modal-head">
+      <div><div class="modal-eyebrow" id="activityEyebrow">Missão</div><h2 class="modal-title" id="activityTitle">Atividade</h2></div>
+      <button class="modal-close" id="activityClose" aria-label="Fechar">×</button>
+    </div>
+    <div id="activityBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="toast toast-undo" id="undoToast" role="status" aria-live="polite" aria-atomic="true"><span id="undoToastMsg"></span><span class="sr-hint">Atalho: Ctrl+Z ou Cmd+Z.</span><button type="button" class="toast-undo-btn" id="undoToastBtn" aria-describedby="undoToastMsg">Desfazer</button><button type="button" class="toast-undo-close" id="undoToastClose" aria-label="Dispensar aviso">×</button></div>
+
+<script src="../js/pages/missions/08-icones-svg.js"></script>
+<script src="../js/pages/missions/09-jornada-trilha.js"></script>
+<script src="../js/pages/missions/10-historico.js"></script>
+<script src="../js/pages/missions/11-app.js"></script>
+<script src="../js/pages/missions/12-i18n.js"></script><script src="../js/pages/missions/13-theme-follow.js"></script><script src="../js/pages/missions/14-sidebar.js"></script></body>
+</html>

@@ -1,0 +1,39 @@
+
+:root{--sb-bg:#e4f3ec;--sb-card:#ffffff;--sb-line:#d3eadf;--sb-line2:#bfdccf;--sb-ghost:#4b6a62;--sb-head:#1d2e4b;--sb-hs:rgba(74,132,118,.07);--sb-h:rgba(74,132,118,.12);--sb-green:#4a8476;--sb-sh:rgba(31,74,64,.13);--sb-drawer:rgba(31,74,64,.16);--sb-back:rgba(31,74,64,.30);--sb-fs:clamp(.81rem,.78rem + .09vw,.92rem);--sb-cap:clamp(.69rem,.66rem + .07vw,.75rem)}
+html[data-theme="dark"]{--sb-bg:#0a1a1c;--sb-card:#152a30;--sb-line:#25444a;--sb-line2:#33585f;--sb-ghost:#9db8c0;--sb-head:#eefbff;--sb-hs:rgba(238,251,255,.04);--sb-h:rgba(238,251,255,.08);--sb-green:#6dbba7;--sb-sh:rgba(2,10,12,.55);--sb-drawer:rgba(2,10,12,.5);--sb-back:rgba(2,10,12,.6)}
+
+.sidebar .side-nav a{font-size:var(--sb-fs);line-height:1.2}
+.sidebar .logo-text{line-height:1.2}
+.sidebar .side-nav a.active{font-weight:500}
+.sidebar{transition:flex-basis .3s ease,padding .3s ease}
+body.eco-notrans .sidebar,body.eco-notrans .sidebar *{transition:none!important}
+
+.sidebar .sidebar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:34px;flex-shrink:0;min-height:40px}
+.sidebar .logo-text{font-family:inherit;font-weight:700;font-size:17.48px;color:var(--sb-head);display:inline-block;background:none;border:none;padding:0;text-align:left;cursor:default}
+.sidebar .logo-mini{display:none;position:relative;width:40px;height:40px}
+.sidebar .logo-mini-mark,.sidebar .logo-mini-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.sidebar .logo-mini-mark{font-weight:800;font-size:20.24px;opacity:1;transform:scale(1);transition:opacity .13s ease .12s,transform .13s ease .12s}
+.sidebar .logo-mini-icon{opacity:0;transform:scale(.75);transition:opacity .12s ease,transform .12s ease;pointer-events:none}
+.sidebar .logo-mini-icon svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sidebar .head-actions{display:flex;align-items:center;gap:2px;flex-shrink:0}
+.sidebar .icon-btn{position:relative;flex-shrink:0;width:34px;height:34px;border-radius:9px;cursor:pointer;background:transparent;border:none;color:var(--sb-ghost);display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease}
+.sidebar .icon-btn:hover{background:var(--sb-h);color:var(--sb-head)}
+.sidebar .icon-btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.side-tooltip{position:fixed;transform:translateY(-50%);z-index:100;pointer-events:none;background:var(--sb-card);color:var(--sb-head);border:1px solid var(--sb-line2);border-radius:8px;padding:7px 12px;font-family:inherit;font-weight:500;font-size:var(--sb-cap);white-space:nowrap;box-shadow:0 10px 22px -10px var(--sb-sh);opacity:0;transition:opacity .15s ease}
+.side-tooltip.show{opacity:1}
+@media (min-width:861px){
+.app.collapsed .sidebar{flex-basis:76px;width:76px;padding:26px 12px}
+.app.collapsed .sidebar .sidebar-head{justify-content:center}
+.app.collapsed .sidebar .head-actions{display:none}
+.app.collapsed .sidebar .logo-full{display:none}
+.app.collapsed .sidebar .logo-text{width:40px;height:40px;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s ease}
+.app.collapsed .sidebar .logo-mini{display:block}
+.app.collapsed .sidebar .logo-text:hover,.app.collapsed .sidebar .logo-text:focus-visible{background:var(--sb-h)}
+.app.collapsed .sidebar .logo-text:hover .logo-mini-mark,.app.collapsed .sidebar .logo-text:focus-visible .logo-mini-mark{opacity:0;transform:scale(.75);transition:opacity .12s ease,transform .12s ease}
+.app.collapsed .sidebar .logo-text:hover .logo-mini-icon,.app.collapsed .sidebar .logo-text:focus-visible .logo-mini-icon{opacity:1;transform:scale(1);transition:opacity .14s ease .12s,transform .14s ease .12s}
+.app.collapsed .sidebar .nav-label{display:none}
+}
+
+@media (min-width:861px){.app.collapsed .sidebar .side-label,.app.collapsed .sidebar .topics{display:none}.app.collapsed .sidebar .side-nav a{justify-content:center;gap:0}.app.collapsed .sidebar .side-nav a:hover svg{transform:none}}
+@media (max-width:860px){.sidebar .head-actions{display:none}}
+@media (prefers-reduced-motion:reduce){.sidebar,.sidebar *{transition:none!important}}

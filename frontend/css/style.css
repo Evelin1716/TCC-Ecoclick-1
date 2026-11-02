@@ -1,0 +1,4 @@
+/* Estilos globais compartilhados por todas as páginas (carregado antes dos estilos de cada página).
+   Cada página mantém seu próprio CSS em css/pages/<pagina>/; componentes reutilizáveis ficam em
+   css/components.css e css/components/. Mantido enxuto de propósito: nada aqui altera o visual existente. */
+html { -webkit-text-size-adjust: 100%; }

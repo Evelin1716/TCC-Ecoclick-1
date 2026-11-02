@@ -1,0 +1,13 @@
+:root{--bg:#eefbff;--fg:#1c2e4a;--mut:#4b6a62;--card:#fff;--line:#bfdccf;--brand:#4a8476}
+html[data-theme="dark"]{--bg:#0a1a1c;--fg:#eefbff;--mut:#9db8c0;--card:#152a30;--line:#33585f;--brand:#6dbba7}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6}
+main{max-width:920px;margin:0 auto;padding:32px 20px 64px}
+h1{font-weight:800;font-size:clamp(1.8rem,3vw + .5rem,2.5rem);margin:0 0 6px}
+.lead{color:var(--mut);margin:0 0 24px}
+.back{display:inline-block;margin-bottom:18px;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;border-radius:24px;padding:10px 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card h2{font-size:1.125rem;margin:0 0 8px}
+.card ul{margin:0;padding-left:18px;color:var(--mut);font-size:.9rem}
+.state{color:var(--mut)}
+.cta{display:inline-block;margin-top:24px;color:var(--brand);font-weight:700}

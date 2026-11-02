@@ -1,0 +1,298 @@
+
+    // Conteúdos e artigos. PARA ADICIONAR UM NOVO CONTEÚDO: acrescente um item à lista abaixo.
+    // Campos: id (único), title, category, description (curta), image (URL ou vazio) e body/refs.
+    // body: ["h","título de seção"] · ["p","parágrafo"] · ["quote","destaque"] · ["ul"|"ol"|"check",["item", ...]]
+    // Marcações no texto: **negrito** · [[rótulo|https://link]] · {{fonte citada}}
+    window.ECO_ARTICLES = [{"id": "reciclagem", "category": "Reciclagem", "description": "Um eletrônico descartado ainda pode ter materiais que podem ser reaproveitados.", "image": "../assets/images/dashboard-b1d17edab7.svg", "title": "Reciclagem: seu eletrônico pode ter uma segunda vida", "body": [["p", "Sabe aquele celular antigo guardado na gaveta? Ou aquele computador que parou de funcionar e você não sabe o que fazer com ele? Antes de considerar tudo isso simplesmente “lixo”, vale lembrar de uma coisa: um eletrônico descartado ainda pode ter materiais que podem ser reaproveitados."], ["p", "O lixo eletrônico, também chamado de e-lixo, inclui celulares, computadores, televisores, eletrodomésticos, baterias e vários outros aparelhos. E a quantidade gerada no mundo está crescendo bastante. Em 2022, foram produzidas cerca de 62 milhões de toneladas de lixo eletrônico no planeta. O mais preocupante é que apenas 22,3% desse material foi oficialmente coletado e reciclado. [[Global E-waste Monitor 2024 – ITU|https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx]]"], ["h", "Mas o que acontece quando um eletrônico é reciclado?"], ["p", "Um aparelho antigo não é simplesmente colocado em uma máquina e transformado em outro aparelho. Primeiro, ele passa por processos de coleta e tratamento, nos quais diferentes componentes e materiais podem ser separados."], ["p", "Isso é importante porque os eletrônicos possuem materiais que podem ser recuperados e reutilizados, além de componentes que precisam de cuidados especiais. Quando são descartados de qualquer maneira, podem representar riscos para o ambiente e para a saúde."], ["p", "Por isso, reciclar não significa apenas “jogar no lugar certo”. É uma forma de evitar desperdícios e aproveitar melhor os recursos que já foram utilizados para fabricar aquele produto."], ["h", "E o meio ambiente nisso?"], ["p", "O problema do lixo eletrônico vai muito além da nossa casa. Quando esses resíduos são manejados de forma inadequada, podem contribuir para a contaminação do solo, da água e do ar."], ["p", "Isso também se relaciona com a proteção dos ecossistemas. A ONU, por meio dos Objetivos de Desenvolvimento Sustentável, destaca a importância de proteger tanto os oceanos e recursos marinhos, no ODS 14, quanto os ecossistemas terrestres, no ODS 15. [[ONU – ODS 14: Vida na Água|https://sdgs.un.org/goals/goal14]] [[ONU – ODS 15: Vida Terrestre|https://sdgs.un.org/goals/goal15]]"], ["p", "E tem outro detalhe importante: o lixo eletrônico pode conter substâncias perigosas. Quando esses resíduos não recebem o tratamento adequado, podem causar impactos tanto ambientais quanto à saúde humana. [[Organização Mundial da Saúde – Electronic waste (e-waste)|https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)]]"], ["h", "Então, o que eu posso fazer?"], ["p", "Não precisa começar fazendo algo complicado. Quando tiver um eletrônico que não usa mais, evite colocá-lo no lixo comum. Procure pontos de coleta ou locais que façam o recebimento e a destinação adequada desses materiais."], ["p", "Também vale pensar antes de trocar um aparelho: ele realmente precisa ser substituído ou ainda pode ser consertado ou reutilizado?"], ["p", "Cada aparelho que recebe o destino correto é um pouco menos de material sendo desperdiçado e um pouco mais de recursos podendo voltar para a cadeia produtiva."], ["p", "Da próxima vez que encontrar um eletrônico velho, pense duas vezes antes de chamá-lo de lixo. Talvez ele ainda tenha muita coisa para oferecer."]], "refs": [{"t": "International Telecommunication Union (ITU). The Global E-waste Monitor 2024.", "url": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-waste-Monitor-2024.aspx"}, {"t": "World Health Organization (WHO). Electronic waste (e-waste).", "url": "https://www.who.int/news-room/fact-sheets/detail/electronic-waste-(e-waste)"}, {"t": "United Nations. Goal 14: Life Below Water.", "url": "https://sdgs.un.org/goals/goal14"}, {"t": "United Nations. Goal 15: Life on Land.", "url": "https://sdgs.un.org/goals/goal15"}]}, {"id": "lixo-celular", "category": "Curiosidades", "description": "Quanto lixo um celular pode gerar? A resposta depende do que acontece com ele depois do uso.", "image": "../assets/images/dashboard-486796a7f3.svg", "title": "Adivinhe quanto lixo um celular pode gerar", "body": [["p", "Vamos fazer um desafio: quanto lixo você acha que um celular pode gerar?"], ["p", "500 gramas? 1 quilo? 5 quilos?"], ["p", "A resposta pode ser um pouco diferente do que você está imaginando. As fontes oficiais não definem uma quantidade única de lixo gerada por cada celular, porque isso depende do aparelho, de quanto tempo ele é usado e, principalmente, do que acontece com ele depois que deixa de ser útil."], ["p", "Mas tem um número que ajuda a entender o tamanho do problema: em 2022, o mundo produziu cerca de 62 milhões de toneladas de lixo eletrônico. E apenas 22,3% desse material foi oficialmente coletado e reciclado."], ["p", "Ou seja: aquele celular esquecido na gaveta parece pequeno, mas ele faz parte de uma montanha de resíduos que está crescendo cada vez mais."], ["h", "Mas celular velho é só “lixo”?"], ["p", "Não necessariamente!"], ["p", "Um aparelho que você não usa mais pode seguir diferentes caminhos. Pela chamada logística reversa, ele pode ser coletado e passar por uma triagem. Se ainda tiver condições, pode ser reutilizado ou recondicionado. Caso contrário, seus componentes podem ser desmontados e separados para reaproveitamento ou reciclagem."], ["p", "Plásticos, metais, vidros e outros materiais presentes nos equipamentos podem voltar para processos produtivos, em vez de simplesmente serem descartados. É como dar uma segunda chance para aquilo que parecia ter chegado ao fim da linha."], ["h", "E se ele for parar no lugar errado?"], ["p", "Aí a história muda."], ["p", "O lixo eletrônico pode conter substâncias perigosas. Quando é desmontado, queimado ou reciclado de maneira inadequada, pode liberar poluentes que contaminam o ar, a água e o solo. A Organização Mundial da Saúde alerta que mais de 1.000 substâncias nocivas podem estar presentes no lixo eletrônico ou ser produzidas durante práticas inadequadas de reciclagem."], ["p", "Por isso, jogar aquele celular velho no lixo comum não é exatamente um “problema resolvido”. É só o começo de outra etapa — e ela pode ser bem ruim para o meio ambiente e para a saúde."], ["h", "Então, qual é a resposta?"], ["p", "Talvez a melhor pergunta não seja “quanto lixo um celular gera?”, mas sim:"], ["quote", "“Quanto desse lixo precisa realmente virar lixo?”"], ["p", "Um celular pode ser reutilizado, recondicionado ou ter seus materiais recuperados quando recebe a destinação adequada. No Brasil, a logística reversa existe justamente para organizar esse caminho depois do uso."], ["p", "E não precisa fazer uma operação secreta na gaveta para descobrir o que fazer com seu aparelho antigo. Existem pontos de recebimento onde produtos eletroeletrônicos podem ser entregues para a destinação correta. A ABREE, por exemplo, disponibiliza uma ferramenta para encontrar pontos de recebimento de acordo com o produto e o CEP."], ["p", "Então, da próxima vez que olhar para aquele celular velho, lembre:"], ["quote", "Ele pode até estar fora de uso, mas isso não significa que tudo nele perdeu o valor."]], "refs": [{"t": "Organização Mundial da Saúde (WHO). Electronic waste (e-waste).", "url": "https://www.who.int/vietnam/news/fact-sheets/detail/electronic-waste-%28e-waste%29"}, {"t": "Organização Mundial da Saúde (WHO). Electronic waste: Digital dumpsites and children’s health.", "url": "https://www.who.int/news-room/questions-and-answers/item/children-and-digital-dumpsites-e-waste-and-health"}, {"t": "SINIR – Sistema Nacional de Informações sobre a Gestão de Resíduos Sólidos. Logística Reversa – Eletroeletrônicos.", "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/eletroeletronicos"}, {"t": "Ministério das Comunicações. Logística reversa: entenda como funciona o reaproveitamento de equipamentos eletrônicos.", "url": "https://www.gov.br/mcom/pt-br/noticias/noticias_alt/2026/julho/logistica-reversa-entenda-como-funciona-o-reaproveitamento-de-equipamentos-eletronicos"}, {"t": "ABREE – Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos.", "url": "https://www.abree.org.br/"}]}, {"id": "baterias", "category": "Baterias", "description": "Pequenas, mas com grande responsabilidade: o que fazer quando uma bateria chega ao fim da vida útil.", "image": "../assets/images/dashboard-c6db31775c.svg", "title": "O que as baterias têm a ver com a poluição?", "body": [["p", "Você já parou para pensar no que acontece com uma bateria quando ela deixa de funcionar? Será que ela simplesmente desaparece quando vai para o lixo? E o que um objeto tão pequeno pode ter a ver com a poluição do planeta? A resposta é mais importante do que parece!"], ["p", "As baterias estão por toda parte: nos celulares, notebooks, brinquedos, controles remotos, relógios e até nos carros elétricos. Elas são essenciais para o funcionamento de muitos aparelhos, mas existe um detalhe que nem todo mundo lembra: quando uma bateria chega ao fim da vida útil, ela precisa receber o destino correto."], ["p", "O problema começa quando pilhas e baterias são jogadas no lixo comum ou descartadas em locais inadequados. Dependendo do tipo, elas podem conter substâncias perigosas, como chumbo, que representam riscos para o meio ambiente e para a saúde humana. Quando esses resíduos não são tratados corretamente, seus componentes podem contaminar o solo e a água, prejudicando os ecossistemas e os seres vivos que dependem deles."], ["p", "E não pense que o perigo está apenas na contaminação! As baterias de íons de lítio, muito utilizadas em celulares, tablets e notebooks, também podem provocar incêndios quando são danificadas, esmagadas ou descartadas incorretamente. Imagine uma bateria descartada no lixo comum que acaba sendo comprimida durante o transporte ou o processamento dos resíduos. Dependendo das condições, isso pode provocar um acidente e colocar trabalhadores em risco."], ["p", "Mas será que uma bateria usada não serve mais para nada?"], ["p", "Calma! Ela não precisa terminar sua história no lixo. Muitas baterias podem passar por processos de reciclagem que recuperam materiais úteis, permitindo que eles sejam reaproveitados na fabricação de novos produtos. Isso ajuda a diminuir o desperdício e pode reduzir a necessidade de extrair novas matérias-primas da natureza."], ["p", "É aí que entra a chamada logística reversa. Esse sistema permite que produtos usados, como pilhas e baterias, retornem aos responsáveis por sua destinação adequada, em vez de seguirem para o lixo comum. Por meio de pontos de coleta e sistemas específicos, esses resíduos podem ser encaminhados para tratamento, reciclagem ou outras formas de destinação ambientalmente apropriadas."], ["p", "No Brasil, existem sistemas de logística reversa voltados para pilhas, baterias e baterias de chumbo-ácido. Cada tipo exige cuidados específicos, por isso é importante não tratar todas as baterias como se fossem iguais. As orientações de descarte podem variar conforme o produto e o sistema de coleta disponível."], ["p", "E o que você pode fazer para ajudar? Primeiro, evite jogar pilhas e baterias usadas no lixo doméstico ou misturá-las aos materiais recicláveis comuns sem verificar as orientações locais. Procure pontos de coleta apropriados, como os disponibilizados por estabelecimentos participantes dos sistemas de logística reversa. Se uma bateria estiver estufada, danificada ou aquecendo, não tente abri-la, perfurá-la ou consertá-la: evite manuseá-la e procure orientação especializada para o descarte seguro."], ["p", "Outra atitude importante é cuidar melhor dos eletrônicos que você já tem. Conservar os aparelhos, evitar trocas desnecessárias e encaminhar as baterias usadas para a destinação correta são formas de reduzir os impactos associados ao consumo de recursos naturais e à geração de resíduos."], ["p", "No fim das contas, a poluição causada pelas baterias não depende apenas do que existe dentro delas, mas também do que fazemos quando deixam de funcionar. Um descarte irresponsável pode gerar problemas; uma destinação adequada, por outro lado, ajuda a prevenir riscos e possibilita o reaproveitamento de materiais."], ["p", "Agora você já sabe: uma bateria pode ser pequena, mas a responsabilidade por seu descarte é enorme! Da próxima vez que seu celular ou outro eletrônico ficar sem bateria definitivamente, lembre-se de que a atitude correta não termina quando o aparelho para de funcionar."]], "refs": [{"t": "Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos (SINIR) — Pilhas e baterias", "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/pilhas-e-baterias/"}, {"t": "Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (Ibama) — Pilhas e baterias", "url": "https://www.gov.br/ibama/pt-br/assuntos/emissoes-e-residuos/residuos/pilhas-e-baterias"}, {"t": "Sistema Nacional de Informações sobre a Gestão dos Resíduos Sólidos (SINIR) — Baterias de chumbo-ácido", "url": "https://sinir.gov.br/perfis/logistica-reversa/logistica-reversa/baterias-de-chumbo-acido/"}, {"t": "Agência de Proteção Ambiental dos Estados Unidos (EPA) — Perguntas frequentes sobre baterias de íons de lítio", "url": "https://www.epa.gov/recycle/frequent-questions-lithium-ion-batteries"}, {"t": "Agência de Proteção Ambiental dos Estados Unidos (EPA) — Reciclagem de baterias de íons de lítio", "url": "https://www.epa.gov/hw/lithium-ion-battery-recycling"}]}, {"id": "biodiversidade", "category": "Biodiversidade", "description": "Como um celular descartado incorretamente pode afetar rios, florestas e a vida que depende deles.", "image": "../assets/images/dashboard-2b6eef9828.svg", "title": "O efeito dominó do lixo eletrônico: como nossos aparelhos afetam a biodiversidade", "body": [["p", "Imagine uma floresta cheia de vida, com pássaros cantando, insetos polinizando flores e pequenos animais procurando alimento. Agora, imagine que um celular descartado incorretamente contribua para contaminar um rio próximo a esse ambiente. Parece que uma coisa não tem nada a ver com a outra, né? Mas é justamente aí que começa o problema!"], ["h", "Tudo na natureza está conectado"], ["p", "A biodiversidade é a variedade de seres vivos do planeta, incluindo animais, plantas, fungos e os ecossistemas onde vivem. No Brasil, essa riqueza é enorme, mas muitas espécies enfrentam ameaças que colocam sua sobrevivência em risco."], ["p", "E sabe o que torna essa situação ainda mais preocupante? Na natureza, nenhum ser vivo está completamente isolado. Os animais dependem de ambientes saudáveis para encontrar alimento, água e abrigo. As plantas precisam de solo e água em boas condições para crescer. Quando um desses elementos é prejudicado, outros também podem sentir os efeitos."], ["p", "É como um efeito dominó: uma mudança no ambiente pode afetar várias espécies ao mesmo tempo. E o descarte inadequado de lixo eletrônico pode contribuir para esse desequilíbrio."], ["h", "Como um celular pode afetar uma floresta ou um oceano?"], ["p", "Celulares, computadores, carregadores e baterias contêm diferentes materiais, alguns dos quais podem ser perigosos quando liberados no ambiente sem controle."], ["p", "Quando o lixo eletrônico é abandonado em terrenos, descartado em locais inadequados ou tratado de maneira incorreta, determinadas substâncias podem contaminar o solo e a água. A partir daí, o problema deixa de ser apenas um aparelho velho: passa a ser uma ameaça potencial aos organismos que dependem desses recursos naturais."], ["p", "Veja como essa conexão acontece:"], ["ul", ["**No solo:** a contaminação pode prejudicar organismos que vivem nele e afetar a qualidade do ambiente onde as plantas crescem.", "**Nos rios e oceanos:** contaminantes que chegam à água podem afetar organismos aquáticos, incluindo espécies que servem de alimento para outros animais.", "**Nas cadeias alimentares:** quando organismos são prejudicados, os efeitos podem alcançar outras espécies que dependem deles para sobreviver.", "**Nos ecossistemas:** a soma desses impactos pode comprometer o equilíbrio ambiental e dificultar a sobrevivência de diferentes formas de vida."]], ["p", "Isso não significa que todo eletrônico descartado incorretamente vá contaminar um rio ou provocar a extinção de uma espécie. O impacto depende dos materiais envolvidos, das condições de descarte e da exposição dos organismos. Porém, quando o descarte inadequado se acumula, os riscos ambientais também aumentam."], ["p", "E existe outro detalhe importante: a fabricação de eletrônicos exige a extração de recursos naturais. Quanto mais aparelhos substituímos sem necessidade, maior pode ser a demanda por novas matérias-primas, cuja extração pode causar alterações nos habitats e pressionar a biodiversidade."], ["p", "Ou seja, o impacto não começa necessariamente quando jogamos um celular fora. Ele pode estar presente desde a retirada dos recursos usados para fabricá-lo até o destino que damos ao aparelho no fim de sua vida útil."], ["h", "Reciclar eletrônicos também é cuidar dos animais"], ["p", "Agora vem a parte boa: podemos ajudar a interromper esse efeito dominó!"], ["p", "Quando um eletrônico é encaminhado para a destinação correta, seus materiais podem ser recuperados e reaproveitados, conforme as possibilidades de cada componente. Isso ajuda a reduzir o desperdício, diminui a necessidade de extrair novos recursos e evita que resíduos sejam abandonados em ambientes naturais."], ["p", "A reciclagem, sozinha, não resolve todas as ameaças à biodiversidade, mas faz parte de um conjunto de atitudes que contribuem para proteger os ecossistemas. É uma maneira de reduzir os impactos do nosso consumo e cuidar dos ambientes dos quais tantas espécies dependem."], ["p", "Você pode fazer sua parte com atitudes simples:"], ["ul", ["**Procure pontos de coleta:** não descarte celulares, baterias e outros eletrônicos no lixo comum.", "**Use seus aparelhos por mais tempo:** consertar um eletrônico pode evitar uma substituição desnecessária.", "**Reutilize quando possível:** um aparelho antigo ainda pode ser útil para outra pessoa.", "**Descarte com responsabilidade:** procure locais que recebam cada tipo de resíduo eletrônico adequadamente."]], ["h", "Salvar a biodiversidade também começa na sua gaveta"], ["p", "A proteção dos animais ameaçados e dos ambientes naturais depende de muitas ações, desde políticas de conservação até mudanças na forma como produzimos e consumimos."], ["p", "Pode parecer pouco levar um celular antigo a um ponto de coleta, mas essa atitude ajuda a dar um destino adequado aos materiais e reduz o risco de que eles acabem poluindo o ambiente. Quando milhões de pessoas fazem escolhas mais responsáveis, o impacto coletivo pode ser significativo."], ["p", "Cuidar do lixo eletrônico é também pensar na floresta, no rio, no oceano e em cada ser vivo que depende deles. Afinal, proteger a biodiversidade não significa apenas salvar animais: significa preservar as conexões que tornam a vida no planeta possível!"]], "refs": [{"t": "ICMBio — Fauna Brasileira", "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/fauna-brasileira"}, {"t": "IBGE — Espécies ameaçadas de extinção", "url": "https://educa.ibge.gov.br/jovens/materias-especiais/22384-especies-ameacadas-de-extincao.html"}, {"t": "IUCN — Natureza, oceanos e clima", "url": "https://iucn.org/news/202609/iucn-advances-nature-ocean-and-climate-agenda-unga-and-nyc-climate-week"}, {"t": "Nações Unidas no Brasil — Objetivos de Desenvolvimento Sustentável", "url": "https://brasil.un.org/pt-br/sdgs"}]}, {"id": "marinha", "category": "Oceanos", "description": "O lixo pode chegar ao oceano sem ser jogado no mar — e já foi encontrado até no mar profundo.", "image": "../assets/images/dashboard-65870d99c4.svg", "title": "Poluição marinha: o problema que vai muito além da praia", "body": [["p", "Quando pensamos em poluição no oceano, é comum imaginar uma praia cheia de garrafas, sacolas e outros resíduos. Mas o problema é bem maior — e pode chegar a lugares que a gente nem consegue enxergar."], ["p", "A poluição marinha acontece quando resíduos e diferentes tipos de substâncias chegam aos oceanos e alteram a qualidade da água, afetando animais, plantas e os próprios ecossistemas. Por isso, proteger os mares é uma das metas do ODS 14 da ONU, que busca conservar os oceanos e promover o uso sustentável dos recursos marinhos. {{ODS 14 – Vida na Água | ONU}}"], ["h", "O lixo consegue chegar tão longe assim?"], ["p", "Sim — e ele nem precisa ser jogado diretamente no mar."], ["p", "Um plástico deixado na rua, por exemplo, pode ser carregado pela chuva até bueiros, córregos e rios. Esses resíduos podem percorrer grandes distâncias antes de chegar ao oceano. Por isso, o que acontece em terra firme também pode ter consequências para o ambiente marinho."], ["p", "E existe um problema ainda mais difícil de perceber: os microplásticos. São partículas muito pequenas de plástico que podem se espalhar pelo ambiente e chegar a diferentes partes do oceano."], ["p", "Uma pesquisa realizada na Bacia de Santos encontrou fibras de plástico e outros poluentes em sedimentos, peixes e invertebrados entre 400 e 1.500 metros de profundidade. Isso mostra que a poluição não está apenas na superfície: ela também pode chegar ao mar profundo. {{Jornal da USP – Poluição nos oceanos já atinge até mar profundo}}"], ["h", "E os animais marinhos?"], ["p", "Os animais podem entrar em contato com resíduos e substâncias poluentes de várias maneiras. Alguns podem ingerir partículas presentes na água ou misturadas ao alimento e ao sedimento. Outros podem ficar expostos a resíduos que permanecem no ambiente."], ["p", "Na pesquisa realizada na Bacia de Santos, por exemplo, pesquisadores encontraram microplásticos em pepinos-do-mar, animais que vivem próximos ao fundo e se alimentam de partículas presentes no sedimento. Também foram encontrados poluentes persistentes em peixes e no próprio sedimento marinho. {{Jornal da USP – Poluição nos oceanos já atinge até mar profundo}}"], ["p", "Isso ajuda a entender uma coisa importante: o oceano é um sistema conectado. Um resíduo que parece pequeno e sem importância pode fazer parte de um problema muito maior quando se acumula no ambiente."], ["p", "A conservação desses ecossistemas é importante não apenas para os animais que vivem neles, mas também para as pessoas. A IUCN trabalha justamente com a conservação da natureza e destaca a importância da proteção dos ecossistemas marinhos e costeiros. {{IUCN – International Union for Conservation of Nature}}"], ["h", "E de onde vem tanta poluição?"], ["p", "A poluição marinha pode ter diferentes origens. Parte dela está relacionada ao descarte inadequado de resíduos e à forma como produzimos, usamos e descartamos produtos."], ["p", "O problema também não se resume ao plástico. Diferentes tipos de poluentes podem chegar aos ambientes aquáticos e permanecer neles, afetando a qualidade dos ecossistemas. O Programa das Nações Unidas para o Meio Ambiente (PNUMA/UNEP) trata a poluição como um problema que exige mudanças na forma como produzimos, consumimos e lidamos com nossos resíduos. {{UNEP – Da Poluição à Solução}}"], ["p", "Por isso, combater a poluição marinha não significa apenas recolher lixo das praias. É preciso pensar antes que esse lixo chegue ao oceano."], ["h", "O que podemos fazer?"], ["p", "Pode parecer que uma pessoa sozinha não consegue fazer muita diferença, mas nossas escolhas fazem parte de um problema coletivo."], ["p", "Descartar resíduos corretamente, evitar desperdícios, reduzir o uso desnecessário de produtos descartáveis e dar a cada tipo de resíduo o destino adequado são algumas atitudes que ajudam a diminuir a quantidade de lixo que pode chegar aos ambientes aquáticos."], ["p", "E existe uma ideia simples para lembrar disso:"], ["quote", "O oceano não começa na praia."], ["p", "O que fazemos em nossas casas, ruas e cidades pode, de alguma forma, chegar aos rios e ao mar. Cuidar do oceano, então, também começa bem longe da água — começa no jeito como cuidamos do que descartamos todos os dias."]], "refs": [{"t": "United Nations – Sustainable Development Goals. Goal 14: Life Below Water.", "url": ""}, {"t": "NOAA – National Ocean Service.", "url": ""}, {"t": "IUCN – International Union for Conservation of Nature.", "url": ""}, {"t": "UNEP – United Nations Environment Programme. Pollution to Solution.", "url": ""}, {"t": "Jornal da USP. Poluição nos oceanos já atinge até mar profundo.", "url": ""}]}, {"id": "infancia", "category": "Saúde", "description": "O descarte inadequado de lixo eletrônico pode liberar substâncias tóxicas, e as crianças estão entre as mais vulneráveis.", "image": "../assets/images/dashboard-ae80307815.svg", "title": "Lixo eletrônico: uma ameaça à infância que vai muito além das telas!", "body": [["p", "Celular que parou de funcionar, fone de ouvido quebrado, computador antigo encostado no quarto… Quem nunca teve um eletrônico sem utilidade ocupando espaço em casa? Parece inofensivo, mas o destino desses aparelhos pode ter consequências bem maiores do que imaginamos, principalmente para as crianças."], ["p", "Quando o lixo eletrônico é descartado de qualquer jeito, ele pode liberar substâncias tóxicas que prejudicam o meio ambiente e a saúde humana. E tem um detalhe preocupante: as crianças estão entre as mais vulneráveis a esses perigos!"], ["h", "O que tem de tão perigoso nesses aparelhos?"], ["p", "Por fora, um celular velho pode parecer apenas um objeto quebrado. Por dentro, porém, ele contém diferentes materiais, incluindo substâncias perigosas, como chumbo e mercúrio."], ["p", "Quando esses aparelhos são queimados, desmontados sem proteção ou reciclados de maneira inadequada, essas substâncias podem contaminar o ar, o solo e a água. Assim, o problema não fica restrito ao eletrônico: pode chegar às pessoas que vivem e circulam por perto."], ["p", "E por que isso preocupa tanto quando falamos de crianças? Simples: elas ainda estão em fase de crescimento e desenvolvimento. A exposição a substâncias tóxicas pode prejudicar esse processo e provocar problemas de saúde, incluindo alterações no desenvolvimento do cérebro, dificuldades de aprendizagem e problemas respiratórios."], ["p", "Ou seja, aquele eletrônico que parece não servir para mais nada pode se tornar um risco quando não recebe o destino adequado."], ["h", "Quando o lixo eletrônico invade a infância"], ["p", "Agora, imagine uma criança que mora perto de um local onde aparelhos são queimados para recuperar seus materiais. Enquanto ela brinca, estuda ou passa o dia com a família, pode acabar exposta à poluição produzida por essas atividades."], ["p", "Essa não é apenas uma situação imaginária. Em diferentes lugares do mundo, crianças vivem ou trabalham perto de áreas de processamento informal de lixo eletrônico. Algumas chegam a participar da coleta e da desmontagem desses materiais, muitas vezes sem equipamentos de proteção."], ["p", "Em 2021, a Organização Mundial da Saúde (OMS) alertou que milhões de crianças e adolescentes estavam em risco devido à exposição a resíduos eletrônicos. A preocupação é ainda maior porque os efeitos da exposição a substâncias tóxicas podem acompanhar uma pessoa por muito tempo."], ["p", "E não são apenas as crianças que mexem diretamente nos aparelhos que correm riscos. A contaminação do ambiente também pode afetar outras pessoas que vivem nas proximidades."], ["quote", "A infância deveria ser feita de brincadeiras, descobertas e aprendizado — não de contato com resíduos perigosos."], ["h", "Tá, mas como podemos mudar essa história?"], ["p", "A boa notícia é que não precisamos abandonar a tecnologia para diminuir esse problema! Celulares, computadores e outros aparelhos são úteis no nosso dia a dia. O importante é aprender a usá-los e descartá-los com responsabilidade."], ["p", "Quando um eletrônico é encaminhado para uma reciclagem adequada, seus materiais podem ser recuperados com mais segurança. Isso ajuda a evitar o descarte irregular e reduz os riscos de contaminação para trabalhadores, crianças e comunidades."], ["p", "Quer fazer sua parte? Olha só algumas atitudes que ajudam de verdade:"], ["ul", ["**Dê um destino certo aos eletrônicos:** procure pontos de coleta específicos em vez de jogá-los no lixo comum.", "**Nada de queimar ou desmontar aparelhos em casa:** isso pode liberar substâncias perigosas.", "**Conserte antes de substituir:** se o aparelho ainda puder ser reparado, você pode prolongar sua vida útil e evitar gerar mais resíduos.", "**Reutilize quando possível:** aquele eletrônico antigo pode continuar sendo útil para outra pessoa.", "**Espalhe a ideia:** converse com amigos e familiares sobre os riscos do descarte inadequado."]], ["p", "São atitudes simples, mas que ajudam a construir uma relação mais responsável com a tecnologia."], ["h", "Mais cuidado com o lixo, mais proteção para as crianças!"], ["p", "O lixo eletrônico não é apenas um problema de aparelhos quebrados ou de poluição. Ele também envolve saúde, segurança e qualidade de vida, especialmente para crianças que vivem em comunidades expostas ao processamento inadequado desses resíduos."], ["p", "Por isso, a solução depende de governos, empresas e serviços de reciclagem que garantam processos seguros. Mas nossas escolhas também fazem parte dessa mudança: descartar corretamente, evitar desperdícios e usar os aparelhos por mais tempo são bons pontos de partida."], ["p", "No fim das contas, a tecnologia deveria tornar nossas vidas melhores, e não colocar a saúde de ninguém em risco."], ["p", "Seu celular pode até ficar velho, mas sua responsabilidade com o planeta nunca sai de moda!"]], "refs": [{"t": "Organização Mundial da Saúde (OMS). Children and digital dumpsites: e-waste and health.", "url": "https://www.who.int/news-room/questions-and-answers/item/children-and-digital-dumpsites-e-waste-and-health"}, {"t": "Organização Pan-Americana da Saúde (OPAS/OMS). Aumento do lixo eletrônico afeta saúde de milhões de crianças, alerta OMS.", "url": "https://www.paho.org/pt/noticias/15-6-2021-aumento-do-lixo-eletronico-afeta-saude-milhoes-criancas-alerta-oms"}, {"t": "Nações Unidas no Brasil. Aumento do lixo eletrônico afeta saúde de milhões de crianças, alerta OMS.", "url": "https://brasil.un.org/pt-br/131782-aumento-do-lixo-eletr%C3%B4nico-afeta-sa%C3%BAde-de-milh%C3%B5es-de-crian%C3%A7as-alerta-oms"}]}, {"id": "destralhe", "category": "Desafios", "description": "Sua missão: investigar os eletrônicos esquecidos na gaveta e descobrir o destino certo para cada um.", "image": "../assets/images/dashboard-cb75dafc10.svg", "title": "Operação Destralhe: a missão de descobrir o que fazer com seus eletrônicos esquecidos!", "body": [["h", "ALERTA, AGENTE! TEM ELETRÔNICO SUSPEITO NA SUA GAVETA!"], ["p", "Um celular que não liga desde 2022, um fone que só funciona quando o fio fica dobrado em um ângulo misterioso e carregadores que ninguém sabe de qual aparelho são. Familiar?"], ["p", "Parabéns! Você pode estar diante de um caso clássico de gaveta-museu da tecnologia. Mas chegou a hora de acabar com essa exposição! Sua missão é investigar esses objetos e descobrir qual será o próximo capítulo da história deles."], ["h", "Fase 1: Quem são esses sujeitos?"], ["p", "Reúna os eletrônicos esquecidos pela casa. Vale celular antigo, teclado quebrado, controle sem utilidade, fone aposentado e até aquele cabo que você guarda “vai que um dia precisa”."], ["p", "Agora, investigue: algum deles ainda funciona? Algum pode ser consertado? Existe alguém que poderia aproveitar um aparelho que você não usa mais?"], ["p", "Cuidado: não é porque um eletrônico saiu de moda que ele precisa ser condenado à gaveta eterna!"], ["h", "Fase 2: Escolha o futuro do suspeito"], ["p", "Cada aparelho pode ter um destino diferente. Confira as possibilidades:"], ["ul", ["**Ainda funciona?** Continue usando ou considere doá-lo para alguém que precise.", "**Está com defeito?** Veja se o conserto vale a pena. Às vezes, o problema tem solução!", "**Não tem mais utilidade?** Procure um ponto de recebimento de lixo eletrônico.", "**É um carregador misterioso?** Tente identificar para qual aparelho serve, mas não use acessórios danificados ou inseguros."]], ["p", "Antes de doar ou entregar um celular, lembre-se de fazer backup dos arquivos e apagar seus dados pessoais. Afinal, ninguém precisa herdar suas fotos e conversas junto com o aparelho!"], ["h", "Fase 3: Nada de abandonar o suspeito por aí!"], ["p", "Atenção, agente: eletrônicos sem utilidade não devem ser descartados automaticamente no lixo comum. Eles precisam receber a destinação adequada."], ["p", "É aí que entra a logística reversa: um sistema que permite que determinados produtos e seus resíduos retornem aos canais apropriados para destinação ambientalmente correta."], ["p", "Organizações como a ABREE ajudam consumidores a encontrar orientações e locais de recebimento de produtos eletroeletrônicos. Antes de sair de casa, confira quais aparelhos são aceitos no ponto escolhido."], ["p", "Missão importante: nada de jogar o celular quebrado no lixo e fingir que ele desapareceu por mágica!"], ["h", "Fase 4: O chefão final — o lixo eletrônico mundial"], ["p", "O problema vai muito além da sua gaveta. O lixo eletrônico é um desafio mundial, e o descarte inadequado pode causar impactos ambientais e à saúde."], ["p", "Por isso, prolongar a vida útil dos aparelhos, consertar o que for possível e encaminhar os resíduos para os locais corretos são atitudes que ajudam a reduzir o desperdício e melhorar a destinação desses materiais."], ["p", "Pode parecer pouco resolver o mistério de um celular esquecido, mas mudanças assim fazem parte de uma missão muito maior: consumir com mais consciência e descartar melhor."], ["h", "Desafio final: conclua a Operação Destralhe!"], ["p", "Marque as tarefas conforme concluir sua missão:"], ["check", ["Reunir os eletrônicos esquecidos pela casa.", "Separar os aparelhos que ainda funcionam.", "Investigar possibilidades de conserto e reutilização.", "Verificar quais aparelhos podem ser doados.", "Encontrar um ponto de recebimento adequado para os eletrônicos sem utilidade.", "Dar adeus à gaveta-museu!"]], ["h", "Caso encerrado?"], ["p", "Se você chegou até aqui, parabéns, agente! Sua gaveta está um passo mais perto de deixar de ser um cemitério tecnológico."], ["p", "Agora, passe a missão adiante: desafie alguém da família ou um amigo a investigar os próprios eletrônicos esquecidos. Afinal, sempre existe aquela pessoa que guarda um celular de cinco gerações atrás “porque ainda pode precisar”."], ["p", "E aí, quantos suspeitos você encontrou na sua casa?"]], "refs": [{"t": "SINIR — Logística reversa de eletroeletrônicos", "url": ""}, {"t": "ABREE — Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos", "url": ""}, {"t": "Ministério das Comunicações — Como descartar eletrônicos sem utilidade", "url": ""}, {"t": "PNUMA — Notícias e reportagens", "url": ""}, {"t": "Global E-waste Monitor", "url": ""}, {"t": "Decreto nº 10.240/2020", "url": ""}]}, {"id": "celular-velho", "category": "Consumo consciente", "description": "Você precisa de um celular novo ou só ficou com vontade da novidade? Pense antes de trocar.", "image": "../assets/images/dashboard-c48dc86a37.svg", "title": "Seu celular é velho ou você só enjoou dele?", "body": [["p", "Imagine a cena: você abre o Instagram e dá de cara com o lançamento de um celular novo. A câmera é absurda, o design é lindo e todo mundo parece estar falando dele. Você olha para o seu aparelho e pensa: “Nossa, acho que está na hora de trocar…”"], ["p", "Mas peraí! Ontem você estava usando o mesmo celular para tudo e ele não parecia tão ruim assim. O que aconteceu? Ele ficou ultrapassado em 24 horas ou você caiu no famoso golpe do “preciso de um celular novo porque esse já não é o mais novo”?"], ["h", "O efeito FOMO: medo de ficar para trás"], ["p", "A gente vive cercado de novidades. Tem celular novo, atualização nova, câmera com mais funções… Quando você percebe, parece que o seu aparelho virou uma relíquia arqueológica."], ["p", "Só que existe uma diferença enorme entre precisar de um celular novo e simplesmente querer um."], ["p", "Se o seu aparelho trava o tempo todo, não recebe mais atualizações importantes ou já não atende às suas necessidades, trocar pode fazer sentido. Mas, se ele funciona bem e você só ficou com vontade de ter o modelo que acabou de lançar, talvez valha a pena pensar duas vezes."], ["p", "Afinal, você quer mesmo um celular novo ou só quer a sensação de ter uma novidade?"], ["h", "O que a propaganda não mostra"], ["p", "Quando você vê um celular novinho saindo da caixa, não vê tudo o que foi necessário para fabricá-lo."], ["p", "A produção de eletrônicos utiliza matérias-primas, recursos naturais e energia. E, quando aparelhos são descartados de maneira inadequada, seus resíduos podem causar danos ao meio ambiente e riscos à saúde."], ["p", "Além disso, o lixo eletrônico é um problema mundial. Segundo o Global E-waste Monitor, a quantidade de resíduos eletrônicos gerados no mundo tem crescido, enquanto a reciclagem documentada não acompanha esse ritmo."], ["p", "Ou seja: trocar de aparelho por impulso pode parecer uma decisão pequena, mas o impacto dos eletrônicos vai muito além da tela que você segura na mão."], ["h", "E o celular antigo vira o quê? Um peso de papel?"], ["p", "Você decidiu trocar? Beleza. Mas não deixe o aparelho antigo virar morador permanente da gaveta, junto com os fones quebrados e os cabos misteriosos!"], ["p", "Antes de dar adeus ao seu celular, pense nas possibilidades:"], ["ul", ["**Ele ainda funciona?** Continue usando ou passe o aparelho para alguém que precise.", "**Está com algum problema?** Pesquise se o conserto compensa. Às vezes, ele ainda tem muita vida pela frente.", "**Não tem mais jeito?** Encaminhe-o para um ponto de recebimento de eletrônicos e confira quais aparelhos são aceitos."]], ["p", "A logística reversa ajuda a encaminhar produtos descartados para a destinação adequada, favorecendo o reaproveitamento de materiais. A ABREE, por exemplo, oferece informações sobre o descarte de eletroeletrônicos."], ["p", "Só não vale jogar o aparelho no lixo comum e fingir que o problema virou assunto de outra pessoa."], ["h", "DESAFIO: prove que você não troca de celular por qualquer coisa!"], ["p", "Antes de comprar o próximo lançamento, responda sinceramente:"], ["ol", ["Meu celular realmente não atende mais às minhas necessidades?", "Um conserto ou alguns ajustes poderiam resolver o problema?", "Eu já queria trocar ou só fiquei com vontade depois de ver o modelo novo?", "Já sei o que vou fazer com o aparelho antigo?"]], ["p", "Se você percebeu que seu celular ainda dá conta do recado, parabéns: acabou de desbloquear a conquista “consumidor consciente”."], ["p", "Não é proibido gostar de tecnologia, querer uma câmera melhor ou comprar um aparelho novo. A questão é não transformar cada lançamento em uma obrigação."], ["p", "No fim das contas, seu celular está velho mesmo ou você só enjoou dele? Pense nisso antes de passar o cartão!"]], "refs": [{"t": "Global E-waste Monitor — Dados globais sobre lixo eletrônico", "url": ""}, {"t": "Organização Mundial da Saúde (OMS) — Lixo eletrônico", "url": ""}, {"t": "Ministério das Comunicações — Logística reversa de equipamentos eletrônicos", "url": ""}, {"t": "SINIR — Logística reversa de eletroeletrônicos", "url": ""}, {"t": "ABREE — Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos", "url": ""}]}];
+    (function(){
+      var A = window.ECO_ARTICLES, PAGE = 6, shown = PAGE, cat = 'Todos', from = 'dashboard';
+      var CHK = 'ecoclick_article_checks';
+      var PH = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>';
+      var cats = []; A.forEach(function(a){ if(cats.indexOf(a.category) < 0) cats.push(a.category); });
+      function $(id){ return document.getElementById(id); }
+      function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      function inl(s){
+        return esc(s).replace(/\{\{(.+?)\}\}/g,'<span class="art-src">$1</span>')
+          .replace(/\[\[(.+?)\|(.+?)\]\]/g,'<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+          .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>');
+      }
+      function plain(s){ return String(s).replace(/\{\{|\}\}|\*\*/g,'').replace(/\[\[(.+?)\|.+?\]\]/g,'$1'); }
+      function words(a){
+        var n = 0; a.body.forEach(function(b){ var t = Array.isArray(b[1]) ? b[1].join(' ') : b[1]; n += plain(t).split(/\s+/).length; });
+        return n;
+      }
+      function mins(a){ return Math.max(1, Math.round(words(a) / 200)); }
+      function find(id){ for(var i = 0; i < A.length; i++) if(A[i].id === id) return A[i]; return null; }
+
+      function card(a){
+        var t = 't' + (cats.indexOf(a.category) % 4);
+        var media = a.image ? '<img src="' + esc(a.image) + '" alt="" loading="lazy">' : PH;
+        return '<article class="content-card art-card" role="listitem" data-id="' + esc(a.id) + '">' +
+          '<div class="cc-media ' + t + '">' + media + '</div>' +
+          '<div class="cc-body"><span class="art-cat">' + esc(a.category) + '</span>' +
+          '<h3 class="art-t"><a href="#" data-open="' + esc(a.id) + '">' + esc(a.title) + '</a></h3>' +
+          '<p class="art-d">' + esc(a.description) + '</p>' +
+          '<span class="art-time">' + mins(a) + ' min de leitura</span></div></article>';
+      }
+
+      // seção compacta do Dashboard: os 4 primeiros conteúdos da lista
+      if($('art-rail')) $('art-rail').innerHTML = A.slice(0, 4).map(card).join('');
+
+      // página completa (estrutura: cabeçalho com modo de exibição, filtro e ordenação; cards com imagem, título e botão)
+      var sort = 'default', mode = 'grid';
+      function key(a){ return plain(a.title).replace(/^[^\p{L}\p{N}]+/u, ''); }
+      function sorted(l){
+        l = l.slice();
+        if(sort === 'az') l.sort(function(x, y){ return key(x).localeCompare(key(y), 'pt-BR'); });
+        else if(sort === 'short') l.sort(function(x, y){ return mins(x) - mins(y); });
+        return l;
+      }
+      function pcard(a){
+        var t = 't' + (cats.indexOf(a.category) % 4);
+        var media = a.image ? '<img src="' + esc(a.image) + '" alt="" loading="lazy">' : PH;
+        return '<article class="content-card art-card art-pcard" role="listitem" data-id="' + esc(a.id) + '">' +
+          '<div class="cc-media ' + t + '">' + media + '</div>' +
+          '<div class="cc-body"><h3 class="art-t"><a href="#" data-open="' + esc(a.id) + '">' + esc(a.title) + '</a></h3>' +
+          '<p class="art-meta-l">' + esc(a.category) + ' · ' + mins(a) + ' min de leitura</p>' +
+          '<p class="art-d">' + esc(a.description) + '</p>' +
+          '<button type="button" class="art-btn">Ler artigo</button></div></article>';
+      }
+      function list(){ return A.filter(function(a){ return cat === 'Todos' || a.category === cat; }); }
+      function renderFilters(){
+        $('art-filters').innerHTML = ['Todos'].concat(cats).map(function(c){
+          return '<button type="button" data-cat="' + esc(c) + '" aria-pressed="' + (c === cat) + '">' + esc(c) + '</button>';
+        }).join('');
+      }
+      function renderGrid(){
+        var l = list();
+        $('art-grid').innerHTML = sorted(l).slice(0, shown).map(pcard).join('');
+        $('art-filter-btn').classList.toggle('has-filter', cat !== 'Todos');
+        $('art-more').hidden = l.length <= shown;
+        $('art-empty').hidden = l.length > 0;
+      }
+      renderFilters(); renderGrid();
+      $('art-filters').addEventListener('click', function(e){
+        var b = e.target.closest('button[data-cat]'); if(!b) return;
+        cat = b.getAttribute('data-cat'); shown = PAGE; renderFilters(); renderGrid();
+      });
+      $('art-more').addEventListener('click', function(){ shown += PAGE; renderGrid(); });
+      $('art-sort').addEventListener('change', function(e){ sort = e.target.value; shown = PAGE; renderGrid(); });
+      $('art-filter-btn').addEventListener('click', function(){
+        var f = $('art-filters'), open = f.hidden; f.hidden = !open; this.setAttribute('aria-expanded', String(open));
+      });
+      document.querySelectorAll('.art-seg button').forEach(function(b){
+        b.addEventListener('click', function(){
+          mode = b.getAttribute('data-mode'); $('art-grid').classList.toggle('is-list', mode === 'list');
+          document.querySelectorAll('.art-seg button').forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); });
+        });
+      });
+      if($('artigos-all')) $('artigos-all').addEventListener('click', function(e){ e.preventDefault(); cat = 'Todos'; shown = PAGE; renderFilters(); renderGrid(); EcoApp.showView('articles'); });
+      if($('art-back-dash')) $('art-back-dash').addEventListener('click', function(){ EcoApp.showView('dashboard'); setTimeout(function(){ var s = $('artigos'); if(s) s.scrollIntoView({ block:'start' }); }, 40); });
+
+      // leitura do artigo
+      function checks(){ try{ return JSON.parse(localStorage.getItem(CHK) || '{}'); }catch(e){ return {}; } }
+      function saveChecks(o){ try{ localStorage.setItem(CHK, JSON.stringify(o)); }catch(e){} }
+      function block(a, b){
+        var k = b[0], v = b[1];
+        if(k === 'h') return '<h2>' + inl(v) + '</h2>';
+        if(k === 'p') return '<p>' + inl(v) + '</p>';
+        if(k === 'quote') return '<p class="art-quote">' + inl(v) + '</p>';
+        if(k === 'ul' || k === 'ol') return '<' + k + '>' + v.map(function(i){ return '<li>' + inl(i) + '</li>'; }).join('') + '</' + k + '>';
+        if(k === 'check'){
+          var done = checks()[a.id] || [];
+          return '<p class="art-prog" data-prog></p>' + v.map(function(i, n){
+            var on = done.indexOf(n) >= 0;
+            return '<label class="art-check' + (on ? ' done' : '') + '"><input type="checkbox" data-n="' + n + '"' + (on ? ' checked' : '') + '><span>' + inl(i) + '</span></label>';
+          }).join('');
+        }
+        return '';
+      }
+      function updateProg(root, total){
+        var p = root.querySelector('[data-prog]'); if(!p) return;
+        var n = root.querySelectorAll('.art-check input:checked').length;
+        p.textContent = n + ' de ' + total + ' tarefas concluídas';
+      }
+      function openArticle(id){
+        var a = find(id); if(!a) return;
+        var cur = document.querySelector('.app').getAttribute('data-view');
+        from = cur === 'articles' ? 'articles' : 'dashboard';
+        var refs = a.refs.length ? '<section class="art-refs"><h2>Referências</h2><ol>' + a.refs.map(function(r){
+          return '<li>' + esc(r.t) + (r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener noreferrer">Acessar fonte</a>' : '') + '</li>';
+        }).join('') + '</ol></section>' : '';
+        var root = $('art-read');
+        root.innerHTML = '<button type="button" class="art-back" id="art-back">← Voltar aos conteúdos</button>' +
+          '<span class="art-cat">' + esc(a.category) + '</span><h1>' + esc(a.title) + '</h1>' +
+          '<div class="art-meta"><span>' + mins(a) + ' min de leitura</span></div>' +
+          (a.image ? '<img class="art-cover" src="' + esc(a.image) + '" alt="">' : '') +
+          a.body.map(function(b){ return block(a, b); }).join('') + refs;
+        var chk = a.body.filter(function(b){ return b[0] === 'check'; })[0];
+        if(chk) updateProg(root, chk[1].length);
+        root.setAttribute('data-id', a.id);
+        $('art-back').addEventListener('click', function(){
+          EcoApp.showView(from);
+          if(from === 'dashboard') setTimeout(function(){ var s = $('artigos'); if(s) s.scrollIntoView({ block:'start' }); }, 40);
+        });
+        EcoApp.showView('article');
+        rmStart(a);
+      }
+      $('art-read').addEventListener('change', function(e){
+        var i = e.target; if(!(i && i.matches && i.matches('.art-check input'))) return;
+        var id = $('art-read').getAttribute('data-id'), all = checks(), set = all[id] || [], n = +i.getAttribute('data-n');
+        set = set.filter(function(x){ return x !== n; }); if(i.checked) set.push(n);
+        all[id] = set; saveChecks(all);
+        i.closest('.art-check').classList.toggle('done', i.checked);
+        var a = find(id), chk = a.body.filter(function(b){ return b[0] === 'check'; })[0];
+        updateProg($('art-read'), chk[1].length);
+      });
+
+      // cada card inteiro abre o artigo
+      document.addEventListener('click', function(e){
+        var c = e.target.closest && e.target.closest('.art-card[data-id]'); if(!c) return;
+        e.preventDefault(); openArticle(c.getAttribute('data-id'));
+      });
+
+      /* ===== Missão de leitura (vem da página de missões) =====
+         Quem chega por uma missão precisa, para o artigo valer: (1) ficar na página pelo tempo mínimo (só conta com a aba visível)
+         e (2) chegar ao final do texto. Ao concluir, deixa um recibo em ecoclick_read_receipts, que a página de missões
+         converte em progresso. Sem missão ativa, a leitura funciona como sempre. */
+      var RM_KEY = 'ecoclick_read_mission', RC_KEY = 'ecoclick_read_receipts', LOG_KEY = 'ecoclick_read_log';
+      var RM_MAX_AGE = 60 * 60 * 1000;                       // a missão aberta vale por 1 hora
+      var RM_FLOOR = 45, RM_CAP = 120, RM_FACTOR = 0.5;      // tempo mínimo = metade do tempo médio de leitura (200 palavras/min), entre 45 s e 120 s
+      var rm = null, rmState = null, rmTimer = null;
+      function lj(k, d){ try{ var v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; }catch(e){ return d; } }
+      function sj(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); return true; }catch(e){ return false; } }
+      function today(){ var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+      function rmLoad(){
+        var c = lj(RM_KEY, null), age = c && typeof c.at === 'number' ? Date.now() - c.at : -1;
+        if(c && c.missionId && age >= -60000 && age < RM_MAX_AGE) rm = c;
+        else { rm = null; if(c){ try{ localStorage.removeItem(RM_KEY); }catch(e){} } }
+        return rm;
+      }
+      function rmSecs(a){ return Math.max(RM_FLOOR, Math.min(RM_CAP, Math.round(words(a) / 200 * 60 * RM_FACTOR))); }
+      function rmPicks(){
+        var log = lj(LOG_KEY, []); if(!Array.isArray(log)) log = [];
+        var td = today();
+        function was(a, day){ return log.some(function(l){ return l && l.id === a.id && (!day || l.day === day); }); }
+        var never = A.filter(function(a){ return !was(a); });
+        var later = A.filter(function(a){ return was(a) && !was(a, td); });
+        var rest = A.filter(function(a){ return was(a, td); });
+        return never.concat(later, rest).slice(0, 2);
+      }
+      function rmRenderBanner(){
+        var old = $('rm-banner'); if(old) old.remove();
+        var host = $('ch'); if(!host || !rmLoad()) return;
+        var picks = rmPicks();
+        var el = document.createElement('section');
+        el.className = 'rm-banner'; el.id = 'rm-banner'; el.setAttribute('data-no-i18n', ''); el.setAttribute('aria-labelledby', 'rm-bt');
+        el.innerHTML = '<div class="rm-b-head"><div><span class="rm-kicker">Missão de leitura</span><h2 id="rm-bt">' + esc(rm.title || 'Leia um artigo') + '</h2>' +
+          (rm.desc ? '<p>' + esc(rm.desc) + '</p>' : '') + '</div>' +
+          '<button type="button" class="rm-x" id="rm-cancel" aria-label="Cancelar missão de leitura">×</button></div>' +
+          '<p class="rm-hint">Escolha um dos dois artigos abaixo. Para a missão valer, leia até o final e fique na página pelo tempo mínimo indicado.</p>' +
+          '<div class="rm-picks">' + picks.map(function(a){
+            return '<article class="rm-pick"><span class="art-cat">' + esc(a.category) + '</span><h3>' + esc(plain(a.title)) + '</h3><p>' + esc(a.description) + '</p>' +
+              '<span class="rm-meta">' + mins(a) + ' min de leitura · tempo mínimo na página: ' + rmSecs(a) + ' s</span>' +
+              '<button type="button" class="art-btn" data-rm-open="' + esc(a.id) + '">Ler artigo</button></article>';
+          }).join('') + '</div>' +
+          '<p class="rm-foot">Prefere outro? Qualquer artigo da lista abaixo também vale para a missão.</p>';
+        host.insertBefore(el, host.firstChild);
+      }
+      function rmEnsureBar(){
+        var bar = $('rm-bar'); if(bar) return bar;
+        bar = document.createElement('div');
+        bar.className = 'rm-bar'; bar.id = 'rm-bar'; bar.hidden = true; bar.setAttribute('role', 'region'); bar.setAttribute('aria-label', 'Missão de leitura'); bar.setAttribute('data-no-i18n', '');
+        bar.innerHTML = '<div class="rm-bar-top"><span id="rm-label"></span><span class="rm-bar-time" id="rm-time"></span></div>' +
+          '<div class="rm-track" id="rm-track" role="progressbar" aria-label="Tempo de leitura" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0"><i id="rm-fill"></i></div>' +
+          '<ul class="rm-checks"><li id="rm-c-time"></li><li id="rm-c-end">Chegar ao final do artigo</li></ul>' +
+          '<p class="rm-sr" id="rm-live" role="status" aria-live="polite"></p>' +
+          '<div class="rm-actions"><button type="button" class="art-btn" id="rm-done" disabled>Concluir leitura</button></div>';
+        document.body.appendChild(bar);
+        $('rm-done').addEventListener('click', rmDone);
+        return bar;
+      }
+      function rmStop(){
+        if(rmTimer){ clearInterval(rmTimer); rmTimer = null; }
+        rmState = null;
+        var bar = $('rm-bar'); if(bar) bar.hidden = true;
+        var r = $('art-read'); if(r){ r.style.paddingBottom = ''; var e = $('rm-end'); if(e) e.remove(); }
+      }
+      function rmStart(a){
+        rmStop();
+        if(!rmLoad()) return;
+        var bar = rmEnsureBar(), root = $('art-read');
+        root.insertAdjacentHTML('beforeend', '<div class="rm-end" id="rm-end" aria-hidden="true"></div>');
+        var need = rmSecs(a);
+        rmState = { id:a.id, need:need, ms:0, last:performance.now(), endOk:false, ready:false, finished:false };
+        $('rm-track').setAttribute('aria-valuemax', String(need));
+        $('rm-c-time').textContent = 'Ficar na página por pelo menos ' + need + ' s';
+        $('rm-live').textContent = '';
+        var done = $('rm-done'); done.textContent = 'Concluir leitura'; done.disabled = true;
+        bar.hidden = false;
+        root.style.paddingBottom = Math.max(0, window.innerHeight - bar.getBoundingClientRect().top) + 32 + 'px';       // o fim do texto não fica escondido atrás da barra
+        rmUpdate();
+        rmTimer = setInterval(rmTick, 250);
+      }
+      function rmEndVisible(){
+        var e = $('rm-end'), b = $('rm-bar');
+        return !!(e && b && !b.hidden && e.getBoundingClientRect().bottom <= b.getBoundingClientRect().top + 1);
+      }
+      function rmViewActive(){ var v = $('view-article'); return !!(v && !v.hidden && rmState && $('art-read').getAttribute('data-id') === rmState.id); }
+      function rmTick(){
+        var s = rmState; if(!s){ rmStop(); return; }
+        var now = performance.now(), dt = Math.min(now - s.last, 1000); s.last = now;
+        if(!rmViewActive()){ rmStop(); return; }                          // saiu do artigo: ao reabrir, recomeça
+        if(s.finished) return;
+        if(!document.hidden){                                              // aba em segundo plano não conta tempo
+          s.ms += dt;
+          if(!s.endOk && rmEndVisible()) s.endOk = true;
+        }
+        rmUpdate();
+      }
+      function rmUpdate(){
+        var s = rmState; if(!s) return;
+        if(s.finished) return;
+        var shown = Math.min(s.need, Math.floor(s.ms / 1000)), timeOk = s.ms >= s.need * 1000;
+        $('rm-time').textContent = shown + ' / ' + s.need + ' s';
+        $('rm-fill').style.width = Math.min(100, s.ms / (s.need * 1000) * 100).toFixed(1) + '%';
+        $('rm-track').setAttribute('aria-valuenow', String(shown));
+        $('rm-c-time').classList.toggle('ok', timeOk);
+        $('rm-c-end').classList.toggle('ok', s.endOk);
+        $('rm-label').textContent = !timeOk ? 'Leia com atenção: faltam ' + (s.need - shown) + ' s'
+          : !s.endOk ? 'Tempo mínimo cumprido. Role até o final do artigo.'
+          : 'Leitura completa. Você já pode concluir.';
+        var can = timeOk && s.endOk;
+        $('rm-done').disabled = !can;
+        if(can && !s.ready){ s.ready = true; $('rm-live').textContent = 'Leitura completa. O botão para concluir está liberado.'; }
+      }
+      function rmDone(){
+        var s = rmState; if(!s) return;
+        if(s.finished){ if(typeof window.EcoNav === 'function') window.EcoNav('missions'); return; }
+        if(!(s.ms >= s.need * 1000 && s.endOk) || !rm) return;                // conferência final
+        var list = lj(RC_KEY, []); if(!Array.isArray(list)) list = [];
+        list.push({ id:'rc' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), articleId:s.id, missionId:rm.missionId, user:rm.user, at:new Date().toISOString(), seconds:Math.round(s.ms / 1000) });
+        if(!sj(RC_KEY, list.slice(-50))){ $('rm-label').textContent = 'Não foi possível registrar a leitura. Tente de novo.'; return; }
+        var log = lj(LOG_KEY, []); if(!Array.isArray(log)) log = [];
+        log.push({ id:s.id, day:today() }); sj(LOG_KEY, log.slice(-200));
+        try{ localStorage.removeItem(RM_KEY); }catch(e){}
+        rm = null; s.finished = true;
+        if(rmTimer){ clearInterval(rmTimer); rmTimer = null; }
+        $('rm-label').textContent = 'Leitura registrada!';
+        $('rm-live').textContent = 'Leitura registrada. Volte às missões para receber a recompensa.';
+        var done = $('rm-done'); done.textContent = 'Voltar às missões'; done.disabled = false;
+        var rb = $('rm-banner'); if(rb) rb.remove();
+      }
+      document.addEventListener('click', function(e){
+        var o = e.target.closest && e.target.closest('[data-rm-open]');
+        if(o){ e.preventDefault(); openArticle(o.getAttribute('data-rm-open')); return; }
+        if(e.target.closest && e.target.closest('#rm-cancel')){
+          try{ localStorage.removeItem(RM_KEY); }catch(x){}
+          rm = null; rmRenderBanner();
+        }
+      });
+      document.addEventListener('ecoclick:view-change', function(e){
+        var v = e.detail && e.detail.view;
+        if(v !== 'article') rmStop();
+        if(v === 'articles') rmRenderBanner();
+      });
+      rmRenderBanner();
+    })();
+  

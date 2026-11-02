@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR" data-eco-page="community" data-eco-route="community" data-fx-reveal=".card">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Comunidade — EcoClick</title>
+<meta name="description" content="EcoClick: encontre pontos de coleta de eletrônicos, agende descartes, cumpra missões e acompanhe seu impacto ambiental.">
+<link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+<link rel="stylesheet" href="../css/components.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/themes.css">
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/page-context.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/components/form-fix.js"></script>
+<script src="../js/components/fx.js"></script>
+<script src="../js/pages/community/02-theme-init.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/pages/community/03-comunidade.css"><link rel="stylesheet" href="../css/pages/community/04-recomendacoes.css"><link rel="stylesheet" href="../css/pages/community/05-sidebar.css"><link rel="stylesheet" href="../css/components/sidebar-pill.css"></head>
+<body>
+<div class="app" id="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head"><button type="button" class="logo-text" id="logo-btn"><span class="logo-full"><img class="eco-logo eco-logo-light" src="../assets/images/community-a253eadfa9.png" alt="EcoClick"><img class="eco-logo eco-logo-dark" src="../assets/images/community-0659191392.png" alt="" aria-hidden="true"></span><span class="logo-mini" aria-hidden="true"><span class="logo-mini-mark"><img class="eco-mark eco-mark-light" src="../assets/images/community-034e8508d8.png" alt="" width="62" height="112"><img class="eco-mark eco-mark-dark" src="../assets/images/community-68b6ffc6e4.png" alt="" width="62" height="112"></span><span class="logo-mini-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M5.6 10l2 2-2 2"/></svg></span></span></button><div class="head-actions"><button type="button" class="icon-btn" id="collapse-btn" aria-label="Fechar barra lateral" aria-expanded="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 4v16"/><path d="M7.6 10l-2 2 2 2"/></svg></button></div></div>
+    <nav class="side-nav" aria-label="Navegação">
+          <a href="#" data-eco-nav="dashboard">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span class="nav-label">Pontos de coleta</span>
+          </a>
+          <a href="#" data-eco-nav="missions">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg>
+            <span class="nav-label">Minha jornada</span>
+          </a>
+          <a href="#" data-eco-nav="dash_recompensas">
+            <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg>
+            <span class="nav-label">Recompensas</span>
+          </a>
+          <a href="#" data-eco-nav="progress">
+            <svg viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+            <span class="nav-label">Meu progresso</span>
+          </a>
+          <a href="#" data-eco-nav="dash_conteudos">
+            <svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h6v18H6a2 2 0 0 1-2-2V5z"/><path d="M20 5a2 2 0 0 0-2-2h-6v18h6a2 2 0 0 0 2-2V5z"/></svg>
+            <span class="nav-label">Conteúdos</span>
+          </a>
+          <a href="#" data-eco-nav="community" class="active" aria-current="page">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3 3 0 0 1 0 5.6M18 14.2c2 .7 3.5 2.6 3.5 5.8"/></svg>
+            <span class="nav-label">Comunidade</span>
+          </a>
+        </nav>
+    <div class="side-label">Temas</div>
+    <nav class="topics intro" id="topics" aria-label="Temas"></nav>
+    <nav class="side-nav side-foot" id="foot" hidden aria-label="Conta">
+        <a href="#" data-eco-nav="dash_settings">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 0 1-4 0v-.09A1.7 1.7 0 0 0 9 19.4a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 0 1 0-4h.09A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-1.55V3a2 2 0 0 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 0 1 0 4h-.09a1.7 1.7 0 0 0-1.51 1z"/></svg>
+          <span class="nav-label">Configurações</span>
+        </a>
+        <a href="#" id="logout">
+          <svg viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
+          <span class="nav-label">Sair</span>
+        </a>
+      </nav>
+  </aside>
+  <div class="backdrop" id="bd"></div>
+
+  <main class="main">
+    <h1 class="fx-sr">Comunidade EcoClick</h1>
+    <header class="topbar">
+      <button class="menu-btn" id="menu" aria-label="Abrir menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="q" type="search" placeholder="Buscar na comunidade" aria-label="Buscar na comunidade" autocomplete="off"></label>
+      <div class="actions" id="actions"></div>
+    </header>
+
+    <div class="layout">
+      <section>
+        <form class="card cmp" id="editor" novalidate>
+          <div class="cmp-top"><span class="av" id="cmp-av">E</span><textarea id="e-body" rows="1" maxlength="1500" placeholder="Compartilhe uma ação, dúvida ou ideia…" aria-label="Texto do post"></textarea>
+            <div class="emo-wrap"><button type="button" class="ico-btn" id="e-emo" aria-label="Emojis"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.2a4.2 4.2 0 0 0 7 0M9 9.6h.01M15 9.6h.01"/></svg></button><div class="emo-pop" id="emo-pop" hidden></div></div></div>
+          <div class="prev" id="e-prev"><img id="e-img" alt="Pré-visualização da foto"><button type="button" id="e-rm">Remover foto</button></div>
+          <div class="chips" id="e-chips"></div>
+          <div class="loc-row" id="e-locrow" hidden><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><input id="e-loc" maxlength="60" placeholder="Onde você está? Ex.: Salvador, BA" aria-label="Local"><button type="button" class="x" id="e-locx" aria-label="Remover local">×</button></div>
+          <div class="cmp-bar">
+            <button type="button" class="tool" id="e-fileb"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span>Arquivo</span></button>
+            <button type="button" class="tool" id="e-add"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M21 16l-5-5-8 8"/></svg><span>Imagem</span></button>
+            <button type="button" class="tool" id="e-locb"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Local</span></button>
+            <label class="tool sel"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><select id="e-vis" aria-label="Quem pode ver"><option value="public">Público</option><option value="followers">Seguidores</option></select></label>
+            <label class="tool sel"><select id="e-topic" aria-label="Tema"></select></label>
+            <span class="sp"></span><button type="submit" class="btn btn-dark" id="e-send">Enviar</button>
+          </div>
+          <div class="err" id="e-err" role="alert"></div>
+          <input type="file" id="e-file" accept="image/*" hidden><input type="file" id="e-doc" accept=".pdf,.txt,.csv,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt" hidden>
+        </form>
+        <div class="card tabs" id="tabs" role="tablist"><button data-t="new" class="on">Novos</button><button data-t="pop">Populares</button><button data-t="dis">Discutidos</button></div>
+        <div id="feed"></div>
+        <p class="note" id="note">Seus posts ficam salvos neste navegador.</p>
+      </section>
+      <aside class="rail">
+        <section class="rsec"><h3>Stories</h3><div class="stories" id="stories"></div></section>
+        <section class="rsec"><h3>Sugestões</h3><div id="sugs"></div><button type="button" class="seeall" id="seeall" hidden>Ver todos</button></section>
+        <section class="rsec"><div class="rhead"><h3>Recomendações</h3><button type="button" class="mine" id="mine">Meus temas</button></div><div class="recs" id="recs"></div></section>
+        <section class="rsec"><h3>Em alta</h3><div id="hot"><p class="mut">Os posts mais curtidos e comentados aparecem aqui.</p></div></section>
+      </aside>
+    </div>
+  </main>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-t"><div class="mbox">
+  <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+  <h2 id="m-t">Entre para participar</h2><p id="m-p">Faça login ou crie sua conta para participar da comunidade.</p>
+  <button class="btn btn-primary" id="m-in">Entrar</button><button class="btn btn-dark" id="m-up">Criar conta</button><button class="btn btn-ghost" id="m-x">Agora não</button>
+</div></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button type="button" id="lb-x">Fechar</button><img id="lb-img" alt=""></div>
+<input type="file" id="st-file" accept="image/*" hidden>
+<div class="sv" id="sv" role="dialog" aria-modal="true" aria-label="Story"><div class="sv-box"><div class="sv-top"><span class="av" id="sv-av"></span><div><b id="sv-name"></b><small id="sv-time"></small></div><button type="button" class="sv-del" id="sv-del" hidden>Excluir story</button><button type="button" class="sv-x" id="sv-x" aria-label="Fechar">×</button></div><img id="sv-img" alt="Story"><div class="sv-react" id="sv-react"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../js/pages/community/07-comunidade.js"></script>
+<script src="../js/pages/community/08-theme-follow.js"></script>
+<script src="../js/pages/community/09-sidebar-collapse.js"></script><script src="../js/components/nav-indicator.js"></script></body></html>

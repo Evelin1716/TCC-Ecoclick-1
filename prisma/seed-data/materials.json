@@ -1,0 +1,47 @@
+[
+  {
+    "id": "cel",
+    "name": "Celulares e tablets",
+    "sortOrder": 0,
+    "prepTips": [
+      "Faça backup e apague seus dados (restaure o padrão de fábrica).",
+      "Saia das contas vinculadas (Google/Apple) e remova chip e cartão de memória."
+    ]
+  },
+  {
+    "id": "nb",
+    "name": "Notebooks e computadores",
+    "sortOrder": 1,
+    "prepTips": [
+      "Faça backup e apague seus arquivos e senhas.",
+      "Remova pendrives, discos externos e mídias."
+    ]
+  },
+  {
+    "id": "pil",
+    "name": "Pilhas e baterias",
+    "sortOrder": 2,
+    "prepTips": [
+      "Não perfure, amasse nem abra pilhas e baterias.",
+      "Cubra os polos de baterias de lítio com fita isolante.",
+      "Bateria estufada, vazando ou quente: não leve junto com os outros itens; peça orientação ao ponto antes."
+    ]
+  },
+  {
+    "id": "cab",
+    "name": "Carregadores e cabos",
+    "sortOrder": 3,
+    "prepTips": [
+      "Separe cabos e carregadores soltos em um saco ou caixa."
+    ]
+  },
+  {
+    "id": "eld",
+    "name": "Pequenos eletrodomésticos",
+    "sortOrder": 4,
+    "prepTips": [
+      "Esvazie e limpe o aparelho; retire pilhas ou baterias, se houver.",
+      "Confirme com o ponto se o tamanho do aparelho é aceito."
+    ]
+  }
+]

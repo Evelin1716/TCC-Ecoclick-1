@@ -1,0 +1,3 @@
+
+:root:not([data-theme="dark"]){--bg:#f2faf6;--muted:#4b6a62;--line:#d3eadf;--soft:#e4f3ec;--blue:#4a8476;--blue2:#2f6b5c;--btn:#2f6b5c;--hero1:#e4f3ec;--hero2:#d3efe3;--shadow:0 6px 26px rgba(31,74,64,.08);}
+.side a[data-eco-nav],.side a.eco-out{cursor:pointer}

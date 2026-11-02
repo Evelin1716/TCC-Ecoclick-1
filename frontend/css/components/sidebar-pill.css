@@ -1,0 +1,21 @@
+
+.side-nav:not(.side-foot),.topics{position:relative}
+.side-nav a,.topics button{position:relative;z-index:1}
+.side-nav a svg{transition:stroke .3s ease}
+.nav-pill{position:absolute;left:0;top:0;width:0;height:0;border-radius:10px;background:var(--bg-2);box-shadow:0 1px 3px color-mix(in srgb,var(--text-heading) 10%,transparent);pointer-events:none;opacity:0;z-index:0;will-change:transform,width,height;transition:transform .42s cubic-bezier(.32,.72,0,1),width .42s cubic-bezier(.32,.72,0,1),height .42s cubic-bezier(.32,.72,0,1),opacity .3s ease}
+.nav-pill.ready{opacity:1}
+.nav-pill.no-anim{transition:none}
+.nav-pill.bar::before{content:'';position:absolute;left:0;top:50%;width:3px;height:18px;margin-top:-9px;border-radius:0 3px 3px 0;background:var(--eco-green)}
+.has-pill a.active,.has-pill button.on{background:transparent!important;box-shadow:none!important}
+.has-pill a.active::before{display:none!important}
+@media (prefers-reduced-motion:reduce){.nav-pill{transition:none}}
+html.reduce-motion .nav-pill{transition:none!important}
+
+/* --- estabilidade: sem tremor ao passar pelas seções --- */
+html{scrollbar-gutter:stable}
+.sidebar{scrollbar-width:none;-ms-overflow-style:none}
+.sidebar::-webkit-scrollbar{width:0;height:0;display:none}
+.side-nav a,.topics button,.side-label{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.side-nav a:hover svg,.side-nav a:focus-visible svg{transform:none!important}
+.side-nav a,.topics button{transition:background-color .3s ease,color .3s ease!important}
+.side-nav a.active,.topics button.on{font-weight:inherit}

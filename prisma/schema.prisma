@@ -1,0 +1,255 @@
+// Banco de dados do EcoClick (PostgreSQL).
+// Comandos: npx prisma migrate dev  ·  npx prisma db seed  ·  npx prisma studio
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  url      = env("DATABASE_URL")
+  provider = "postgresql"
+}
+
+enum Role {
+  USER
+  OPERATOR // equipe de um ponto de coleta: valida descartes dos pontos em que está vinculada
+  ADMIN
+}
+
+enum AppointmentStatus {
+  planned
+  pending_validation
+  completed
+  cancelled
+  rejected
+}
+
+enum ContentType {
+  ARTICLE
+  QUIZ
+  TIP
+  COURSE
+}
+
+enum CommunityCollection {
+  posts
+  stories
+}
+
+model User {
+  id             String    @id @default(cuid())
+  name           String
+  email          String    @unique
+  passwordHash   String
+  role           Role      @default(USER)
+  /// Incrementado para encerrar todas as sessões ("sair dos outros aparelhos", troca de senha)
+  tokenVersion   Int       @default(0)
+  consentVersion String?
+  consentAt      DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  appData        AppData[]
+  appointments   Appointment[]
+  ledger         PointLedger[]
+  redemptions    Redemption[]
+  communityItems CommunityItem[]
+  resets         PasswordReset[]
+  operatesAt     PointOperator[]
+}
+
+model PasswordReset {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+/// Dados de interface de cada usuário (configurações, favoritos, notificações, estado de missões, etc.).
+/// Chave/valor em texto: preserva exatamente o que as telas já gravavam no navegador.
+model AppData {
+  userId    String
+  key       String
+  value     String   @db.Text
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, key])
+}
+
+model Material {
+  id        String          @id
+  name      String          @unique
+  sortOrder Int             @default(0)
+  prepTips  Json            @default("[]")
+  points    PointMaterial[]
+}
+
+model CollectionPoint {
+  id           String   @id
+  name         String
+  kind         String
+  operator     String
+  neighborhood String?
+  address      String?
+  phone        String?
+  /// Texto usado para localizar o ponto quando ainda não há coordenadas
+  geoQuery     String?
+  /// true = posição aproximada, ainda não confirmada
+  geoApprox    Boolean  @default(true)
+  lat          Float?
+  lng          Float?
+  geoLabel     String?
+  geoUrl       String?
+  matNote      String?
+  pendingNote  String?
+  /// [{ days:[0..6], open:"08:00", close:"18:00", closed?:boolean }]  (0 = domingo). Vazio = horário não verificado.
+  hours        Json     @default("[]")
+  hoursNote    String?
+  hoursShort   String?
+  /// Fontes da informação (ids/URLs) e campos já verificados: { address, materials, hours, phone }
+  sources      Json     @default("[]")
+  verified     Json     @default("{}")
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  materials    PointMaterial[]
+  appointments Appointment[]
+  operators    PointOperator[]
+
+  @@index([neighborhood])
+  @@index([lat, lng])
+}
+
+model PointMaterial {
+  pointId    String
+  materialId String
+  point      CollectionPoint @relation(fields: [pointId], references: [id], onDelete: Cascade)
+  material   Material        @relation(fields: [materialId], references: [id], onDelete: Cascade)
+
+  @@id([pointId, materialId])
+}
+
+model PointOperator {
+  userId  String
+  pointId String
+  user    User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  point   CollectionPoint @relation(fields: [pointId], references: [id], onDelete: Cascade)
+
+  @@id([userId, pointId])
+}
+
+model Appointment {
+  /// Mesmo id gerado pela tela (permite reenviar sem duplicar)
+  id             String            @id
+  userId         String
+  pointId        String
+  /// AAAA-MM-DD e HH:MM no horário de Salvador (America/Bahia)
+  date           String            @db.VarChar(10)
+  time           String            @db.VarChar(5)
+  status         AppointmentStatus @default(planned)
+  /// "pontoId|data|hora" enquanto o horário está ocupado (planned/pending_validation); nulo quando livre.
+  /// A restrição @unique garante, no banco, que dois usuários não ocupem o mesmo horário.
+  slotKey        String?           @unique
+  points         Int               @default(0)
+  /// Objeto completo enviado pela tela (itens, materiais, histórico, comprovante…)
+  data           Json
+  validatedAt    DateTime?
+  validatedById  String?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  point          CollectionPoint   @relation(fields: [pointId], references: [id])
+  ledger         PointLedger?
+
+  @@index([userId])
+  @@index([pointId, date])
+}
+
+/// Livro-razão de pontos: o saldo é sempre a soma de "delta". Só o servidor escreve aqui.
+model PointLedger {
+  id            String       @id @default(cuid())
+  userId        String
+  /// Único: um descarte só credita pontos uma vez
+  appointmentId String?      @unique
+  delta         Int
+  reason        String
+  createdAt     DateTime     @default(now())
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  appointment   Appointment? @relation(fields: [appointmentId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+}
+
+model Reward {
+  id          String   @id
+  name        String
+  description String
+  cost        Int
+  glow        String?
+  active      Boolean  @default(true)
+  sortOrder   Int      @default(0)
+}
+
+model Redemption {
+  id        String   @id @default(cuid())
+  userId    String
+  rewardId  String
+  name      String
+  qty       Int
+  total     Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Mission {
+  id          String   @id
+  chain       String?
+  stepOrder   Int?
+  category    String
+  title       String
+  description String
+  points      Int
+  xp          Int
+  goal        Int      @default(1)
+  minLevel    Int?
+  active      Boolean  @default(true)
+  sortOrder   Int      @default(0)
+}
+
+model Content {
+  id          String      @id
+  type        ContentType @default(ARTICLE)
+  category    String
+  title       String
+  description String
+  image       String?     @db.Text
+  body        Json        @default("[]")
+  refs        Json        @default("[]")
+  published   Boolean     @default(true)
+  sortOrder   Int         @default(0)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+/// Posts e histórias da comunidade. "data" guarda o objeto da tela; o servidor controla autoria e interações.
+model CommunityItem {
+  collection CommunityCollection
+  id         String
+  ownerId    String
+  data       Json
+  createdAt  DateTime            @default(now())
+  updatedAt  DateTime            @updatedAt
+  owner      User                @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+
+  @@id([collection, id])
+  @@index([collection, createdAt])
+}
