@@ -178,6 +178,8 @@ model PointLedger {
   userId        String
   /// Único: um descarte só credita pontos uma vez
   appointmentId String?      @unique
+  /// Impede creditar a mesma missão mais de uma vez
+  refKey        String?      @unique
   delta         Int
   reason        String
   createdAt     DateTime     @default(now())
