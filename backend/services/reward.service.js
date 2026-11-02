@@ -36,4 +36,50 @@ async function redeem(userId, rewardId, qty) {
   });
 }
 
-module.exports = { balance, listRewards, listRedemptions, redeem };
+/** Credita pontos de missões sem permitir duplicidade. */
+async function creditMissions(userId, items) {
+  const ids = [...new Set(items.map((i) => i.id))];
+
+  const catalog = await prisma.mission.findMany({
+    where: { id: { in: ids }, active: true },
+    select: { id: true, points: true }
+  });
+
+  const byId = new Map(catalog.map((m) => [m.id, m.points]));
+  let credited = 0;
+  let skipped = 0;
+
+  for (const it of items) {
+    const max = byId.get(it.id);
+    const delta = max == null ? 0 : Math.min(it.pts, max);
+
+    if (delta <= 0) {
+      skipped++;
+      continue;
+    }
+
+    try {
+      await prisma.pointLedger.create({
+        data: {
+          userId,
+          delta,
+          reason: `missao:${it.id}`,
+          refKey: `${userId}:m:${it.key}`
+        }
+      });
+      credited++;
+    } catch (e) {
+      if (e.code !== 'P2002') throw e;
+    }
+  }
+
+  return { credited, skipped, balance: await balance(userId) };
+}
+
+module.exports = {
+  balance,
+  listRewards,
+  listRedemptions,
+  redeem,
+  creditMissions
+};
